@@ -47,62 +47,61 @@ require_once("admin-functions/error-handlers.php");
 <body>
     <div class="wrapper" style="width: 100%;">
         <!--JumboImage-->
-       <?php
-       function getHeroImage($conn)
-       {
-           $sql = "SELECT `hero_image` FROM `index_page` WHERE id = 1;";
-       
-           $stmt = $conn->prepare($sql);
-       
-           // Check if the statement preparation was successful
-           if (!$stmt) {
-               echo "Error preparing statement: " . $conn->error;
-               $conn->close();
-               exit;
-           }
-       
-           $stmt->execute();
-       
-           // Check if the statement execution was successful
-           if (!$stmt) {
-               echo "Error executing statement: " . $stmt->error;
-               $stmt->close();
-               $conn->close();
-               exit;
-           }
-       
-           // Get the result set
-           $result = $stmt->get_result();
-       
-           // Fetch the row as an associative array
-           $row = $result->fetch_assoc();
-       
-           // Check if any rows were returned
-           if ($row) {
-               echo "images/" . $row['hero_image'];
-           } else {
-               echo "images/jumbo1.jpg";
-           }
-       
-           // Close the statement
-           $stmt->close();
-       }
-       
-       ?>
-       
+        <?php
+        function getHeroImage($conn)
+        {
+            $sql = "SELECT `hero_image` FROM `index_page` WHERE id = 1;";
+
+            $stmt = $conn->prepare($sql);
+
+            // Check if the statement preparation was successful
+            if (!$stmt) {
+                echo "Error preparing statement: " . $conn->error;
+                $conn->close();
+                exit;
+            }
+
+            $stmt->execute();
+
+            // Check if the statement execution was successful
+            if (!$stmt) {
+                echo "Error executing statement: " . $stmt->error;
+                $stmt->close();
+                $conn->close();
+                exit;
+            }
+
+            // Get the result set
+            $result = $stmt->get_result();
+
+            // Fetch the row as an associative array
+            $row = $result->fetch_assoc();
+
+            // Check if any rows were returned
+            if ($row) {
+                echo "images/" . $row['hero_image'];
+            } else {
+                echo "images/jumbo1.jpg";
+            }
+
+            // Close the statement
+            $stmt->close();
+        }
+
+        ?>
+
 
 
 
         <img id="hero-img" src="<?php getHeroImage($conn) ?>" class="img-fluid" width="100%" alt="50 Years of Soccer">
         <form class="hero-img-container" action="admin-functions/update-hero-img.php" method="post"
             enctype="multipart/form-data">
-            <?php 
-                if ($_GET['error']) {
-                    errorHandler($_GET['error']);
-                }
-                elseif ($_GET['success']) {
-                    successHandler($_GET['success']);
-                }
+            <?php
+            if ($_GET['error']) {
+                errorHandler($_GET['error']);
+            } elseif ($_GET['success']) {
+                successHandler($_GET['success']);
+            }
             ?>
             <h2>Upload a New Home Page Image</h2>
             <div class="input-group mb-3 hero-img-upload">
@@ -425,20 +424,45 @@ require_once("admin-functions/error-handlers.php");
         </div>
     </div>
     <!--center blurb-->
-    <div class="px-5 py-2 my-3 text-center">
-        <h1 class="pb-0 text-center">51 Great Years Of Soccer</h1>
+    <div class="px-5 py-2 my-3 d-flex flex-column justify-content-center align-items-center">
+        <?php
+        $sql = "SELECT `section_1_heading`, `section_1_text` FROM index_page WHERE id = 1;";
+        $result = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $section_1_heading = $row['section_1_heading'];
+                $section_1_text = $row['section_1_text'];
+            }
+        }
+
+        ?>
+        <h1 id="section-1-heading" class="pb-0"><?php echo $section_1_heading ?></h1>
         <div class="col-lg-8 mx-auto">
-            <p class="lead mb-0 px-2">
-                It seems like yesterday when the first whistle blew to start the first game. Since then we have
-                built a
-                large organization that is still growing day by day. We have great people, great facilities and a
-                true love of the beautiful game.
+            <p id="section-1-text" class="lead mb-0 px-2">
+            <?php echo $section_1_text ?>
             </p>
         </div>
+        <!-- Section 1 Form -->
+        <form id="section-1-form" class="section-1-input-container" method="post" action="admin-functions/update-section-1.php">
+            <h4 for="section-1-heading-input">Heading Text</h4>
+            <div class="form-floating">
+                <textarea name="section-1-heading" class="form-control" placeholder="Leave a comment here"
+                    id="section-1-heading-input" style="height: 100px"><?php echo $section_1_heading ?></textarea>
+
+            </div>
+            <h4 for="section-1-text-input">Paragraph Text</h4>
+            <div class="form-floating">
+                <textarea name="section-1-text" class="form-control" placeholder="Leave a comment here"
+                    id="section-1-text-input" style="height: 100px"><?php echo $section_1_text ?></textarea>
+            </div>
+            <div class="section-1-submit-btn-container d-flex justify-content-center"
+                id="section-1-submit-btn-container">
+            </div>
+        </form>
     </div>
     <div class="bg-dark text-white py-3">
         <div style="text-align: center;">
-            <h3>2024 OUTDOOR SOCCER REGISTRATON</h3>
+            <h3>2024 OUTDOOR SOCCER REGISTRATION</h3>
             <h4>Starts January 15, 2024</h4>
             <h6>ONLINE REGISTRATION ONLY</h6>
             <img src="images/outdoorseason.png" style="width: 60%; height:auto;">
@@ -767,6 +791,7 @@ require_once("admin-functions/error-handlers.php");
     <!--end-->
     <script src="<?php echo BASE_URL ?>js/index.js"></script>
     <script src="<?php echo BASE_URL ?>js/admin.js"></script>
+    <script src="<?php echo BASE_URL ?>js/section-1.js"></script>
 
 </body>
 
