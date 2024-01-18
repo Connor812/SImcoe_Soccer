@@ -28,6 +28,10 @@
     display: none;
 }
 
+.hero-upload-btn * {
+    margin: 0px 10px
+}
+
 /* Registration Update */
 .registration-input {
     height: 100px;
@@ -96,4 +100,13 @@
     align-items: center;
     border-radius: 0.375rem;
     padding: 10px 20px
+}
+
+.section-1-input-container {
+    width: 70%;
+    margin-top: 10px;
+}
+
+.section-1-input-container * {
+    margin-top: 10px;
 }
