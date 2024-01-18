@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#new-hero-img").change(function () {
         const fileInput = $(this)[0]; // Get the DOM element
         const file = fileInput.files[0];
+        const originalHeroImage = $("#hero-img").attr("src");
 
         if (file) {
             const reader = new FileReader();
@@ -25,16 +26,36 @@ $(document).ready(function () {
                 for: 'new-hero-img',
                 type: 'submit'
             });
+            const resetButton = $('<button>', {
+                id: 'reset-btn',
+                class: 'btn btn-primary',
+                text: 'Reset',
+                value: originalHeroImage
+            });
 
             $("#hero-upload-btn").append(uploadButton);
+            $("#hero-upload-btn").append(resetButton);
+            addEventListenerToResetBtn();
         }
 
     });
 
+    function addEventListenerToResetBtn() {
+        $("#reset-btn").on("click", function (event) {
+            event.preventDefault();
+            const src = $(this).val();
+
+            $("#hero-img").attr("src", src);
+            $("#upload-hero-img-submit-btn").remove();
+            $("#reset-btn").remove();
+            $("#new-hero-img").val("")
+        });
+    }
+
     // Attach a click event listener to the dropdown items
     $('.dropdown-item').on('click', function () {
         // Get the value attribute of the clicked item
-        var selectedValue = $(this).data('value');
+        var selectedValue = $(this).attr('image');
 
         var formData = {
             status: selectedValue
