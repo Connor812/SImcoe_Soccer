@@ -1,0 +1,548 @@
+Table 1
+event_id,category_name,division_name,game_number,home_team_name,home_team_colour,home_team_score,away_team_name,away_team_colour,away_team_score,game_completion_note,event_date,time_start,time_end,facility_name,subfacility_designator,event_type_code,event_status,game_status
+1618248,U13 Girls,U13 Girls,U13-G-U13G -001, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,3. Norfolk Dental Hygiene U13 G,Red,,,5/15/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618249,U13 Girls,U13 Girls,U13-G-U13G -002,4. Randyâ€™s Auto U13 G ,Sky blue,,1. Simcoe Lions Club U13G,Purple,,,5/15/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614415,Women 19+,Women 19+,W-WOMEN-19+-001,W3.  Norfolk Dental Hygiene,Maroon,,W4. Erie Beach Hotel,Purple,,,5/15/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614416,Women 19+,Women 19+,W-WOMEN-19+-002,W1. The Functional Approach Chiro & Physio,Gold,,W2. Demeyere's Simcoe Honda,Red,,,5/15/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614619,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-001,3. Bulk Barn U11,Gold,,5. Victoria Eldercare U11,Sky  Blue,,,5/16/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614620,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-002,7. Waterford Home Hardware Building Centre U11,Lime Green,,2. Norfolk Dental Hygiene U11,Red,,,5/16/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614365,U7 coed,U7 coed,U7-U7X -001,8. Mitt & Robe Co. U7,Lime green,,5. Norfolk Dental Hygiene U7,Maroon,,,5/16/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614366,U7 coed,U7 coed,U7-U7X -002,1.Barrel Restaurant U7,White,,4. Simcoe Lions Club U7,Purple,,,5/16/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614367,U7 coed,U7 coed,U7-U7X -003,3. Victor Pool & Spa Supply U7,Royal  Blue,,7. NACL U7,Teal,,,5/16/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614463,U18 Boys,U18 Boys,U18-B-U18B -001,3. BML Roofing System U18 B,Royal Blue,,4. TIRECRAFT U18 B,Orange,,,5/16/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614464,U18 Boys,U18 Boys,U18-B-U18B -002,1. Townsend Butchers U18 B,Gold,,2. Norfolk Dental Hygiene U18 B,Red,,,5/16/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614368,U7 coed,U7 coed,U7-U7X -004,2. First Choice Haircutters U7,Red,,6. Port Dover Knights of Columbus U7,sky blue,,,5/16/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614621,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-003,4. Demeyere Chrysler U11,Royal  Blue,,8. TACOS 'N' TEQUILA U11,Maroon,,,5/16/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614622,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-004,6. Country Trophies U11,White,,1. Toyotetsu Canada Inc. U11,Purple,,,5/16/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614513,U8 coed,U8 coed,U8-U8X -001,6. Boer Homes U8,White,,8. Roulstons Pharmacy U8,Sky  Blue,,,5/17/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614514,U8 coed,U8 coed,U8-U8X -002,1. EastLink U8,Red,,5. Norfolk Dental Hygiene U8,Maroon,,,5/17/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614491,U18  Girls,U18 Girls,U18-G-U18G -001,2. Norfolk Dental Hygiene U18 G,Red,,4. Hidden Valley RV Resort U18 G,Maroon,,,5/17/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614492,U18  Girls,U18 Girls,U18-G-U18G -002,1. Jarja Floral International U18 G,Lime Green,,3. Suprun Psychotherapy U18 G,Purple,,,5/17/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614515,U8 coed,U8 coed,U8-U8X -003,4. Cobb & Jones LLP U8,Royal  Blue,,3. RCL Br #123 U8,Lime green,,,5/17/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614516,U8 coed,U8 coed,U8-U8X -004,7. Townsend Butchers U8,Gold,,2. Good Redden Klosler LLP U8,Purple,,,5/17/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614561,U9 coed,U9 coed,U9-U9X -001,2. Arbor Restaurant U9,Orange,,5. Simcoe Knights of Columbus U9,Lime green,,,5/18/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614562,U9 coed,U9 coed,U9-U9X -002,3. Springview Farms Golf Course U9,Sky  Blue,,1. Norfolk Dental Hygiene U9,Red,,,5/18/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618226,U13 Boys ,U13 Boys,U13-B-U13B -001,1. Norfolk Dental Hygiene U13 B,Red,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,5/18/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618227,U13 Boys ,U13 Boys,U13-B-U13B -002,4. Edgil Pools Services Ltd U13 B,Royal Blue,,2. Little Caesars U13 B,Gold,,,5/18/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614563,U9 coed,U9 coed,U9-U9X -003,4. Bachmann Law U9,White,,6. OPG U9,Royal blue,,,5/18/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614147,U4 coed,U4 coed,U4-U4X -001,Tim Bit  7. Purple,Purple,,Tim Bit 6. Kelly Green,Kelly Green,,,5/20/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614148,U4 coed,U4 coed,U4-U4X -002,Tim Bit 8. White,White,,Tim Bit 3. Yellow,Yellow,,,5/20/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614149,U4 coed,U4 coed,U4-U4X -003,Tim Bit 2. Red,Red,,Tim Bit 4. Royal Blue,Royal Blue,,,5/20/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614150,U4 coed,U4 coed,U4-U4X -004,Tim Bit 1. SKY BLUE,SKY BLUE,,Tim Bit 5. Grey,Grey,,,5/20/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614275,U5 coed,U5 coed,U5-U5X -001,U5 Tim Bits 1. WHITE,WHITE,,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,,5/20/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614315,U6 coed,U6 coed,U6-U6X -001,U6 Tim Bits 1. Lime green,Lime Green,,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,,5/20/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614316,U6 coed,U6 coed,U6-U6X -002,U6 Tim Bits 9. Grey,Grey,,U6 Tim Bits 4. Royal Blue,Royal  Blue,,,5/20/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614276,U5 coed,U5 coed,U5-U5X -002,U5 Tim Bits 2. Red,Red,,U5 Tim Bits 6. Purple,Purple,,,5/20/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614277,U5 coed,U5 coed,U5-U5X -003,U5 Tim Bits 8. Kelly Green,Kelly Green,,U5 Tim Bits 4. Royal Blue,Royal  Blue,,,5/20/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614278,U5 coed,U5 coed,U5-U5X -004,U5 Tim Bits 3. Yellow,Yellow,,U5 Tim Bits 5. Grey,Grey,,,5/20/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614317,U6 coed,U6 coed,U6-U6X -003,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,U6 Tim Bits 7. WHITE,WHITE,,,5/20/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614318,U6 coed,U6 coed,U6-U6X -004,U6 Tim Bits 2. Red,Red,,U6 Tim Bits 6. Purple,Purple,,,5/20/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614319,U6 coed,U6 coed,U6-U6X -005,U6 Tim Bits 3. Yellow,Yellow,,U6 Tim Bits 5. MAROON,Maroon,,,5/20/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614623,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-005,8. TACOS 'N' TEQUILA U11,Maroon,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,5/23/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614624,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-006,4. Demeyere Chrysler U11,Royal  Blue,,5. Victoria Eldercare U11,Sky  Blue,,,5/23/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614369,U7 coed,U7 coed,U7-U7X -005,7. NACL U7,Teal,,6. Port Dover Knights of Columbus U7,sky blue,,,5/23/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614370,U7 coed,U7 coed,U7-U7X -006,5. Norfolk Dental Hygiene U7,Maroon,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,5/23/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614371,U7 coed,U7 coed,U7-U7X -007,8. Mitt & Robe Co. U7,Lime green,,4. Simcoe Lions Club U7,Purple,,,5/23/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614466,U18 Boys,U18 Boys,U18-B-U18B -003,4. TIRECRAFT U18 B,Orange,,1. Townsend Butchers U18 B,Gold,,,5/23/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614468,U18 Boys,U18 Boys,U18-B-U18B -004,2. Norfolk Dental Hygiene U18 B,Red,,3. BML Roofing System U18 B,Royal Blue,,,5/23/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614372,U7 coed,U7 coed,U7-U7X -008,2. First Choice Haircutters U7,Red,,1.Barrel Restaurant U7,White,,,5/23/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614625,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-007,2. Norfolk Dental Hygiene U11,Red,,1. Toyotetsu Canada Inc. U11,Purple,,,5/23/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614626,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-008,6. Country Trophies U11,White,,3. Bulk Barn U11,Gold,,,5/23/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614517,U8 coed,U8 coed,U8-U8X -005,5. Norfolk Dental Hygiene U8,Maroon,,7. Townsend Butchers U8,Gold,,,5/24/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614518,U8 coed,U8 coed,U8-U8X -006,2. Good Redden Klosler LLP U8,Purple,,3. RCL Br #123 U8,Lime green,,,5/24/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614493,U18  Girls,U18 Girls,U18-G-U18G -003,4. Hidden Valley RV Resort U18 G,Maroon,,1. Jarja Floral International U18 G,Lime Green,,,5/24/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614494,U18  Girls,U18 Girls,U18-G-U18G -004,3. Suprun Psychotherapy U18 G,Purple,,2. Norfolk Dental Hygiene U18 G,Red,,,5/24/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614519,U8 coed,U8 coed,U8-U8X -007,4. Cobb & Jones LLP U8,Royal  Blue,,6. Boer Homes U8,White,,,5/24/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614520,U8 coed,U8 coed,U8-U8X -008,1. EastLink U8,Red,,8. Roulstons Pharmacy U8,Sky  Blue,,,5/24/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614564,U9 coed,U9 coed,U9-U9X -004,6. OPG U9,Royal blue,,3. Springview Farms Golf Course U9,Sky  Blue,,,5/25/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614565,U9 coed,U9 coed,U9-U9X -005,1. Norfolk Dental Hygiene U9,Red,,5. Simcoe Knights of Columbus U9,Lime green,,,5/25/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618228,U13 Boys ,U13 Boys,U13-B-U13B -003,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,5/25/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618229,U13 Boys ,U13 Boys,U13-B-U13B -004,2. Little Caesars U13 B,Gold,,1. Norfolk Dental Hygiene U13 B,Red,,,5/25/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614566,U9 coed,U9 coed,U9-U9X -006,4. Bachmann Law U9,White,,2. Arbor Restaurant U9,Orange,,,5/25/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614151,U4 coed,U4 coed,U4-U4X -005,Tim Bit 4. Royal Blue,Royal Blue,,Tim Bit 8. White,White,,,5/27/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614152,U4 coed,U4 coed,U4-U4X -006,Tim Bit 2. Red,Red,,Tim Bit 6. Kelly Green,Kelly Green,,,5/27/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614153,U4 coed,U4 coed,U4-U4X -007,Tim Bit 3. Yellow,Yellow,,Tim Bit 5. Grey,Grey,,,5/27/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614154,U4 coed,U4 coed,U4-U4X -008,Tim Bit 1. SKY BLUE,SKY BLUE,,Tim Bit  7. Purple,Purple,,,5/27/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614279,U5 coed,U5 coed,U5-U5X -005,U5 Tim Bits 5. Grey,Grey,,U5 Tim Bits 8. Kelly Green,Kelly Green,,,5/27/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614320,U6 coed,U6 coed,U6-U6X -006,U6 Tim Bits 5. MAROON,Maroon,,U6 Tim Bits 9. Grey,Grey,,,5/27/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614321,U6 coed,U6 coed,U6-U6X -007,U6 Tim Bits 2. Red,Red,,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,,5/27/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614280,U5 coed,U5 coed,U5-U5X -006,U5 Tim Bits 2. Red,Red,,U5 Tim Bits 1. WHITE,WHITE,,,5/27/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614281,U5 coed,U5 coed,U5-U5X -007,U5 Tim Bits 3. Yellow,Yellow,,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,,5/27/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614282,U5 coed,U5 coed,U5-U5X -008,U5 Tim Bits 4. Royal Blue,Royal  Blue,,U5 Tim Bits 6. Purple,Purple,,,5/27/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614322,U6 coed,U6 coed,U6-U6X -008,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,U6 Tim Bits 1. Lime green,Lime Green,,,5/27/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614323,U6 coed,U6 coed,U6-U6X -009,U6 Tim Bits 3. Yellow,Yellow,,U6 Tim Bits 7. WHITE,WHITE,,,5/27/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614324,U6 coed,U6 coed,U6-U6X -010,U6 Tim Bits 4. Royal Blue,Royal  Blue,,U6 Tim Bits 6. Purple,Purple,,,5/27/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1618250,U13 Girls,U13 Girls,U13-G-U13G -003,3. Norfolk Dental Hygiene U13 G,Red,,1. Simcoe Lions Club U13G,Purple,,,5/29/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618251,U13 Girls,U13 Girls,U13-G-U13G -004,4. Randyâ€™s Auto U13 G ,Sky blue,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,5/29/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614417,Women 19+,Women 19+,W-WOMEN-19+-003,W4. Erie Beach Hotel,Purple,,W2. Demeyere's Simcoe Honda,Red,,,5/29/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614418,Women 19+,Women 19+,W-WOMEN-19+-004,W1. The Functional Approach Chiro & Physio,Gold,,W3.  Norfolk Dental Hygiene,Maroon,,,5/29/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614627,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-009,4. Demeyere Chrysler U11,Royal  Blue,,6. Country Trophies U11,White,,,5/30/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614628,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-010,2. Norfolk Dental Hygiene U11,Red,,3. Bulk Barn U11,Gold,,,5/30/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614373,U7 coed,U7 coed,U7-U7X -009,5. Norfolk Dental Hygiene U7,Maroon,,4. Simcoe Lions Club U7,Purple,,,5/30/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614374,U7 coed,U7 coed,U7-U7X -010,8. Mitt & Robe Co. U7,Lime green,,2. First Choice Haircutters U7,Red,,,5/30/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614375,U7 coed,U7 coed,U7-U7X -011,7. NACL U7,Teal,,1.Barrel Restaurant U7,White,,,5/30/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614469,U18 Boys,U18 Boys,U18-B-U18B -005,4. TIRECRAFT U18 B,Orange,,2. Norfolk Dental Hygiene U18 B,Red,,,5/30/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614470,U18 Boys,U18 Boys,U18-B-U18B -006,1. Townsend Butchers U18 B,Gold,,3. BML Roofing System U18 B,Royal Blue,,,5/30/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614376,U7 coed,U7 coed,U7-U7X -012,3. Victor Pool & Spa Supply U7,Royal  Blue,,6. Port Dover Knights of Columbus U7,sky blue,,,5/30/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614629,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-011,8. TACOS 'N' TEQUILA U11,Maroon,,5. Victoria Eldercare U11,Sky  Blue,,,5/30/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614630,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-012,7. Waterford Home Hardware Building Centre U11,Lime Green,,1. Toyotetsu Canada Inc. U11,Purple,,,5/30/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614521,U8 coed,U8 coed,U8-U8X -009,1. EastLink U8,Red,,4. Cobb & Jones LLP U8,Royal  Blue,,,5/31/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614522,U8 coed,U8 coed,U8-U8X -010,5. Norfolk Dental Hygiene U8,Maroon,,8. Roulstons Pharmacy U8,Sky  Blue,,,5/31/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614495,U18  Girls,U18 Girls,U18-G-U18G -005,4. Hidden Valley RV Resort U18 G,Maroon,,3. Suprun Psychotherapy U18 G,Purple,,,5/31/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614496,U18  Girls,U18 Girls,U18-G-U18G -006,1. Jarja Floral International U18 G,Lime Green,,2. Norfolk Dental Hygiene U18 G,Red,,,5/31/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614523,U8 coed,U8 coed,U8-U8X -011,7. Townsend Butchers U8,Gold,,3. RCL Br #123 U8,Lime green,,,5/31/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614524,U8 coed,U8 coed,U8-U8X -012,2. Good Redden Klosler LLP U8,Purple,,6. Boer Homes U8,White,,,5/31/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614567,U9 coed,U9 coed,U9-U9X -007,1. Norfolk Dental Hygiene U9,Red,,4. Bachmann Law U9,White,,,6/1/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614568,U9 coed,U9 coed,U9-U9X -008,6. OPG U9,Royal blue,,2. Arbor Restaurant U9,Orange,,,6/1/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618230,U13 Boys ,U13 Boys,U13-B-U13B -005,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,2. Little Caesars U13 B,Gold,,,6/1/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618231,U13 Boys ,U13 Boys,U13-B-U13B -006,4. Edgil Pools Services Ltd U13 B,Royal Blue,,1. Norfolk Dental Hygiene U13 B,Red,,,6/1/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614569,U9 coed,U9 coed,U9-U9X -009,3. Springview Farms Golf Course U9,Sky  Blue,,5. Simcoe Knights of Columbus U9,Lime green,,,6/1/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1656284,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T14,1. Toyotetsu Canada Inc. U11,Purple,,3. Bulk Barn U11,Gold,,,6/2/23,18:00,19:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656285,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T15,5. Victoria Eldercare U11,Sky  Blue,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,6/2/23,18:00,19:00,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1646499,U18 Boys,U18 Boys,U18-B-U18B -T08,HOME,,,AWAY,,,,6/2/23,19:00,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1646500,U18 Boys,U18 Boys,U18-B-U18B -T09,HOME,,,AWAY,,,,6/2/23,19:00,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1656286,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T16,2. Norfolk Dental Hygiene U11,Red,,4. Demeyere Chrysler U11,Royal  Blue,,,6/2/23,19:15,20:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656287,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T17,6. Country Trophies U11,White,,8. TACOS 'N' TEQUILA U11,Maroon,,,6/2/23,19:15,20:15,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1656288,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T18,5. Victoria Eldercare U11,Sky  Blue,,3. Bulk Barn U11,Gold,,,6/3/23,9:00,10:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656289,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T19,7. Waterford Home Hardware Building Centre U11,Lime Green,,1. Toyotetsu Canada Inc. U11,Purple,,,6/3/23,9:00,10:00,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1646501,U18 Boys,U18 Boys,U18-B-U18B -T10,HOME,,,AWAY,,,,6/3/23,9:00,10:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1646502,U18 Boys,U18 Boys,U18-B-U18B -T11,HOME,,,AWAY,,,,6/3/23,9:00,10:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1614155,U4 coed,U4 coed,U4-U4X -009,Tim Bit 2. Red,Red,,Tim Bit 1. SKY BLUE,SKY BLUE,,,6/3/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614156,U4 coed,U4 coed,U4-U4X -010,Tim Bit 3. Yellow,Yellow,,Tim Bit  7. Purple,Purple,,,6/3/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614157,U4 coed,U4 coed,U4-U4X -011,Tim Bit 4. Royal Blue,Royal Blue,,Tim Bit 6. Kelly Green,Kelly Green,,,6/3/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614158,U4 coed,U4 coed,U4-U4X -012,Tim Bit 8. White,White,,Tim Bit 5. Grey,Grey,,,6/3/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614283,U5 coed,U5 coed,U5-U5X -009,U5 Tim Bits 3. Yellow,Yellow,,U5 Tim Bits 2. Red,Red,,,6/3/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614325,U6 coed,U6 coed,U6-U6X -011,U6 Tim Bits 2. Red,Red,,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,,6/3/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614326,U6 coed,U6 coed,U6-U6X -012,U6 Tim Bits 3. Yellow,Yellow,,U6 Tim Bits 1. Lime green,Lime Green,,,6/3/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614284,U5 coed,U5 coed,U5-U5X -010,U5 Tim Bits 8. Kelly Green,Kelly Green,,U5 Tim Bits 6. Purple,Purple,,,6/3/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614285,U5 coed,U5 coed,U5-U5X -011,U5 Tim Bits 4. Royal Blue,Royal  Blue,,U5 Tim Bits 1. WHITE,WHITE,,,6/3/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614286,U5 coed,U5 coed,U5-U5X -012,U5 Tim Bits 5. Grey,Grey,,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,,6/3/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656290,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T20,4. Demeyere Chrysler U11,Royal  Blue,,6. Country Trophies U11,White,,,6/3/23,10:15,11:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656291,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T21,8. TACOS 'N' TEQUILA U11,Maroon,,2. Norfolk Dental Hygiene U11,Red,,,6/3/23,10:15,11:15,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1614327,U6 coed,U6 coed,U6-U6X -013,U6 Tim Bits 9. Grey,Grey,,U6 Tim Bits 6. Purple,Purple,,,6/3/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614328,U6 coed,U6 coed,U6-U6X -014,U6 Tim Bits 4. Royal Blue,Royal  Blue,,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,,6/3/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614329,U6 coed,U6 coed,U6-U6X -015,U6 Tim Bits 5. MAROON,Maroon,,U6 Tim Bits 7. WHITE,WHITE,,,6/3/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656292,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T22,1. Toyotetsu Canada Inc. U11,Purple,,5. Victoria Eldercare U11,Sky  Blue,,,6/3/23,11:30,12:30,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656293,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T23,3. Bulk Barn U11,Gold,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,6/3/23,11:30,12:30,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1646503,U18 Boys,U18 Boys,U18-B-U18B -T12,HOME,,,AWAY,,,,6/3/23,12:00,13:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1646504,U18 Boys,U18 Boys,U18-B-U18B -T13,HOME,,,AWAY,,,,6/3/23,12:00,13:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1656294,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T24,2. Norfolk Dental Hygiene U11,Red,,6. Country Trophies U11,White,,,6/3/23,12:45,13:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656295,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T25,4. Demeyere Chrysler U11,Royal  Blue,,8. TACOS 'N' TEQUILA U11,Maroon,,,6/3/23,12:45,13:45,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1656296,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T26,HOME,,,AWAY,,,,6/3/23,15:00,16:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1646505,U18 Boys,U18 Boys,U18-B-U18B -T14,HOME,,,AWAY,,,,6/3/23,15:00,16:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1618252,U13 Girls,U13 Girls,U13-G-U13G -005,1. Simcoe Lions Club U13G,Purple,,4. Randyâ€™s Auto U13 G ,Sky blue,,,6/5/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618253,U13 Girls,U13 Girls,U13-G-U13G -006,3. Norfolk Dental Hygiene U13 G,Red,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,6/5/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614419,Women 19+,Women 19+,W-WOMEN-19+-005,W2. Demeyere's Simcoe Honda,Red,,W1. The Functional Approach Chiro & Physio,Gold,,,6/5/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614420,Women 19+,Women 19+,W-WOMEN-19+-006,W4. Erie Beach Hotel,Purple,,W3.  Norfolk Dental Hygiene,Maroon,,,6/5/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614631,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-013,2. Norfolk Dental Hygiene U11,Red,,4. Demeyere Chrysler U11,Royal  Blue,,,6/6/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614632,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-014,5. Victoria Eldercare U11,Sky  Blue,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,6/6/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614377,U7 coed,U7 coed,U7-U7X -013,6. Port Dover Knights of Columbus U7,sky blue,,1.Barrel Restaurant U7,White,,,6/6/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614378,U7 coed,U7 coed,U7-U7X -014,7. NACL U7,Teal,,8. Mitt & Robe Co. U7,Lime green,,,6/6/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614379,U7 coed,U7 coed,U7-U7X -015,4. Simcoe Lions Club U7,Purple,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,6/6/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614471,U18 Boys,U18 Boys,U18-B-U18B -007,2. Norfolk Dental Hygiene U18 B,Red,,1. Townsend Butchers U18 B,Gold,,,6/6/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614472,U18 Boys,U18 Boys,U18-B-U18B -008,4. TIRECRAFT U18 B,Orange,,3. BML Roofing System U18 B,Royal Blue,,,6/6/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614380,U7 coed,U7 coed,U7-U7X -016,5. Norfolk Dental Hygiene U7,Maroon,,2. First Choice Haircutters U7,Red,,,6/6/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614633,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-015,1. Toyotetsu Canada Inc. U11,Purple,,3. Bulk Barn U11,Gold,,,6/6/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614634,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-016,8. TACOS 'N' TEQUILA U11,Maroon,,6. Country Trophies U11,White,,,6/6/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614525,U8 coed,U8 coed,U8-U8X -013,2. Good Redden Klosler LLP U8,Purple,,1. EastLink U8,Red,,,6/7/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614526,U8 coed,U8 coed,U8-U8X -014,3. RCL Br #123 U8,Lime green,,6. Boer Homes U8,White,,,6/7/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614497,U18  Girls,U18 Girls,U18-G-U18G -007,3. Suprun Psychotherapy U18 G,Purple,,1. Jarja Floral International U18 G,Lime Green,,,6/7/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614498,U18  Girls,U18 Girls,U18-G-U18G -008,4. Hidden Valley RV Resort U18 G,Maroon,,2. Norfolk Dental Hygiene U18 G,Red,,,6/7/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614527,U8 coed,U8 coed,U8-U8X -015,5. Norfolk Dental Hygiene U8,Maroon,,4. Cobb & Jones LLP U8,Royal  Blue,,,6/7/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614528,U8 coed,U8 coed,U8-U8X -016,8. Roulstons Pharmacy U8,Sky  Blue,,7. Townsend Butchers U8,Gold,,,6/7/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614570,U9 coed,U9 coed,U9-U9X -010,6. OPG U9,Royal blue,,1. Norfolk Dental Hygiene U9,Red,,,6/8/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614571,U9 coed,U9 coed,U9-U9X -011,5. Simcoe Knights of Columbus U9,Lime green,,4. Bachmann Law U9,White,,,6/8/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618232,U13 Boys ,U13 Boys,U13-B-U13B -007,2. Little Caesars U13 B,Gold,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,6/8/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618233,U13 Boys ,U13 Boys,U13-B-U13B -008,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,1. Norfolk Dental Hygiene U13 B,Red,,,6/8/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614572,U9 coed,U9 coed,U9-U9X -012,2. Arbor Restaurant U9,Orange,,3. Springview Farms Golf Course U9,Sky  Blue,,,6/8/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1666073,U13 Boys ,U13 Boys,U13-B-U13B -T08,1. Norfolk Dental Hygiene U13 B,Red,,2. Little Caesars U13 B,Gold,,,6/9/23,18:00,19:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1666074,U13 Boys ,U13 Boys,U13-B-U13B -T09,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,6/9/23,18:00,19:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1662192,U18  Girls,U18 Girls,U18-G-U18G -T08,1. Jarja Floral International U18 G,Lime Green,,2. Norfolk Dental Hygiene U18 G,Red,,,6/9/23,19:15,20:15,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1662193,U18  Girls,U18 Girls,U18-G-U18G -T09,3. Suprun Psychotherapy U18 G,Purple,,4. Hidden Valley RV Resort U18 G,Maroon,,,6/9/23,19:15,20:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1666075,U13 Boys ,U13 Boys,U13-B-U13B -T10,2. Little Caesars U13 B,Gold,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,6/10/23,9:00,10:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1666076,U13 Boys ,U13 Boys,U13-B-U13B -T11,4. Edgil Pools Services Ltd U13 B,Royal Blue,,1. Norfolk Dental Hygiene U13 B,Red,,,6/10/23,9:00,10:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614159,U4 coed,U4 coed,U4-U4X -013,Tim Bit 3. Yellow,Yellow,,Tim Bit 2. Red,Red,,,6/10/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614160,U4 coed,U4 coed,U4-U4X -014,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit 8. White,White,,,6/10/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614161,U4 coed,U4 coed,U4-U4X -015,Tim Bit 5. Grey,Grey,,Tim Bit  7. Purple,Purple,,,6/10/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614162,U4 coed,U4 coed,U4-U4X -016,Tim Bit 4. Royal Blue,Royal Blue,,Tim Bit 1. SKY BLUE,SKY BLUE,,,6/10/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614287,U5 coed,U5 coed,U5-U5X -013,U5 Tim Bits 4. Royal Blue,Royal  Blue,,U5 Tim Bits 3. Yellow,Yellow,,,6/10/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614330,U6 coed,U6 coed,U6-U6X -016,U6 Tim Bits 3. Yellow,Yellow,,U6 Tim Bits 2. Red,Red,,,6/10/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614331,U6 coed,U6 coed,U6-U6X -017,U6 Tim Bits 7. WHITE,WHITE,,U6 Tim Bits 9. Grey,Grey,,,6/10/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614288,U5 coed,U5 coed,U5-U5X -014,U5 Tim Bits 5. Grey,Grey,,U5 Tim Bits 2. Red,Red,,,6/10/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614289,U5 coed,U5 coed,U5-U5X -015,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 8. Kelly Green,Kelly Green,,,6/10/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614290,U5 coed,U5 coed,U5-U5X -016,U5 Tim Bits 6. Purple,Purple,,U5 Tim Bits 1. WHITE,WHITE,,,6/10/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1662194,U18  Girls,U18 Girls,U18-G-U18G -T10,2. Norfolk Dental Hygiene U18 G,Red,,3. Suprun Psychotherapy U18 G,Purple,,,6/10/23,10:15,11:15,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1662195,U18  Girls,U18 Girls,U18-G-U18G -T11,4. Hidden Valley RV Resort U18 G,Maroon,,1. Jarja Floral International U18 G,Lime Green,,,6/10/23,10:15,11:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614332,U6 coed,U6 coed,U6-U6X -018,U6 Tim Bits 4. Royal Blue,Royal  Blue,,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,,6/10/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614333,U6 coed,U6 coed,U6-U6X -019,U6 Tim Bits 5. MAROON,Maroon,,U6 Tim Bits 1. Lime green,Lime Green,,,6/10/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614334,U6 coed,U6 coed,U6-U6X -020,U6 Tim Bits 6. Purple,Purple,,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,,6/10/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1666077,U13 Boys ,U13 Boys,U13-B-U13B -T12,1. Norfolk Dental Hygiene U13 B,Red,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,6/10/23,11:30,12:30,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1666078,U13 Boys ,U13 Boys,U13-B-U13B -T13,2. Little Caesars U13 B,Gold,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,6/10/23,11:30,12:30,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1662196,U18  Girls,U18 Girls,U18-G-U18G -T12,1. Jarja Floral International U18 G,Lime Green,,3. Suprun Psychotherapy U18 G,Purple,,,6/10/23,12:45,13:45,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1662197,U18  Girls,U18 Girls,U18-G-U18G -T13,2. Norfolk Dental Hygiene U18 G,Red,,4. Hidden Valley RV Resort U18 G,Maroon,,,6/10/23,12:45,13:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1666079,U13 Boys ,U13 Boys,U13-B-U13B -T14,HOME,,,AWAY,,,,6/10/23,14:00,15:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1662198,U18  Girls,U18 Girls,U18-G-U18G -T14,HOME,,,AWAY,,,,6/10/23,15:30,16:30,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1618254,U13 Girls,U13 Girls,U13-G-U13G -007, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,1. Simcoe Lions Club U13G,Purple,,,6/12/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618255,U13 Girls,U13 Girls,U13-G-U13G -008,4. Randyâ€™s Auto U13 G ,Sky blue,,3. Norfolk Dental Hygiene U13 G,Red,,,6/12/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614421,Women 19+,Women 19+,W-WOMEN-19+-007,W3.  Norfolk Dental Hygiene,Maroon,,W2. Demeyere's Simcoe Honda,Red,,,6/12/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614422,Women 19+,Women 19+,W-WOMEN-19+-008,W1. The Functional Approach Chiro & Physio,Gold,,W4. Erie Beach Hotel,Purple,,,6/12/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614635,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-017,8. TACOS 'N' TEQUILA U11,Maroon,,2. Norfolk Dental Hygiene U11,Red,,,6/13/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614636,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-018,1. Toyotetsu Canada Inc. U11,Purple,,4. Demeyere Chrysler U11,Royal  Blue,,,6/13/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614381,U7 coed,U7 coed,U7-U7X -017,4. Simcoe Lions Club U7,Purple,,2. First Choice Haircutters U7,Red,,,6/13/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614382,U7 coed,U7 coed,U7-U7X -018,5. Norfolk Dental Hygiene U7,Maroon,,7. NACL U7,Teal,,,6/13/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614383,U7 coed,U7 coed,U7-U7X -019,6. Port Dover Knights of Columbus U7,sky blue,,8. Mitt & Robe Co. U7,Lime green,,,6/13/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614473,U18 Boys,U18 Boys,U18-B-U18B -009,3. BML Roofing System U18 B,Royal Blue,,2. Norfolk Dental Hygiene U18 B,Red,,,6/13/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614474,U18 Boys,U18 Boys,U18-B-U18B -010,1. Townsend Butchers U18 B,Gold,,4. TIRECRAFT U18 B,Orange,,,6/13/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614384,U7 coed,U7 coed,U7-U7X -020,3. Victor Pool & Spa Supply U7,Royal  Blue,,1.Barrel Restaurant U7,White,,,6/13/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614637,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-019,5. Victoria Eldercare U11,Sky  Blue,,6. Country Trophies U11,White,,,6/13/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614638,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-020,7. Waterford Home Hardware Building Centre U11,Lime Green,,3. Bulk Barn U11,Gold,,,6/13/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614529,U8 coed,U8 coed,U8-U8X -017,5. Norfolk Dental Hygiene U8,Maroon,,2. Good Redden Klosler LLP U8,Purple,,,6/14/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614530,U8 coed,U8 coed,U8-U8X -018,8. Roulstons Pharmacy U8,Sky  Blue,,4. Cobb & Jones LLP U8,Royal  Blue,,,6/14/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614499,U18  Girls,U18 Girls,U18-G-U18G -009,2. Norfolk Dental Hygiene U18 G,Red,,3. Suprun Psychotherapy U18 G,Purple,,,6/14/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614500,U18  Girls,U18 Girls,U18-G-U18G -010,1. Jarja Floral International U18 G,Lime Green,,4. Hidden Valley RV Resort U18 G,Maroon,,,6/14/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614531,U8 coed,U8 coed,U8-U8X -019,7. Townsend Butchers U8,Gold,,6. Boer Homes U8,White,,,6/14/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614532,U8 coed,U8 coed,U8-U8X -020,3. RCL Br #123 U8,Lime green,,1. EastLink U8,Red,,,6/14/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614573,U9 coed,U9 coed,U9-U9X -013,3. Springview Farms Golf Course U9,Sky  Blue,,4. Bachmann Law U9,White,,,6/15/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614574,U9 coed,U9 coed,U9-U9X -014,2. Arbor Restaurant U9,Orange,,1. Norfolk Dental Hygiene U9,Red,,,6/15/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618234,U13 Boys ,U13 Boys,U13-B-U13B -009,1. Norfolk Dental Hygiene U13 B,Red,,2. Little Caesars U13 B,Gold,,,6/15/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618235,U13 Boys ,U13 Boys,U13-B-U13B -010,4. Edgil Pools Services Ltd U13 B,Royal Blue,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,6/15/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614575,U9 coed,U9 coed,U9-U9X -015,5. Simcoe Knights of Columbus U9,Lime green,,6. OPG U9,Royal blue,,,6/15/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1656107,U7 coed,U7 coed,U7-U7X -T01,1.Barrel Restaurant U7,White,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,6/16/23,18:00,18:45,NCYSP - Trillium Mini  3,,PL   ,ACTIVE,ACTIVE
+1656108,U7 coed,U7 coed,U7-U7X -T02,5. Norfolk Dental Hygiene U7,Maroon,,7. NACL U7,Teal,,,6/16/23,18:00,18:45,NCYSP - Trillium Mini 1,,PL   ,ACTIVE,ACTIVE
+1656361,U9 coed,U9 coed,U9-U9X -T01,1. Norfolk Dental Hygiene U9,Red,,2. Arbor Restaurant U9,Orange,,,6/16/23,18:00,19:00,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656362,U9 coed,U9 coed,U9-U9X -T02,3. Springview Farms Golf Course U9,Sky  Blue,,4. Bachmann Law U9,White,,,6/16/23,18:00,19:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1661034,U13 Girls,U13 Girls,U13-G-U13G -T08,1. Simcoe Lions Club U13G,Purple,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,6/16/23,19:00,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1661035,U13 Girls,U13 Girls,U13-G-U13G -T09,3. Norfolk Dental Hygiene U13 G,Red,,4. Randyâ€™s Auto U13 G ,Sky blue,,,6/16/23,19:00,20:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656109,U7 coed,U7 coed,U7-U7X -T03,2. First Choice Haircutters U7,Red,,4. Simcoe Lions Club U7,Purple,,,6/16/23,19:00,19:45,NCYSP - Trillium Mini  3,,PL   ,ACTIVE,ACTIVE
+1656110,U7 coed,U7 coed,U7-U7X -T04,6. Port Dover Knights of Columbus U7,sky blue,,8. Mitt & Robe Co. U7,Lime green,,,6/16/23,19:00,19:45,NCYSP - Trillium Mini 1,,PL   ,ACTIVE,ACTIVE
+1656363,U9 coed,U9 coed,U9-U9X -T03,5. Simcoe Knights of Columbus U9,Lime green,,6. OPG U9,Royal blue,,,6/16/23,19:15,20:15,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1661036,U13 Girls,U13 Girls,U13-G-U13G -T10, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,3. Norfolk Dental Hygiene U13 G,Red,,,6/17/23,9:00,10:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1661037,U13 Girls,U13 Girls,U13-G-U13G -T11,4. Randyâ€™s Auto U13 G ,Sky blue,,1. Simcoe Lions Club U13G,Purple,,,6/17/23,9:00,10:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614163,U4 coed,U4 coed,U4-U4X -017,Tim Bit 4. Royal Blue,Royal Blue,,Tim Bit 3. Yellow,Yellow,,,6/17/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614164,U4 coed,U4 coed,U4-U4X -018,Tim Bit 5. Grey,Grey,,Tim Bit 2. Red,Red,,,6/17/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614165,U4 coed,U4 coed,U4-U4X -019,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit 1. SKY BLUE,SKY BLUE,,,6/17/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614166,U4 coed,U4 coed,U4-U4X -020,Tim Bit 8. White,White,,Tim Bit  7. Purple,Purple,,,6/17/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614291,U5 coed,U5 coed,U5-U5X -017,U5 Tim Bits 5. Grey,Grey,,U5 Tim Bits 4. Royal Blue,Royal  Blue,,,6/17/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614335,U6 coed,U6 coed,U6-U6X -021,U6 Tim Bits 4. Royal Blue,Royal  Blue,,U6 Tim Bits 3. Yellow,Yellow,,,6/17/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614336,U6 coed,U6 coed,U6-U6X -022,U6 Tim Bits 5. MAROON,Maroon,,U6 Tim Bits 2. Red,Red,,,6/17/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656364,U9 coed,U9 coed,U9-U9X -T04,1. Norfolk Dental Hygiene U9,Red,,4. Bachmann Law U9,White,,,6/17/23,9:00,10:00,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656365,U9 coed,U9 coed,U9-U9X -T05,3. Springview Farms Golf Course U9,Sky  Blue,,6. OPG U9,Royal blue,,,6/17/23,9:00,10:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1614292,U5 coed,U5 coed,U5-U5X -018,U5 Tim Bits 8. Kelly Green,Kelly Green,,U5 Tim Bits 1. WHITE,WHITE,,,6/17/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614293,U5 coed,U5 coed,U5-U5X -019,U5 Tim Bits 6. Purple,Purple,,U5 Tim Bits 3. Yellow,Yellow,,,6/17/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614294,U5 coed,U5 coed,U5-U5X -020,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 2. Red,Red,,,6/17/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656366,U9 coed,U9 coed,U9-U9X -T06,5. Simcoe Knights of Columbus U9,Lime green,,2. Arbor Restaurant U9,Orange,,,6/17/23,10:15,11:15,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1661038,U13 Girls,U13 Girls,U13-G-U13G -T12,1. Simcoe Lions Club U13G,Purple,,3. Norfolk Dental Hygiene U13 G,Red,,,6/17/23,11:00,12:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1661039,U13 Girls,U13 Girls,U13-G-U13G -T13,4. Randyâ€™s Auto U13 G ,Sky blue,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,6/17/23,11:00,12:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614337,U6 coed,U6 coed,U6-U6X -023,U6 Tim Bits 9. Grey,Grey,,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,,6/17/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614338,U6 coed,U6 coed,U6-U6X -024,U6 Tim Bits 6. Purple,Purple,,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,,6/17/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614339,U6 coed,U6 coed,U6-U6X -025,U6 Tim Bits 7. WHITE,WHITE,,U6 Tim Bits 1. Lime green,Lime Green,,,6/17/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656367,U9 coed,U9 coed,U9-U9X -T07,3. Springview Farms Golf Course U9,Sky  Blue,,4. Bachmann Law U9,White,,,6/17/23,11:30,12:30,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656368,U9 coed,U9 coed,U9-U9X -T08,5. Simcoe Knights of Columbus U9,Lime green,,6. OPG U9,Royal blue,,,6/17/23,11:30,12:30,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1656111,U7 coed,U7 coed,U7-U7X -T05,5. Norfolk Dental Hygiene U7,Maroon,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,6/17/23,12:30,13:15,NCYSP - Trillium Mini  3,,PL   ,ACTIVE,ACTIVE
+1656112,U7 coed,U7 coed,U7-U7X -T06,7. NACL U7,Teal,,1.Barrel Restaurant U7,White,,,6/17/23,12:30,13:15,NCYSP - Trillium Mini 1,,PL   ,ACTIVE,ACTIVE
+1656369,U9 coed,U9 coed,U9-U9X -T09,1. Norfolk Dental Hygiene U9,Red,,2. Arbor Restaurant U9,Orange,,,6/17/23,12:45,13:45,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656370,U9 coed,U9 coed,U9-U9X -T10,4. Bachmann Law U9,White,,5. Simcoe Knights of Columbus U9,Lime green,,,6/17/23,13:00,14:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1656113,U7 coed,U7 coed,U7-U7X -T07,4. Simcoe Lions Club U7,Purple,,6. Port Dover Knights of Columbus U7,sky blue,,,6/17/23,13:15,14:00,NCYSP - Trillium Mini  3,,PL   ,ACTIVE,ACTIVE
+1656114,U7 coed,U7 coed,U7-U7X -T08,8. Mitt & Robe Co. U7,Lime green,,2. First Choice Haircutters U7,Red,,,6/17/23,13:15,14:00,NCYSP - Trillium Mini 1,,PL   ,ACTIVE,ACTIVE
+1661040,U13 Girls,U13 Girls,U13-G-U13G -T14,HOME,,,AWAY,,,,6/17/23,14:00,15:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1656115,U7 coed,U7 coed,U7-U7X -T09,1.Barrel Restaurant U7,White,,5. Norfolk Dental Hygiene U7,Maroon,,,6/17/23,14:15,15:00,NCYSP - Trillium Mini  3,,PL   ,ACTIVE,ACTIVE
+1656116,U7 coed,U7 coed,U7-U7X -T10,3. Victor Pool & Spa Supply U7,Royal  Blue,,7. NACL U7,Teal,,,6/17/23,14:15,15:00,NCYSP - Trillium Mini 1,,PL   ,ACTIVE,ACTIVE
+1656371,U9 coed,U9 coed,U9-U9X -T11,2. Arbor Restaurant U9,Orange,,3. Springview Farms Golf Course U9,Sky  Blue,,,6/17/23,14:15,15:15,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656372,U9 coed,U9 coed,U9-U9X -T12,6. OPG U9,Royal blue,,1. Norfolk Dental Hygiene U9,Red,,,6/17/23,14:15,15:15,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1656117,U7 coed,U7 coed,U7-U7X -T11,2. First Choice Haircutters U7,Red,,6. Port Dover Knights of Columbus U7,sky blue,,,6/17/23,15:00,15:45,NCYSP - Trillium Mini  3,,PL   ,ACTIVE,ACTIVE
+1656118,U7 coed,U7 coed,U7-U7X -T12,4. Simcoe Lions Club U7,Purple,,8. Mitt & Robe Co. U7,Lime green,,,6/17/23,15:00,15:45,NCYSP - Trillium Mini 1,,PL   ,ACTIVE,ACTIVE
+1656373,U9 coed,U9 coed,U9-U9X -T13,HOME,,,AWAY,,,,6/17/23,16:30,17:30,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1618256,U13 Girls,U13 Girls,U13-G-U13G -009, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,4. Randyâ€™s Auto U13 G ,Sky blue,,,6/19/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618257,U13 Girls,U13 Girls,U13-G-U13G -010,1. Simcoe Lions Club U13G,Purple,,3. Norfolk Dental Hygiene U13 G,Red,,,6/19/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614423,Women 19+,Women 19+,W-WOMEN-19+-009,W3.  Norfolk Dental Hygiene,Maroon,,W1. The Functional Approach Chiro & Physio,Gold,,,6/19/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614424,Women 19+,Women 19+,W-WOMEN-19+-010,W2. Demeyere's Simcoe Honda,Red,,W4. Erie Beach Hotel,Purple,,,6/19/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614639,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-021,6. Country Trophies U11,White,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,6/20/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614640,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-022,5. Victoria Eldercare U11,Sky  Blue,,2. Norfolk Dental Hygiene U11,Red,,,6/20/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614385,U7 coed,U7 coed,U7-U7X -021,1.Barrel Restaurant U7,White,,8. Mitt & Robe Co. U7,Lime green,,,6/20/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614386,U7 coed,U7 coed,U7-U7X -022,2. First Choice Haircutters U7,Red,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,6/20/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614387,U7 coed,U7 coed,U7-U7X -023,4. Simcoe Lions Club U7,Purple,,7. NACL U7,Teal,,,6/20/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614475,U18 Boys,U18 Boys,U18-B-U18B -011,3. BML Roofing System U18 B,Royal Blue,,1. Townsend Butchers U18 B,Gold,,,6/20/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614476,U18 Boys,U18 Boys,U18-B-U18B -012,2. Norfolk Dental Hygiene U18 B,Red,,4. TIRECRAFT U18 B,Orange,,,6/20/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614388,U7 coed,U7 coed,U7-U7X -024,6. Port Dover Knights of Columbus U7,sky blue,,5. Norfolk Dental Hygiene U7,Maroon,,,6/20/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614641,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-023,3. Bulk Barn U11,Gold,,4. Demeyere Chrysler U11,Royal  Blue,,,6/20/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614642,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-024,1. Toyotetsu Canada Inc. U11,Purple,,8. TACOS 'N' TEQUILA U11,Maroon,,,6/20/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614533,U8 coed,U8 coed,U8-U8X -021,4. Cobb & Jones LLP U8,Royal  Blue,,7. Townsend Butchers U8,Gold,,,6/21/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614534,U8 coed,U8 coed,U8-U8X -022,6. Boer Homes U8,White,,1. EastLink U8,Red,,,6/21/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614501,U18  Girls,U18 Girls,U18-G-U18G -011,2. Norfolk Dental Hygiene U18 G,Red,,1. Jarja Floral International U18 G,Lime Green,,,6/21/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614502,U18  Girls,U18 Girls,U18-G-U18G -012,3. Suprun Psychotherapy U18 G,Purple,,4. Hidden Valley RV Resort U18 G,Maroon,,,6/21/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614535,U8 coed,U8 coed,U8-U8X -023,3. RCL Br #123 U8,Lime green,,5. Norfolk Dental Hygiene U8,Maroon,,,6/21/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614536,U8 coed,U8 coed,U8-U8X -024,8. Roulstons Pharmacy U8,Sky  Blue,,2. Good Redden Klosler LLP U8,Purple,,,6/21/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614576,U9 coed,U9 coed,U9-U9X -016,6. OPG U9,Royal blue,,4. Bachmann Law U9,White,,,6/22/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614577,U9 coed,U9 coed,U9-U9X -017,5. Simcoe Knights of Columbus U9,Lime green,,2. Arbor Restaurant U9,Orange,,,6/22/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618236,U13 Boys ,U13 Boys,U13-B-U13B -011,1. Norfolk Dental Hygiene U13 B,Red,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,6/22/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618237,U13 Boys ,U13 Boys,U13-B-U13B -012,2. Little Caesars U13 B,Gold,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,6/22/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614578,U9 coed,U9 coed,U9-U9X -018,1. Norfolk Dental Hygiene U9,Red,,3. Springview Farms Golf Course U9,Sky  Blue,,,6/22/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1656177,U8 coed,U8 coed,U8-U8X -T01,1. EastLink U8,Red,,3. RCL Br #123 U8,Lime green,,,6/23/23,18:00,19:00,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656178,U8 coed,U8 coed,U8-U8X -T02,5. Norfolk Dental Hygiene U8,Maroon,,7. Townsend Butchers U8,Gold,,,6/23/23,18:00,19:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1656179,U8 coed,U8 coed,U8-U8X -T03,2. Good Redden Klosler LLP U8,Purple,,4. Cobb & Jones LLP U8,Royal  Blue,,,6/23/23,19:00,20:00,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656180,U8 coed,U8 coed,U8-U8X -T04,6. Boer Homes U8,White,,8. Roulstons Pharmacy U8,Sky  Blue,,,6/23/23,19:00,20:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1661392,Women 19+,Women 19+,W-WOMEN-19+-T08,W1. The Functional Approach Chiro & Physio,Gold,,W2. Demeyere's Simcoe Honda,Red,,,6/23/23,19:00,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1661393,Women 19+,Women 19+,W-WOMEN-19+-T09,W3.  Norfolk Dental Hygiene,Maroon,,W4. Erie Beach Hotel,Purple,,,6/23/23,19:00,20:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614167,U4 coed,U4 coed,U4-U4X -021,Tim Bit 1. SKY BLUE,SKY BLUE,,Tim Bit 8. White,White,,,6/24/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614168,U4 coed,U4 coed,U4-U4X -022,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit 3. Yellow,Yellow,,,6/24/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614169,U4 coed,U4 coed,U4-U4X -023,Tim Bit  7. Purple,Purple,,Tim Bit 2. Red,Red,,,6/24/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614170,U4 coed,U4 coed,U4-U4X -024,Tim Bit 5. Grey,Grey,,Tim Bit 4. Royal Blue,Royal Blue,,,6/24/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614295,U5 coed,U5 coed,U5-U5X -021,U5 Tim Bits 2. Red,Red,,U5 Tim Bits 8. Kelly Green,Kelly Green,,,6/24/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614340,U6 coed,U6 coed,U6-U6X -026,U6 Tim Bits 5. MAROON,Maroon,,U6 Tim Bits 4. Royal Blue,Royal  Blue,,,6/24/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614341,U6 coed,U6 coed,U6-U6X -027,U6 Tim Bits 6. Purple,Purple,,U6 Tim Bits 3. Yellow,Yellow,,,6/24/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656181,U8 coed,U8 coed,U8-U8X -T05,5. Norfolk Dental Hygiene U8,Maroon,,3. RCL Br #123 U8,Lime green,,,6/24/23,9:00,10:00,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656182,U8 coed,U8 coed,U8-U8X -T06,7. Townsend Butchers U8,Gold,,1. EastLink U8,Red,,,6/24/23,9:00,10:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1661394,Women 19+,Women 19+,W-WOMEN-19+-T10,W2. Demeyere's Simcoe Honda,Red,,W3.  Norfolk Dental Hygiene,Maroon,,,6/24/23,9:00,10:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1661395,Women 19+,Women 19+,W-WOMEN-19+-T11,W4. Erie Beach Hotel,Purple,,W1. The Functional Approach Chiro & Physio,Gold,,,6/24/23,9:00,10:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614296,U5 coed,U5 coed,U5-U5X -022,U5 Tim Bits 6. Purple,Purple,,U5 Tim Bits 5. Grey,Grey,,,6/24/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614297,U5 coed,U5 coed,U5-U5X -023,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 4. Royal Blue,Royal  Blue,,,6/24/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614298,U5 coed,U5 coed,U5-U5X -024,U5 Tim Bits 1. WHITE,WHITE,,U5 Tim Bits 3. Yellow,Yellow,,,6/24/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1656183,U8 coed,U8 coed,U8-U8X -T07,4. Cobb & Jones LLP U8,Royal  Blue,,6. Boer Homes U8,White,,,6/24/23,10:15,11:15,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656184,U8 coed,U8 coed,U8-U8X -T08,8. Roulstons Pharmacy U8,Sky  Blue,,2. Good Redden Klosler LLP U8,Purple,,,6/24/23,10:15,11:15,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1614342,U6 coed,U6 coed,U6-U6X -028,U6 Tim Bits 1. Lime green,Lime Green,,U6 Tim Bits 9. Grey,Grey,,,6/24/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614343,U6 coed,U6 coed,U6-U6X -029,U6 Tim Bits 7. WHITE,WHITE,,U6 Tim Bits 2. Red,Red,,,6/24/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614344,U6 coed,U6 coed,U6-U6X -030,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,,6/24/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1661396,Women 19+,Women 19+,W-WOMEN-19+-T12,W1. The Functional Approach Chiro & Physio,Gold,,W3.  Norfolk Dental Hygiene,Maroon,,,6/24/23,11:00,12:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1661397,Women 19+,Women 19+,W-WOMEN-19+-T13,W2. Demeyere's Simcoe Honda,Red,,W4. Erie Beach Hotel,Purple,,,6/24/23,11:00,12:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1656185,U8 coed,U8 coed,U8-U8X -T09,1. EastLink U8,Red,,5. Norfolk Dental Hygiene U8,Maroon,,,6/24/23,11:30,12:30,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656186,U8 coed,U8 coed,U8-U8X -T10,3. RCL Br #123 U8,Lime green,,7. Townsend Butchers U8,Gold,,,6/24/23,11:30,12:30,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1656187,U8 coed,U8 coed,U8-U8X -T11,2. Good Redden Klosler LLP U8,Purple,,6. Boer Homes U8,White,,,6/24/23,12:45,13:45,NCYSP -  Sunrise,,PL   ,ACTIVE,ACTIVE
+1656188,U8 coed,U8 coed,U8-U8X -T12,4. Cobb & Jones LLP U8,Royal  Blue,,8. Roulstons Pharmacy U8,Sky  Blue,,,6/24/23,12:45,13:45,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1661398,Women 19+,Women 19+,W-WOMEN-19+-T14,HOME,,,AWAY,,,,6/24/23,14:00,15:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1656189,U8 coed,U8 coed,U8-U8X -T13,HOME,,,AWAY,,,,6/24/23,15:00,16:00,NCYSP - Timbit,,PL   ,ACTIVE,ACTIVE
+1618258,U13 Girls,U13 Girls,U13-G-U13G -011, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,3. Norfolk Dental Hygiene U13 G,Red,,,6/26/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618259,U13 Girls,U13 Girls,U13-G-U13G -012,4. Randyâ€™s Auto U13 G ,Sky blue,,1. Simcoe Lions Club U13G,Purple,,,6/26/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614425,Women 19+,Women 19+,W-WOMEN-19+-011,W3.  Norfolk Dental Hygiene,Maroon,,W4. Erie Beach Hotel,Purple,,,6/26/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614426,Women 19+,Women 19+,W-WOMEN-19+-012,W1. The Functional Approach Chiro & Physio,Gold,,W2. Demeyere's Simcoe Honda,Red,,,6/26/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614643,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-025,5. Victoria Eldercare U11,Sky  Blue,,1. Toyotetsu Canada Inc. U11,Purple,,,6/27/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614644,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-026,3. Bulk Barn U11,Gold,,8. TACOS 'N' TEQUILA U11,Maroon,,,6/27/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614389,U7 coed,U7 coed,U7-U7X -025,2. First Choice Haircutters U7,Red,,7. NACL U7,Teal,,,6/27/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614390,U7 coed,U7 coed,U7-U7X -026,4. Simcoe Lions Club U7,Purple,,6. Port Dover Knights of Columbus U7,sky blue,,,6/27/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614391,U7 coed,U7 coed,U7-U7X -027,1.Barrel Restaurant U7,White,,5. Norfolk Dental Hygiene U7,Maroon,,,6/27/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614477,U18 Boys,U18 Boys,U18-B-U18B -013,3. BML Roofing System U18 B,Royal Blue,,4. TIRECRAFT U18 B,Orange,,,6/27/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614478,U18 Boys,U18 Boys,U18-B-U18B -014,1. Townsend Butchers U18 B,Gold,,2. Norfolk Dental Hygiene U18 B,Red,,,6/27/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614392,U7 coed,U7 coed,U7-U7X -028,3. Victor Pool & Spa Supply U7,Royal  Blue,,8. Mitt & Robe Co. U7,Lime green,,,6/27/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614645,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-027,6. Country Trophies U11,White,,2. Norfolk Dental Hygiene U11,Red,,,6/27/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614646,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-028,7. Waterford Home Hardware Building Centre U11,Lime Green,,4. Demeyere Chrysler U11,Royal  Blue,,,6/27/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614537,U8 coed,U8 coed,U8-U8X -025,8. Roulstons Pharmacy U8,Sky  Blue,,3. RCL Br #123 U8,Lime green,,,6/28/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614538,U8 coed,U8 coed,U8-U8X -026,4. Cobb & Jones LLP U8,Royal  Blue,,2. Good Redden Klosler LLP U8,Purple,,,6/28/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614503,U18  Girls,U18 Girls,U18-G-U18G -013,2. Norfolk Dental Hygiene U18 G,Red,,4. Hidden Valley RV Resort U18 G,Maroon,,,6/28/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614504,U18  Girls,U18 Girls,U18-G-U18G -014,1. Jarja Floral International U18 G,Lime Green,,3. Suprun Psychotherapy U18 G,Purple,,,6/28/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614539,U8 coed,U8 coed,U8-U8X -027,7. Townsend Butchers U8,Gold,,1. EastLink U8,Red,,,6/28/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614540,U8 coed,U8 coed,U8-U8X -028,6. Boer Homes U8,White,,5. Norfolk Dental Hygiene U8,Maroon,,,6/28/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614579,U9 coed,U9 coed,U9-U9X -019,2. Arbor Restaurant U9,Orange,,4. Bachmann Law U9,White,,,6/29/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614580,U9 coed,U9 coed,U9-U9X -020,3. Springview Farms Golf Course U9,Sky  Blue,,6. OPG U9,Royal blue,,,6/29/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618238,U13 Boys ,U13 Boys,U13-B-U13B -013,1. Norfolk Dental Hygiene U13 B,Red,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,6/29/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618239,U13 Boys ,U13 Boys,U13-B-U13B -014,4. Edgil Pools Services Ltd U13 B,Royal Blue,,2. Little Caesars U13 B,Gold,,,6/29/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614581,U9 coed,U9 coed,U9-U9X -021,5. Simcoe Knights of Columbus U9,Lime green,,1. Norfolk Dental Hygiene U9,Red,,,6/29/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614647,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-029,1. Toyotetsu Canada Inc. U11,Purple,,6. Country Trophies U11,White,,,7/4/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614648,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-030,5. Victoria Eldercare U11,Sky  Blue,,3. Bulk Barn U11,Gold,,,7/4/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614393,U7 coed,U7 coed,U7-U7X -029,7. NACL U7,Teal,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,7/4/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614394,U7 coed,U7 coed,U7-U7X -030,6. Port Dover Knights of Columbus U7,sky blue,,2. First Choice Haircutters U7,Red,,,7/4/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614395,U7 coed,U7 coed,U7-U7X -031,4. Simcoe Lions Club U7,Purple,,1.Barrel Restaurant U7,White,,,7/4/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614479,U18 Boys,U18 Boys,U18-B-U18B -015,4. TIRECRAFT U18 B,Orange,,1. Townsend Butchers U18 B,Gold,,,7/4/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614480,U18 Boys,U18 Boys,U18-B-U18B -016,2. Norfolk Dental Hygiene U18 B,Red,,3. BML Roofing System U18 B,Royal Blue,,,7/4/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614396,U7 coed,U7 coed,U7-U7X -032,5. Norfolk Dental Hygiene U7,Maroon,,8. Mitt & Robe Co. U7,Lime green,,,7/4/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614649,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-031,2. Norfolk Dental Hygiene U11,Red,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,7/4/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614650,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-032,8. TACOS 'N' TEQUILA U11,Maroon,,4. Demeyere Chrysler U11,Royal  Blue,,,7/4/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614541,U8 coed,U8 coed,U8-U8X -029,3. RCL Br #123 U8,Lime green,,4. Cobb & Jones LLP U8,Royal  Blue,,,7/5/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614542,U8 coed,U8 coed,U8-U8X -030,2. Good Redden Klosler LLP U8,Purple,,7. Townsend Butchers U8,Gold,,,7/5/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614505,U18  Girls,U18 Girls,U18-G-U18G -015,4. Hidden Valley RV Resort U18 G,Maroon,,1. Jarja Floral International U18 G,Lime Green,,,7/5/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614506,U18  Girls,U18 Girls,U18-G-U18G -016,3. Suprun Psychotherapy U18 G,Purple,,2. Norfolk Dental Hygiene U18 G,Red,,,7/5/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614543,U8 coed,U8 coed,U8-U8X -031,5. Norfolk Dental Hygiene U8,Maroon,,1. EastLink U8,Red,,,7/5/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614544,U8 coed,U8 coed,U8-U8X -032,8. Roulstons Pharmacy U8,Sky  Blue,,6. Boer Homes U8,White,,,7/5/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614582,U9 coed,U9 coed,U9-U9X -022,5. Simcoe Knights of Columbus U9,Lime green,,3. Springview Farms Golf Course U9,Sky  Blue,,,7/6/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614583,U9 coed,U9 coed,U9-U9X -023,4. Bachmann Law U9,White,,1. Norfolk Dental Hygiene U9,Red,,,7/6/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618240,U13 Boys ,U13 Boys,U13-B-U13B -015,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,7/6/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618241,U13 Boys ,U13 Boys,U13-B-U13B -016,2. Little Caesars U13 B,Gold,,1. Norfolk Dental Hygiene U13 B,Red,,,7/6/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614584,U9 coed,U9 coed,U9-U9X -024,2. Arbor Restaurant U9,Orange,,6. OPG U9,Royal blue,,,7/6/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614171,U4 coed,U4 coed,U4-U4X -025,Tim Bit 5. Grey,Grey,,Tim Bit 1. SKY BLUE,SKY BLUE,,,7/8/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614172,U4 coed,U4 coed,U4-U4X -026,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit  7. Purple,Purple,,,7/8/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614173,U4 coed,U4 coed,U4-U4X -027,Tim Bit 3. Yellow,Yellow,,Tim Bit 8. White,White,,,7/8/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614174,U4 coed,U4 coed,U4-U4X -028,Tim Bit 4. Royal Blue,Royal Blue,,Tim Bit 2. Red,Red,,,7/8/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614299,U5 coed,U5 coed,U5-U5X -025,U5 Tim Bits 6. Purple,Purple,,U5 Tim Bits 2. Red,Red,,,7/8/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614345,U6 coed,U6 coed,U6-U6X -031,U6 Tim Bits 7. WHITE,WHITE,,U6 Tim Bits 6. Purple,Purple,,,7/8/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614346,U6 coed,U6 coed,U6-U6X -032,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,U6 Tim Bits 5. MAROON,Maroon,,,7/8/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614300,U5 coed,U5 coed,U5-U5X -026,U5 Tim Bits 5. Grey,Grey,,U5 Tim Bits 3. Yellow,Yellow,,,7/8/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614301,U5 coed,U5 coed,U5-U5X -027,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 1. WHITE,WHITE,,,7/8/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614302,U5 coed,U5 coed,U5-U5X -028,U5 Tim Bits 4. Royal Blue,Royal  Blue,,U5 Tim Bits 8. Kelly Green,Kelly Green,,,7/8/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614347,U6 coed,U6 coed,U6-U6X -033,U6 Tim Bits 2. Red,Red,,U6 Tim Bits 9. Grey,Grey,,,7/8/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614348,U6 coed,U6 coed,U6-U6X -034,U6 Tim Bits 1. Lime green,Lime Green,,U6 Tim Bits 4. Royal Blue,Royal  Blue,,,7/8/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614349,U6 coed,U6 coed,U6-U6X -035,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,U6 Tim Bits 3. Yellow,Yellow,,,7/8/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1618260,U13 Girls,U13 Girls,U13-G-U13G -013,3. Norfolk Dental Hygiene U13 G,Red,,1. Simcoe Lions Club U13G,Purple,,,7/10/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618261,U13 Girls,U13 Girls,U13-G-U13G -014,4. Randyâ€™s Auto U13 G ,Sky blue,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,7/10/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614427,Women 19+,Women 19+,W-WOMEN-19+-013,W4. Erie Beach Hotel,Purple,,W2. Demeyere's Simcoe Honda,Red,,,7/10/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614428,Women 19+,Women 19+,W-WOMEN-19+-014,W1. The Functional Approach Chiro & Physio,Gold,,W3.  Norfolk Dental Hygiene,Maroon,,,7/10/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614651,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-033,3. Bulk Barn U11,Gold,,6. Country Trophies U11,White,,,7/11/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614652,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-034,7. Waterford Home Hardware Building Centre U11,Lime Green,,8. TACOS 'N' TEQUILA U11,Maroon,,,7/11/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614397,U7 coed,U7 coed,U7-U7X -033,4. Simcoe Lions Club U7,Purple,,8. Mitt & Robe Co. U7,Lime green,,,7/11/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614398,U7 coed,U7 coed,U7-U7X -034,1.Barrel Restaurant U7,White,,2. First Choice Haircutters U7,Red,,,7/11/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614399,U7 coed,U7 coed,U7-U7X -035,3. Victor Pool & Spa Supply U7,Royal  Blue,,5. Norfolk Dental Hygiene U7,Maroon,,,7/11/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614481,U18 Boys,U18 Boys,U18-B-U18B -017,4. TIRECRAFT U18 B,Orange,,2. Norfolk Dental Hygiene U18 B,Red,,,7/11/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614482,U18 Boys,U18 Boys,U18-B-U18B -018,1. Townsend Butchers U18 B,Gold,,3. BML Roofing System U18 B,Royal Blue,,,7/11/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614400,U7 coed,U7 coed,U7-U7X -036,6. Port Dover Knights of Columbus U7,sky blue,,7. NACL U7,Teal,,,7/11/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614653,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-035,5. Victoria Eldercare U11,Sky  Blue,,4. Demeyere Chrysler U11,Royal  Blue,,,7/11/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614654,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-036,1. Toyotetsu Canada Inc. U11,Purple,,2. Norfolk Dental Hygiene U11,Red,,,7/11/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614545,U8 coed,U8 coed,U8-U8X -033,6. Boer Homes U8,White,,4. Cobb & Jones LLP U8,Royal  Blue,,,7/12/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614546,U8 coed,U8 coed,U8-U8X -034,8. Roulstons Pharmacy U8,Sky  Blue,,1. EastLink U8,Red,,,7/12/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614507,U18  Girls,U18 Girls,U18-G-U18G -017,4. Hidden Valley RV Resort U18 G,Maroon,,3. Suprun Psychotherapy U18 G,Purple,,,7/12/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614508,U18  Girls,U18 Girls,U18-G-U18G -018,1. Jarja Floral International U18 G,Lime Green,,2. Norfolk Dental Hygiene U18 G,Red,,,7/12/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614547,U8 coed,U8 coed,U8-U8X -035,3. RCL Br #123 U8,Lime green,,2. Good Redden Klosler LLP U8,Purple,,,7/12/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614548,U8 coed,U8 coed,U8-U8X -036,7. Townsend Butchers U8,Gold,,5. Norfolk Dental Hygiene U8,Maroon,,,7/12/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614585,U9 coed,U9 coed,U9-U9X -025,3. Springview Farms Golf Course U9,Sky  Blue,,2. Arbor Restaurant U9,Orange,,,7/13/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614586,U9 coed,U9 coed,U9-U9X -026,1. Norfolk Dental Hygiene U9,Red,,6. OPG U9,Royal blue,,,7/13/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618242,U13 Boys ,U13 Boys,U13-B-U13B -017,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,2. Little Caesars U13 B,Gold,,,7/13/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618243,U13 Boys ,U13 Boys,U13-B-U13B -018,4. Edgil Pools Services Ltd U13 B,Royal Blue,,1. Norfolk Dental Hygiene U13 B,Red,,,7/13/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614587,U9 coed,U9 coed,U9-U9X -027,4. Bachmann Law U9,White,,5. Simcoe Knights of Columbus U9,Lime green,,,7/13/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614175,U4 coed,U4 coed,U4-U4X -029,Tim Bit  7. Purple,Purple,,Tim Bit 1. SKY BLUE,SKY BLUE,,,7/15/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614176,U4 coed,U4 coed,U4-U4X -030,Tim Bit 8. White,White,,Tim Bit 4. Royal Blue,Royal Blue,,,7/15/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614177,U4 coed,U4 coed,U4-U4X -031,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit 2. Red,Red,,,7/15/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614178,U4 coed,U4 coed,U4-U4X -032,Tim Bit 5. Grey,Grey,,Tim Bit 3. Yellow,Yellow,,,7/15/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614303,U5 coed,U5 coed,U5-U5X -029,U5 Tim Bits 1. WHITE,WHITE,,U5 Tim Bits 2. Red,Red,,,7/15/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614350,U6 coed,U6 coed,U6-U6X -036,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,U6 Tim Bits 7. WHITE,WHITE,,,7/15/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614351,U6 coed,U6 coed,U6-U6X -037,U6 Tim Bits 9. Grey,Grey,,U6 Tim Bits 3. Yellow,Yellow,,,7/15/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614304,U5 coed,U5 coed,U5-U5X -030,U5 Tim Bits 6. Purple,Purple,,U5 Tim Bits 4. Royal Blue,Royal  Blue,,,7/15/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614305,U5 coed,U5 coed,U5-U5X -031,U5 Tim Bits 8. Kelly Green,Kelly Green,,U5 Tim Bits 5. Grey,Grey,,,7/15/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614306,U5 coed,U5 coed,U5-U5X -032,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 3. Yellow,Yellow,,,7/15/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614352,U6 coed,U6 coed,U6-U6X -038,U6 Tim Bits 1. Lime green,Lime Green,,U6 Tim Bits 6. Purple,Purple,,,7/15/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614353,U6 coed,U6 coed,U6-U6X -039,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,U6 Tim Bits 5. MAROON,Maroon,,,7/15/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614354,U6 coed,U6 coed,U6-U6X -040,U6 Tim Bits 2. Red,Red,,U6 Tim Bits 4. Royal Blue,Royal  Blue,,,7/15/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1618262,U13 Girls,U13 Girls,U13-G-U13G -015,1. Simcoe Lions Club U13G,Purple,,4. Randyâ€™s Auto U13 G ,Sky blue,,,7/17/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618263,U13 Girls,U13 Girls,U13-G-U13G -016,3. Norfolk Dental Hygiene U13 G,Red,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,7/17/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614429,Women 19+,Women 19+,W-WOMEN-19+-015,W2. Demeyere's Simcoe Honda,Red,,W1. The Functional Approach Chiro & Physio,Gold,,,7/17/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614430,Women 19+,Women 19+,W-WOMEN-19+-016,W4. Erie Beach Hotel,Purple,,W3.  Norfolk Dental Hygiene,Maroon,,,7/17/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614655,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-037,1. Toyotetsu Canada Inc. U11,Purple,,7. Waterford Home Hardware Building Centre U11,Lime Green,,,7/18/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614656,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-038,6. Country Trophies U11,White,,4. Demeyere Chrysler U11,Royal  Blue,,,7/18/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614401,U7 coed,U7 coed,U7-U7X -037,1.Barrel Restaurant U7,White,,7. NACL U7,Teal,,,7/18/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614402,U7 coed,U7 coed,U7-U7X -038,6. Port Dover Knights of Columbus U7,sky blue,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,7/18/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614403,U7 coed,U7 coed,U7-U7X -039,2. First Choice Haircutters U7,Red,,8. Mitt & Robe Co. U7,Lime green,,,7/18/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614483,U18 Boys,U18 Boys,U18-B-U18B -019,2. Norfolk Dental Hygiene U18 B,Red,,1. Townsend Butchers U18 B,Gold,,,7/18/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614484,U18 Boys,U18 Boys,U18-B-U18B -020,4. TIRECRAFT U18 B,Orange,,3. BML Roofing System U18 B,Royal Blue,,,7/18/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614404,U7 coed,U7 coed,U7-U7X -040,4. Simcoe Lions Club U7,Purple,,5. Norfolk Dental Hygiene U7,Maroon,,,7/18/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614657,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-039,3. Bulk Barn U11,Gold,,2. Norfolk Dental Hygiene U11,Red,,,7/18/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614658,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-040,5. Victoria Eldercare U11,Sky  Blue,,8. TACOS 'N' TEQUILA U11,Maroon,,,7/18/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614549,U8 coed,U8 coed,U8-U8X -037,3. RCL Br #123 U8,Lime green,,7. Townsend Butchers U8,Gold,,,7/19/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614550,U8 coed,U8 coed,U8-U8X -038,6. Boer Homes U8,White,,2. Good Redden Klosler LLP U8,Purple,,,7/19/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614509,U18  Girls,U18 Girls,U18-G-U18G -019,3. Suprun Psychotherapy U18 G,Purple,,1. Jarja Floral International U18 G,Lime Green,,,7/19/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614510,U18  Girls,U18 Girls,U18-G-U18G -020,4. Hidden Valley RV Resort U18 G,Maroon,,2. Norfolk Dental Hygiene U18 G,Red,,,7/19/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614551,U8 coed,U8 coed,U8-U8X -039,8. Roulstons Pharmacy U8,Sky  Blue,,5. Norfolk Dental Hygiene U8,Maroon,,,7/19/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614552,U8 coed,U8 coed,U8-U8X -040,4. Cobb & Jones LLP U8,Royal  Blue,,1. EastLink U8,Red,,,7/19/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614588,U9 coed,U9 coed,U9-U9X -028,6. OPG U9,Royal blue,,5. Simcoe Knights of Columbus U9,Lime green,,,7/20/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614589,U9 coed,U9 coed,U9-U9X -029,4. Bachmann Law U9,White,,3. Springview Farms Golf Course U9,Sky  Blue,,,7/20/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618244,U13 Boys ,U13 Boys,U13-B-U13B -019,2. Little Caesars U13 B,Gold,,4. Edgil Pools Services Ltd U13 B,Royal Blue,,,7/20/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618245,U13 Boys ,U13 Boys,U13-B-U13B -020,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,1. Norfolk Dental Hygiene U13 B,Red,,,7/20/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614590,U9 coed,U9 coed,U9-U9X -030,1. Norfolk Dental Hygiene U9,Red,,2. Arbor Restaurant U9,Orange,,,7/20/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614179,U4 coed,U4 coed,U4-U4X -033,Tim Bit 5. Grey,Grey,,Tim Bit 8. White,White,,,7/22/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614180,U4 coed,U4 coed,U4-U4X -034,Tim Bit 1. SKY BLUE,SKY BLUE,,Tim Bit 2. Red,Red,,,7/22/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614181,U4 coed,U4 coed,U4-U4X -035,Tim Bit  7. Purple,Purple,,Tim Bit 3. Yellow,Yellow,,,7/22/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614182,U4 coed,U4 coed,U4-U4X -036,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit 4. Royal Blue,Royal Blue,,,7/22/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614307,U5 coed,U5 coed,U5-U5X -033,U5 Tim Bits 6. Purple,Purple,,U5 Tim Bits 8. Kelly Green,Kelly Green,,,7/22/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614355,U6 coed,U6 coed,U6-U6X -041,U6 Tim Bits 7. WHITE,WHITE,,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,,7/22/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614356,U6 coed,U6 coed,U6-U6X -042,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,U6 Tim Bits 1. Lime green,Lime Green,,,7/22/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614308,U5 coed,U5 coed,U5-U5X -034,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 5. Grey,Grey,,,7/22/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614309,U5 coed,U5 coed,U5-U5X -035,U5 Tim Bits 2. Red,Red,,U5 Tim Bits 3. Yellow,Yellow,,,7/22/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614310,U5 coed,U5 coed,U5-U5X -036,U5 Tim Bits 1. WHITE,WHITE,,U5 Tim Bits 4. Royal Blue,Royal  Blue,,,7/22/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614357,U6 coed,U6 coed,U6-U6X -043,U6 Tim Bits 5. MAROON,Maroon,,U6 Tim Bits 3. Yellow,Yellow,,,7/22/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614358,U6 coed,U6 coed,U6-U6X -044,U6 Tim Bits 4. Royal Blue,Royal  Blue,,U6 Tim Bits 9. Grey,Grey,,,7/22/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614359,U6 coed,U6 coed,U6-U6X -045,U6 Tim Bits 6. Purple,Purple,,U6 Tim Bits 2. Red,Red,,,7/22/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1618264,U13 Girls,U13 Girls,U13-G-U13G -017, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,1. Simcoe Lions Club U13G,Purple,,,7/24/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618265,U13 Girls,U13 Girls,U13-G-U13G -018,4. Randyâ€™s Auto U13 G ,Sky blue,,3. Norfolk Dental Hygiene U13 G,Red,,,7/24/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614431,Women 19+,Women 19+,W-WOMEN-19+-017,W4. Erie Beach Hotel,Purple,,W1. The Functional Approach Chiro & Physio,Gold,,,7/24/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614432,Women 19+,Women 19+,W-WOMEN-19+-018,W2. Demeyere's Simcoe Honda,Red,,W3.  Norfolk Dental Hygiene,Maroon,,,7/24/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614659,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-041,6. Country Trophies U11,White,,8. TACOS 'N' TEQUILA U11,Maroon,,,7/25/23,18:00,19:00,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614660,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-042,4. Demeyere Chrysler U11,Royal  Blue,,2. Norfolk Dental Hygiene U11,Red,,,7/25/23,18:00,19:00,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614405,U7 coed,U7 coed,U7-U7X -041,3. Victor Pool & Spa Supply U7,Royal  Blue,,4. Simcoe Lions Club U7,Purple,,,7/25/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614406,U7 coed,U7 coed,U7-U7X -042,2. First Choice Haircutters U7,Red,,5. Norfolk Dental Hygiene U7,Maroon,,,7/25/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614407,U7 coed,U7 coed,U7-U7X -043,8. Mitt & Robe Co. U7,Lime green,,7. NACL U7,Teal,,,7/25/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614485,U18 Boys,U18 Boys,U18-B-U18B -021,3. BML Roofing System U18 B,Royal Blue,,2. Norfolk Dental Hygiene U18 B,Red,,,7/25/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614486,U18 Boys,U18 Boys,U18-B-U18B -022,1. Townsend Butchers U18 B,Gold,,4. TIRECRAFT U18 B,Orange,,,7/25/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1614408,U7 coed,U7 coed,U7-U7X -044,1.Barrel Restaurant U7,White,,6. Port Dover Knights of Columbus U7,sky blue,,,7/25/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614661,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-043,7. Waterford Home Hardware Building Centre U11,Lime Green,,5. Victoria Eldercare U11,Sky  Blue,,,7/25/23,19:15,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614662,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-044,3. Bulk Barn U11,Gold,,1. Toyotetsu Canada Inc. U11,Purple,,,7/25/23,19:15,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614553,U8 coed,U8 coed,U8-U8X -041,4. Cobb & Jones LLP U8,Royal  Blue,,5. Norfolk Dental Hygiene U8,Maroon,,,7/26/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614554,U8 coed,U8 coed,U8-U8X -042,7. Townsend Butchers U8,Gold,,8. Roulstons Pharmacy U8,Sky  Blue,,,7/26/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614511,U18  Girls,U18 Girls,U18-G-U18G -021,2. Norfolk Dental Hygiene U18 G,Red,,3. Suprun Psychotherapy U18 G,Purple,,,7/26/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614512,U18  Girls,U18 Girls,U18-G-U18G -022,1. Jarja Floral International U18 G,Lime Green,,4. Hidden Valley RV Resort U18 G,Maroon,,,7/26/23,19:00,20:30,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614555,U8 coed,U8 coed,U8-U8X -043,6. Boer Homes U8,White,,3. RCL Br #123 U8,Lime green,,,7/26/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614556,U8 coed,U8 coed,U8-U8X -044,1. EastLink U8,Red,,2. Good Redden Klosler LLP U8,Purple,,,7/26/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614591,U9 coed,U9 coed,U9-U9X -031,3. Springview Farms Golf Course U9,Sky  Blue,,1. Norfolk Dental Hygiene U9,Red,,,7/27/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614592,U9 coed,U9 coed,U9-U9X -032,4. Bachmann Law U9,White,,6. OPG U9,Royal blue,,,7/27/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1618246,U13 Boys ,U13 Boys,U13-B-U13B -021,1. Norfolk Dental Hygiene U13 B,Red,,2. Little Caesars U13 B,Gold,,,7/27/23,19:00,20:15,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1618247,U13 Boys ,U13 Boys,U13-B-U13B -022,4. Edgil Pools Services Ltd U13 B,Royal Blue,,3. Port Dover Chiropractic & Rehabilitation Centre U13 B,White,,,7/27/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1614593,U9 coed,U9 coed,U9-U9X -033,2. Arbor Restaurant U9,Orange,,5. Simcoe Knights of Columbus U9,Lime green,,,7/27/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614183,U4 coed,U4 coed,U4-U4X -037,Tim Bit 6. Kelly Green,Kelly Green,,Tim Bit 5. Grey,Grey,,,7/29/23,9:00,9:45,NCYSP - Pros Mini 1,,R    ,ACTIVE,ACTIVE
+1614184,U4 coed,U4 coed,U4-U4X -038,Tim Bit  7. Purple,Purple,,Tim Bit 4. Royal Blue,Royal Blue,,,7/29/23,9:00,9:45,NCYSP - Pros Mini 2,,R    ,ACTIVE,ACTIVE
+1614185,U4 coed,U4 coed,U4-U4X -039,Tim Bit 1. SKY BLUE,SKY BLUE,,Tim Bit 3. Yellow,Yellow,,,7/29/23,9:00,9:45,NCYSP - Pros Mini 3,,R    ,ACTIVE,ACTIVE
+1614186,U4 coed,U4 coed,U4-U4X -040,Tim Bit 8. White,White,,Tim Bit 2. Red,Red,,,7/29/23,9:00,9:45,NCYSP - Pros Mini 4,,R    ,ACTIVE,ACTIVE
+1614311,U5 coed,U5 coed,U5-U5X -037,U5 Tim Bits 7. SKY BLUE,SKY BLUE,,U5 Tim Bits 6. Purple,Purple,,,7/29/23,9:00,9:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614360,U6 coed,U6 coed,U6-U6X -046,U6 Tim Bits 9. Grey,Grey,,U6 Tim Bits 10. KELLY GREEN,Kelly Green,,,7/29/23,9:00,9:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614361,U6 coed,U6 coed,U6-U6X -047,U6 Tim Bits 7. WHITE,WHITE,,U6 Tim Bits 4. Royal Blue,Royal  Blue,,,7/29/23,9:00,9:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614312,U5 coed,U5 coed,U5-U5X -038,U5 Tim Bits 8. Kelly Green,Kelly Green,,U5 Tim Bits 3. Yellow,Yellow,,,7/29/23,10:00,10:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614313,U5 coed,U5 coed,U5-U5X -039,U5 Tim Bits 1. WHITE,WHITE,,U5 Tim Bits 5. Grey,Grey,,,7/29/23,10:00,10:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614314,U5 coed,U5 coed,U5-U5X -040,U5 Tim Bits 2. Red,Red,,U5 Tim Bits 4. Royal Blue,Royal  Blue,,,7/29/23,10:00,10:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1614362,U6 coed,U6 coed,U6-U6X -048,U6 Tim Bits 6. Purple,Purple,,U6 Tim Bits 5. MAROON,Maroon,,,7/29/23,11:00,11:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614363,U6 coed,U6 coed,U6-U6X -049,U6 Tim Bits 8. SKY BLUE,SKY BLUE,,U6 Tim Bits 3. Yellow,Yellow,,,7/29/23,11:00,11:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614364,U6 coed,U6 coed,U6-U6X -050,U6 Tim Bits 1. Lime green,Lime Green,,U6 Tim Bits 2. Red,Red,,,7/29/23,11:00,11:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1618266,U13 Girls,U13 Girls,U13-G-U13G -019,3. Norfolk Dental Hygiene U13 G,Red,,4. Randyâ€™s Auto U13 G ,Sky blue,,,7/31/23,19:00,20:15,NCYSP -  Veterans ,,R    ,ACTIVE,ACTIVE
+1618267,U13 Girls,U13 Girls,U13-G-U13G -020,1. Simcoe Lions Club U13G,Purple,, 2. Brody's Mechanical Service Inc U13 G,Royal Blue,,,7/31/23,19:00,20:15,NCYSP - Community,,R    ,ACTIVE,ACTIVE
+1614433,Women 19+,Women 19+,W-WOMEN-19+-019,W4. Erie Beach Hotel,Purple,,W1. The Functional Approach Chiro & Physio,Gold,,,7/31/23,19:00,20:30,NCYSP -  Presidents,,R    ,ACTIVE,ACTIVE
+1614434,Women 19+,Women 19+,W-WOMEN-19+-020,W2. Demeyere's Simcoe Honda,Red,,W3.  Norfolk Dental Hygiene,Maroon,,,7/31/23,19:00,20:30,NCYSP - Pros,,R    ,ACTIVE,ACTIVE
+1634613,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T01,Rank 1 of U11 Co Ed Regular Season,,,Rank 3 of U11 Co Ed Regular Season,,,,8/1/23,17:45,19:00,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1634614,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T02,Rank 2 of U11 Co Ed Regular Season,,,4. Demeyere Chrysler U11,Royal  Blue,,,8/1/23,17:45,19:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614409,U7 coed,U7 coed,U7-U7X -045,8. Mitt & Robe Co. U7,Lime green,,6. Port Dover Knights of Columbus U7,sky blue,,,8/1/23,18:00,18:45,NCYSP - Trillium Mini  3,,R    ,ACTIVE,ACTIVE
+1614410,U7 coed,U7 coed,U7-U7X -046,1.Barrel Restaurant U7,White,,3. Victor Pool & Spa Supply U7,Royal  Blue,,,8/1/23,18:00,18:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614411,U7 coed,U7 coed,U7-U7X -047,7. NACL U7,Teal,,5. Norfolk Dental Hygiene U7,Maroon,,,8/1/23,18:00,18:45,NCYSP - Trillium Mini 2,,R    ,ACTIVE,ACTIVE
+1628498,U18 Boys,U18 Boys,U18-B-U18B -T01,Rank 1 of U18 Boys Regular Season,,,Rank 2 of U18 Boys Regular Season,,,,8/1/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628499,U18 Boys,U18 Boys,U18-B-U18B -T02,Rank 3 of U18 Boys Regular Season,,,Rank 4 of U18 Boys Regular Season,,,,8/1/23,18:30,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634615,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T03,Rank 5 of U11 Co Ed Regular Season,,,Rank 7 of U11 Co Ed Regular Season,,,,8/1/23,19:00,20:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634616,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T04,Rank 6 of U11 Co Ed Regular Season,,,Rank 8 of U11 Co Ed Regular Season,,,,8/1/23,19:00,20:15,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1614412,U7 coed,U7 coed,U7-U7X -048,2. First Choice Haircutters U7,Red,,4. Simcoe Lions Club U7,Purple,,,8/1/23,19:00,19:45,NCYSP - Trillium Mini 1,,R    ,ACTIVE,ACTIVE
+1614557,U8 coed,U8 coed,U8-U8X -045,6. Boer Homes U8,White,,7. Townsend Butchers U8,Gold,,,8/2/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614558,U8 coed,U8 coed,U8-U8X -046,1. EastLink U8,Red,,3. RCL Br #123 U8,Lime green,,,8/2/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1628506,U18  Girls,U18 Girls,U18-G-U18G -T01,Rank 1 of U18 Girls Regular Season,,,Rank 2 of U18 Girls Regular Season,,,,8/2/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628507,U18  Girls,U18 Girls,U18-G-U18G -T02,Rank 3 of U18 Girls Regular Season,,,Rank 4 of U18 Girls Regular Season,,,,8/2/23,18:30,20:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614559,U8 coed,U8 coed,U8-U8X -047,4. Cobb & Jones LLP U8,Royal  Blue,,8. Roulstons Pharmacy U8,Sky  Blue,,,8/2/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614560,U8 coed,U8 coed,U8-U8X -048,2. Good Redden Klosler LLP U8,Purple,,5. Norfolk Dental Hygiene U8,Maroon,,,8/2/23,19:15,20:15,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1614594,U9 coed,U9 coed,U9-U9X -034,1. Norfolk Dental Hygiene U9,Red,,5. Simcoe Knights of Columbus U9,Lime green,,,8/3/23,18:00,19:00,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1614595,U9 coed,U9 coed,U9-U9X -035,4. Bachmann Law U9,White,,2. Arbor Restaurant U9,Orange,,,8/3/23,18:00,19:00,NCYSP - Timbit,,R    ,ACTIVE,ACTIVE
+1660978,U13 Boys ,U13 Boys,U13-B-U13B -T01,Rank 1 of U13 Boys Regular Season,,,Rank 2 of U13 Boys Regular Season,,,,8/3/23,18:30,19:45,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1660979,U13 Boys ,U13 Boys,U13-B-U13B -T02,Rank 3 of U13 Boys Regular Season,,,Rank 4 of U13 Boys Regular Season,,,,8/3/23,18:30,19:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1614596,U9 coed,U9 coed,U9-U9X -036,6. OPG U9,Royal blue,,3. Springview Farms Golf Course U9,Sky  Blue,,,8/3/23,19:15,20:15,NCYSP -  Sunrise,,R    ,ACTIVE,ACTIVE
+1634617,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T05,Rank 5 of U11 Co Ed Regular Season,,,Rank 3 of U11 Co Ed Regular Season,,,,8/8/23,17:45,19:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634618,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T06,Rank 4 of U11 Co Ed Regular Season,,,Rank 6 of U11 Co Ed Regular Season,,,,8/8/23,17:45,19:00,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1628500,U18 Boys,U18 Boys,U18-B-U18B -T03,Rank 2 of U18 Boys Regular Season,,,Rank 3 of U18 Boys Regular Season,,,,8/8/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628501,U18 Boys,U18 Boys,U18-B-U18B -T04,Rank 4 of U18 Boys Regular Season,,,Rank 1 of U18 Boys Regular Season,,,,8/8/23,18:30,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634619,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T07,Rank 7 of U11 Co Ed Regular Season,,,Rank 1 of U11 Co Ed Regular Season,,,,8/8/23,19:00,20:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634620,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T08,Rank 8 of U11 Co Ed Regular Season,,,Rank 2 of U11 Co Ed Regular Season,,,,8/8/23,19:00,20:15,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1628508,U18  Girls,U18 Girls,U18-G-U18G -T03,Rank 2 of U18 Girls Regular Season,,,Rank 3 of U18 Girls Regular Season,,,,8/9/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628509,U18  Girls,U18 Girls,U18-G-U18G -T04,Rank 4 of U18 Girls Regular Season,,,Rank 1 of U18 Girls Regular Season,,,,8/9/23,18:30,20:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1660980,U13 Boys ,U13 Boys,U13-B-U13B -T03,Rank 2 of U13 Boys Regular Season,,,Rank 3 of U13 Boys Regular Season,,,,8/10/23,18:30,19:45,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1660981,U13 Boys ,U13 Boys,U13-B-U13B -T04,Rank 4 of U13 Boys Regular Season,,,Rank 1 of U13 Boys Regular Season,,,,8/10/23,18:30,19:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634685,U13 Girls,U13 Girls,U13-G-U13G -T01,Rank 1 of U13 Girls Regular Season,,,Rank 2 of U13 Girls Regular Season,,,,8/11/23,18:30,19:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634686,U13 Girls,U13 Girls,U13-G-U13G -T02,Rank 3 of U13 Girls Regular Season,,,Rank 4 of U13 Girls Regular Season,,,,8/11/23,18:30,19:45,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1634654,Women 19+,Women 19+,W-WOMEN-19+-T01,Rank 1 of Women 19+ Regular Season,,,Rank 2 of Women 19+ Regular Season,,,,8/11/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1634655,Women 19+,Women 19+,W-WOMEN-19+-T02,Rank 3 of Women 19+ Regular Season,,,Rank 4 of Women 19+ Regular Season,,,,8/11/23,18:30,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634687,U13 Girls,U13 Girls,U13-G-U13G -T03,Rank 2 of U13 Girls Regular Season,,,Rank 3 of U13 Girls Regular Season,,,,8/14/23,18:30,19:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634688,U13 Girls,U13 Girls,U13-G-U13G -T04,Rank 4 of U13 Girls Regular Season,,,Rank 1 of U13 Girls Regular Season,,,,8/14/23,18:30,19:45,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1634656,Women 19+,Women 19+,W-WOMEN-19+-T03,Rank 2 of Women 19+ Regular Season,,,Rank 3 of Women 19+ Regular Season,,,,8/14/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1634657,Women 19+,Women 19+,W-WOMEN-19+-T04,Rank 4 of Women 19+ Regular Season,,,Rank 1 of Women 19+ Regular Season,,,,8/14/23,18:30,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634621,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T09,Rank 1 of U11 Co Ed Regular Season,,,Rank 5 of U11 Co Ed Regular Season,,,,8/15/23,17:45,19:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634622,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T10,Rank 2 of U11 Co Ed Regular Season,,,Rank 6 of U11 Co Ed Regular Season,,,,8/15/23,17:45,19:00,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1628502,U18 Boys,U18 Boys,U18-B-U18B -T05,Rank 4 of U18 Boys Regular Season,,,Rank 2 of U18 Boys Regular Season,,,,8/15/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628503,U18 Boys,U18 Boys,U18-B-U18B -T06,Rank 1 of U18 Boys Regular Season,,,Rank 3 of U18 Boys Regular Season,,,,8/15/23,18:30,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634623,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T11,Rank 3 of U11 Co Ed Regular Season,,,Rank 7 of U11 Co Ed Regular Season,,,,8/15/23,19:00,20:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634624,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T12,Rank 4 of U11 Co Ed Regular Season,,,Rank 8 of U11 Co Ed Regular Season,,,,8/15/23,19:00,20:15,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1628510,U18  Girls,U18 Girls,U18-G-U18G -T05,Rank 4 of U18 Girls Regular Season,,,Rank 2 of U18 Girls Regular Season,,,,8/16/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628511,U18  Girls,U18 Girls,U18-G-U18G -T06,Rank 1 of U18 Girls Regular Season,,,Rank 3 of U18 Girls Regular Season,,,,8/16/23,18:30,20:00,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1660982,U13 Boys ,U13 Boys,U13-B-U13B -T05,Rank 1 of U13 Boys Regular Season,,,Rank 3 of U13 Boys Regular Season,,,,8/17/23,18:30,19:45,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1660983,U13 Boys ,U13 Boys,U13-B-U13B -T06,Rank 2 of U13 Boys Regular Season,,,Rank 4 of U13 Boys Regular Season,,,,8/17/23,18:30,19:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634689,U13 Girls,U13 Girls,U13-G-U13G -T05,Rank 1 of U13 Girls Regular Season,,,Rank 3 of U13 Girls Regular Season,,,,8/21/23,18:30,19:45,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1634690,U13 Girls,U13 Girls,U13-G-U13G -T06,Rank 2 of U13 Girls Regular Season,,,Rank 4 of U13 Girls Regular Season,,,,8/21/23,18:30,19:45,NCYSP - Community,,PL   ,ACTIVE,ACTIVE
+1634658,Women 19+,Women 19+,W-WOMEN-19+-T05,Rank 1 of Women 19+ Regular Season,,,Rank 3 of Women 19+ Regular Season,,,,8/21/23,18:30,20:00,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1634659,Women 19+,Women 19+,W-WOMEN-19+-T06,Rank 2 of Women 19+ Regular Season,,,Rank 4 of Women 19+ Regular Season,,,,8/21/23,18:30,20:00,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634625,U11 Co Ed,U11 Co Ed,U11-JR-AT-U11-CO-ED-T13,HOME,,,AWAY,,,,8/22/23,18:00,19:15,NCYSP -  Veterans ,,PL   ,ACTIVE,ACTIVE
+1628504,U18 Boys,U18 Boys,U18-B-U18B -T07,HOME,,,AWAY,,,,8/22/23,18:00,19:30,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1628512,U18  Girls,U18 Girls,U18-G-U18G -T07,HOME,,,AWAY,,,,8/23/23,18:00,19:30,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1660984,U13 Boys ,U13 Boys,U13-B-U13B -T07,HOME,,,AWAY,,,,8/24/23,18:00,19:15,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE
+1634660,Women 19+,Women 19+,W-WOMEN-19+-T07,HOME,,,AWAY,,,,8/28/23,18:00,19:30,NCYSP - Pros,,PL   ,ACTIVE,ACTIVE
+1634691,U13 Girls,U13 Girls,U13-G-U13G -T07,HOME,,,AWAY,,,,8/28/23,18:15,19:30,NCYSP -  Presidents,,PL   ,ACTIVE,ACTIVE

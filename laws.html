@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/seletion.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Simcoe Soccer Home Page</title></head>
+    <style>
+      .linkchange {
+        color: white;
+      }
+      .contacttext{
+        color: black;
+      }
+
+      .contactalert {
+        background-color: white;
+        border-style: solid;
+        border-color: darkblue;
+        border-radius: 20px;
+        padding: 3% 5%;
+        margin: 1% 5%;
+      }
+    </style>
+    <body>
+      <div id="navbar" style="z-index: 3;">
+        <a href="/index.php"><img fluid src="images/ball.png" style="width: 50%" alt="Ball"></a>
+        <a href="/players.html">Players</a>
+        <a href="/parents.html">Parents</a>
+        <a href="/coaches.html">Coaches</a>
+        <a href="/officials.html">Officials</a>
+        <a href="/info.html">Info</a>
+        <a href="#footer">Contact Us</a>
+      </div>
+<iframe
+    src="http://simcoesoccer.com/Laws2023.pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="100%"
+    width="100%"
+></iframe>
+ <!--Footer-->
+ <a id="footer"></a>
+  <div class="container-fluid bg-primary text-center" style="width: 100%; padding: 3% 5%;">
+    <div class="contactalert">
+      <div class="row">
+      <div class="col-sm-12 p-2">
+        <h3 style="color: black ;">Contact Us</h3>
+        <div class="container-fluid"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca" width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+      <div class="col pt-2" style="text-align: center; line-height: 2.; color: black;">
+        <p class="contacttext">
+         MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3<hr style="color: blue;">
+         PRESIDENT: <a href="mailto:president@simcoesoccer.ca">Brian Suggett</a> <br> 
+        MANAGER: <a href="mailto:clubmanager@simcoesoccer.ca">Bev Suggett </a><br> 
+         REFEREES: <a href="mailto:joe.estrela@hotmail.com">Joe Estrela</a> <br>
+         E TRANSFERS: </a>sdysc.treasurer@gmail.com</a>
+        </p>
+       <small><a href="http://www.businesslore.com" style="text-decoration: none; ">- CREATED BY BUSINESSLORE - </a></small> 
+      </div>
+    </div>
+    </div>
+   <div class="linkchange" style="text-align: center;">
+        <small><a href="http://www.businesslore.com">- CREATED BY BUSINESSLORE - </a></small>
+      </div>
+    </div>
+  
+
+
+      <script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+</body>
+</html>

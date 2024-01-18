@@ -1,0 +1,236 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.content {
+  margin: auto;
+}
+
+/* navbar settings*/
+#navbar {
+  background-color: blue;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0px;
+  font-size: 1.75vw;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: auto;
+}
+
+#registration {
+  background-color: red;
+}
+
+#games {
+  background-color: green;
+}
+
+#players {
+  background-color: blue;
+}
+
+#coaches {
+  background-color: orange;
+}
+
+/* features*/
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-2 {
+  text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-3 {
+  text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Slides */
+
+#slideset6 {
+  height: 10em;
+  position: relative
+}
+
+#slideset6>* {
+  animation: 12s autoplay6 infinite linear;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0.0
+}
+
+@keyframes autoplay6 {
+  0% {
+    opacity: 0.0
+  }
+
+  4% {
+    opacity: 1.0
+  }
+
+  33.33% {
+    opacity: 1.0
+  }
+
+  37.33% {
+    opacity: 0.0
+  }
+
+  100% {
+    opacity: 0.0
+  }
+}
+
+#slideset6>*:nth-child(1) {
+  animation-delay: 0s
+}
+
+#slideset6>*:nth-child(2) {
+  animation-delay: 4s
+}
+
+#slideset6>*:nth-child(3) {
+  animation-delay: 8s
+}
+
+/*clearfix*/
+.sponsorcenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*sponsors*/
+.rowi {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0% 10%;
+  width: 100%;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.columni {
+  -ms-flex: 20%;
+  /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 1%;
+}
+
+.columni img {
+  margin-top: 3px;
+  vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columni {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columni {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hello {
+  background-color: aqua;
+  width: 80%;
+  text-align: center;
+}
+
+.containerz {
+  z-index: -1;
+}

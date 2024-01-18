@@ -1,0 +1,99 @@
+:root {
+    --green: #198754;
+    --red: #dc3545;
+}
+
+/* Hero Image Upload */
+
+.hero-img-container {
+    width: 100%;
+    height: 200px;
+    background-color:blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-container h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero-img-upload {
+    max-width: 70%;
+}
+
+.hide {
+    display: none;
+}
+
+/* Registration Update */
+.registration-input {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registration-state-result-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registration-success {
+    background-color: var(--green);
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+}
+
+.registration-error {
+    background-color: var(--red);
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+}
+
+#registration-btn {
+    text-transform: uppercase;
+}
+
+/* success-message */
+
+.success-message {
+    font-size: 25px;
+    color: white;
+    background-color: var(--green);
+    width: auto;
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    padding: 10px 20px
+}
+
+.error-message {
+    font-size: 25px;
+    color: white;
+    background-color: var(--red);
+    width: auto;
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    padding: 10px 20px
+}

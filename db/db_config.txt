@@ -1,0 +1,37 @@
+<?php
+$servername = "sql5c0f.megasqlservers.com";
+$database = "soccertables_simcoesocc591341";
+$username = "simcoesocc591341";
+$password = "Connor007$";
+ 
+// Create connection
+ 
+$conn = mysqli_connect($servername, $username, $password, $database);
+ 
+// Check connection
+if (!$conn) 
+{
+    die("Connection failed: " . mysqli_connect_error());
+}
+mysqli_close($conn);
+
+<?php
+$servername = "localhost";
+$database = "simcoe_soccer";
+$username = "root";
+$password = "";
+ 
+// Create connection
+ 
+$conn = mysqli_connect($servername, $username, $password, $database);
+ 
+// Check connection
+if (!$conn) 
+{
+    die("Connection failed: " . mysqli_connect_error());
+}
+mysqli_close($conn);
+
+define("BASE_URL", "https://localhost/simcoe");
+
+define("BASE_URL", "https://simcoesoccer.ca");
