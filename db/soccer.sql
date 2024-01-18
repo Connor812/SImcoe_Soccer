@@ -78,6 +78,7 @@ CREATE TABLE `index_page` (
   `ad_text` TEXT,
   `ad_link` TEXT
 );
+
 CREATE TABLE `rules_regulations` (`link_rules_pdf` TEXT, `link_rules_text` TEXT);
 CREATE TABLE `parents_page` (
   `form_link` TEXT,
