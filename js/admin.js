@@ -1,5 +1,28 @@
 //  Function to update the registration btn
 $(document).ready(function () {
+
+    // If There is the floating error or success handler, then add an event listener to the remove button, and remove the container once clicked
+    if (document.getElementById('floating-error-btn')) {
+        const floatingErrorBtn = document.getElementById('floating-error-btn');
+        floatingErrorBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            const idOfErrorBox = floatingErrorBtn.value;
+            const errorBox = document.getElementById(idOfErrorBox);
+            errorBox.remove();
+        });
+    }
+
+    console.log(document.getElementById('floating-success-btn'));
+    if (document.getElementById('floating-success-btn')) {
+        const floatingSuccessBtn = document.getElementById('floating-success-btn');
+        floatingSuccessBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            const idOfSuccessBox = floatingSuccessBtn.value;
+            const successBox = document.getElementById(idOfSuccessBox);
+            successBox.remove();
+        });
+    }
+
     // New hero Image
     $("#new-hero-img").change(function () {
         const fileInput = $(this)[0]; // Get the DOM element
@@ -55,11 +78,12 @@ $(document).ready(function () {
     // Attach a click event listener to the dropdown items
     $('.dropdown-item').on('click', function () {
         // Get the value attribute of the clicked item
-        var selectedValue = $(this).attr('image');
+        var selectedValue = $(this).attr("value");
 
         var formData = {
             status: selectedValue
         };
+        console.log(formData);
 
         // Perform AJAX POST request
         $.ajax({

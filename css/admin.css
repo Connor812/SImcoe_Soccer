@@ -1,14 +1,96 @@
 :root {
+--red: #cb3140;
+    --red-hover: #dc3545;
+    --blue: #0d6efd;
+    --blue-hover: #0c64e5;
     --green: #198754;
-    --red: #dc3545;
+    --green-hover: #177f4f;
+    --error-success-container-placement: 100px;
 }
+
+/* Error and Success styles */
+
+.floating-error {
+    position: fixed;
+    font-size: 20px;
+    right: 10px;
+    top: var(--error-success-container-placement);
+    width: fit-content;
+    background-color: var(--red);
+    padding: 10px 50px;
+    border: 5px solid var(--red-hover);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.floating-error-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    transition: 200ms;
+    padding: 2px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+    
+    .floating-error-btn:hover {
+    background-color: var(--red-hover);
+}
+
+.floating-success {
+    position: fixed;
+    font-size: 20px;
+    right: 10px;
+    top: var(--error-success-container-placement);
+    width: fit-content;
+    background-color: var(--green);
+    padding: 10px 50px;
+    border: 5px solid var(--green-hover);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.floating-success-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    transition: 200ms;
+    padding: 2px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.floating-success-btn:hover {
+    background-color: var(--green-hover);
+}
+
 
 /* Hero Image Upload */
 
 .hero-img-container {
     width: 100%;
     height: 200px;
-    background-color:blue;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +110,7 @@
     display: none;
 }
 
-.hero-upload-btn * {
+.hero-upload-btn *, .registration-image-upload-btn * {
     margin: 0px 10px
 }
 
@@ -72,36 +154,6 @@
     text-transform: uppercase;
 }
 
-/* success-message */
-
-.success-message {
-    font-size: 25px;
-    color: white;
-    background-color: var(--green);
-    width: auto;
-    text-align: center;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.375rem;
-    padding: 10px 20px
-}
-
-.error-message {
-    font-size: 25px;
-    color: white;
-    background-color: var(--red);
-    width: auto;
-    text-align: center;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.375rem;
-    padding: 10px 20px
-}
-
 .section-1-input-container {
     width: 70%;
     margin-top: 10px;
@@ -110,3 +162,81 @@
 .section-1-input-container * {
     margin-top: 10px;
 }
+
+.registration-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form {
+    width: 80%;
+}
+
+.registration-info-image-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-edit-section {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card-form {
+    width: 70%;
+}
+
+.card-close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.regulation-rules-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.regulation-rules-input {
+    width: 70% !important;
+    margin: 5px;
+}
+
+.registration-date-form * {
+    margin: 10px;
+}
+
+.field-img-submit-container * {
+    margin: 5px;
+}
+
+.ad-form {
+    padding: 20px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.director, .past_president {
+    background: none;
+    border: none;
+    transition: 200ms;
+}
+
+.director:hover, .past_president:hover {
+    color: var(--blue);
+    font-size: 18px;
+}
+

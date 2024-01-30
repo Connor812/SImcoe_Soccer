@@ -1,3 +1,3 @@
 <?php
 
-define("BASE_URL", "https://localhost/soccer/");
+define("BASE_URL", "https://localhost/Soccer/");

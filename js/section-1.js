@@ -1,12 +1,12 @@
 // This handles changes in the section - 1 section
 
-let formChanged = false;
+let Section1FormChanged = false;
 
 const originalFormData = $("#section-1-form").serialize();
 
 $("#section-1-form").on("input change", function () {
     // Check if changes have already been detected
-    if (formChanged) {
+    if (Section1FormChanged) {
         return;
     }
 
@@ -25,7 +25,7 @@ $("#section-1-form").on("input change", function () {
         $("#section-1-submit-btn-container").append(uploadButton);
 
         // Set the flag to indicate changes have been detected
-        formChanged = true;
+        Section1FormChanged = true;
     }
 });
 
