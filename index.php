@@ -97,7 +97,7 @@ require_once("php/header.php");
                                             Southern Ontario near Lake Erie</p>
                                         <p style="color: black; text-align: center;">If you have any questions
                                             please
-                                            contact us: admin@simcoesoccer.com</p>
+                                            contact us: clubmanager@simcoesoccer.ca</p>
 
                                     </div>
 
