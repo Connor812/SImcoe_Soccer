@@ -40,6 +40,14 @@ function errorHandler($error)
         $message = "Error: Failed To Update Past President. Please Try Again";
     } elseif ($error == "deleting_past_president") {
         $message = "Error: Failed To Delete Past President. Please Try Again";
+    }  elseif ($error == "access_denied") {
+        $message = "Error: Access Denied. Please Login";
+    } elseif ($error == "pwd_doesnt_match") {
+        $message = "Error: Incorrect Password. Please Try Again.";
+    } elseif ($error == "username_doesnt_exist") {
+        $message = "Error: Incorrect Username. Please Try Again.";
+    } elseif ($error == "failed_to_login") {
+        $message = "Error: Failed To Login. Please Try Again.";
     } 
 
     ?>
@@ -86,6 +94,8 @@ function successHandler($success)
         $message = "Successfully Updated Past President.";
     } elseif ($success == "delete_past_president") {
         $message = "Successfully Deleted Past President.";
+    } elseif ($success == "logged_in") {
+        $message = "Successfully Logged In. Welcome!";
     }
  
     ?>
