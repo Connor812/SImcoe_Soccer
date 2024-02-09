@@ -1,3 +1,15 @@
+<?php
+require_once("config-url.php");
+require_once("admin-functions/error-handlers.php");
+
+if (isset($_SERVER["admin_username"])) {
+    header("Location: " . BASE_URL . "admin.php");
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,16 +37,20 @@
     <div class="admin-login-form">
         <form method="post" action="admin-functions/admin-login.php">
             <h1>Login</h1>
-            <h3>Enter Username</h3>
-            <input name="username" type="text" class="form-control" placeholder="Please Enter In A Username">
-            <h3>Enter Password</h3>
-            <input name="username" type="password" class="form-control" placeholder="Please Enter In A Password">
-            <button></button>
+            <center>
+                <h3 class="text-start">Enter Username</h3>
+                <input name="username" type="text" class="form-control" placeholder="Please Enter In A Username">
+                <h3 class="text-start">Enter Password</h3>
+                <input name="pwd" type="password" class="form-control" placeholder="Please Enter In A Password">
+            </center>
+            <button type="submit" class="btn btn-primary">
+                <h4>Login</h3>
+            </button>
         </form>
     </div>
 
 
-
+    <script src="<?php echo BASE_URL ?>js/admin.js"></script>
 
 </body>
 
