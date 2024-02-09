@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/selection.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Simcoe Soccer Home Page</title>
 </head>
 <style>
@@ -38,17 +39,113 @@
 
 <?php
 require_once("php/header.php");
+require_once("db/db_config.php");
+
+$sql = "SELECT *
+        FROM `index_page`
+        LEFT JOIN `rules_regulations` ON `index_page`.`id` = `rules_regulations`.`id`
+        WHERE `index_page`.`id` = 1;";
+
+$stmt = $conn->prepare($sql);
+
+// Check if the statement preparation was successful
+if (!$stmt) {
+    echo "Error preparing statement: " . $conn->error;
+    $conn->close();
+    exit;
+}
+
+$stmt->execute();
+
+// Check if the statement execution was successful
+if (!$stmt) {
+    echo "Error executing statement: " . $stmt->error;
+    $stmt->close();
+    $conn->close();
+    exit;
+}
+
+// Get the result set
+$result = $stmt->get_result();
+
+// Fetch the row as an associative array
+$row = $result->fetch_assoc();
+
+// Check if any rows were returned
+if (!$row) {
+    echo "Error With Admin Site.";
+}
+
+$hero_image = $row["hero_image"];
+$registration_year = $row["registration_year"];
+$registration_start_date = $row["registration_start_date"];
+$registration_btn_status = $row["registration_btn_status"];
+$section_1_heading = $row["section_1_heading"];
+$section_1_text = $row["section_1_text"];
+$registration_info_heading = $row["registration_info_heading"];
+$registration_info_date = $row["registration_info_date"];
+$registration_info_image = $row["registration_info_image"];
+$season_start_date = $row["season_start_date"];
+$u6_start_date = $row["u6_start_date"];
+$field_image = $row["field_image"];
+$card_heading_1 = $row["card_heading_1"];
+$card_text_1 = $row["card_text_1"];
+$card_link_1 = $row["card_link_1"];
+$card_image_1 = $row["card_image_1"];
+$card_heading_2 = $row["card_heading_2"];
+$card_text_2 = $row["card_text_2"];
+$card_link_2 = $row["card_link_2"];
+$card_image_2 = $row["card_image_2"];
+$card_heading_3 = $row["card_heading_3"];
+$card_text_3 = $row["card_text_3"];
+$card_link_3 = $row["card_link_3"];
+$card_image_3 = $row["card_image_3"];
+$card_heading_4 = $row["card_heading_4"];
+$card_text_4 = $row["card_text_4"];
+$card_link_4 = $row["card_link_4"];
+$card_image_4 = $row["card_image_4"];
+$card_heading_5 = $row["card_heading_5"];
+$card_text_5 = $row["card_text_5"];
+$card_link_5 = $row["card_link_5"];
+$card_image_5 = $row["card_image_5"];
+$card_heading_6 = $row["card_heading_6"];
+$card_text_6 = $row["card_text_6"];
+$card_link_6 = $row["card_link_6"];
+$card_image_6 = $row["card_image_6"];
+$link_rules_pdf = $row["link_rules_pdf"];
+$link_rules_text = $row["link_rules_text"];
+$ad_image_1 = $row["ad_image_1"];
+$ad_text_1 = $row["ad_text_1"];
+$ad_link_1 = $row["ad_link_1"];
+$ad_image_2 = $row["ad_image_2"];
+$ad_text_2 = $row["ad_text_2"];
+$ad_link_2 = $row["ad_link_2"];
+$president_name = $row["president_name"];
+$president_email = $row["president_email"];
+$manager_name = $row["manager_name"];
+$manager_email = $row["manager_email"];
+$referees_name = $row["referees_name"];
+$referees_email = $row["referees_email"];
+$e_transfer_email = $row["e_transfer_email"];
+
+
+// Close the statement
+$stmt->close();
+
+
 ?>
 
 <body>
     <div class="wrapper" style="width: 100%;">
         <!--JumboImage-->
-        <img src="images/jumbo1.jpg" class="img-fluid" width="100%" alt="50 Years of Soccer">
+        <img src="<?php echo empty($hero_image) ? 'images/jumbo1.jpg' : "images/$hero_image"; ?>" class="img-fluid"
+            width="100%" alt="50 Years of Soccer">
         <!--sections-->
         <div class="container-fluid h2 p-2 m-0" style="text-align: center; background-color: blue; color: white;">SIMCOE
             DISTRICT YOUTH SOCCER CLUB</div>
         <div class="container-fluid p-0 m-0" style="width: 100%;">
-            <button class="tablink" onclick="openPage('registration', this, 'red')" id="defaultOpen">REGISTRATION</button>
+            <button class="tablink" onclick="openPage('registration', this, 'red')"
+                id="defaultOpen">REGISTRATION</button>
             <button class="tablink" onclick="openPage('games', this, 'green')">TODAYS GAMES</button>
             <button class="tablink" onclick="openPage('players', this, 'blue')">PLAYERS &amp; PARENTS</button>
             <button class="tablink" onclick="openPage('coaches', this, 'orange')">COACHES &amp; OFFICIALS</button>
@@ -59,7 +156,10 @@ require_once("php/header.php");
                         <img src="images/CrestLOGO1.png" width="80%" height="mx-auto">
                     </div>
                     <div class="col">
-                        <div style="font-size: 3vw;">2024 Outdoor Soccer Registration<br>Starts January 15</div>
+                        <div style="font-size: 3vw;">
+                            <?php echo $registration_year ?><br>
+                            <?php echo $registration_start_date ?>
+                        </div>
                         <div style="font-size: 2.5vw;"> </div>
                         <!--<div style="font-size: 2vw;">ONLY GIRLS U13 and U18 AVAILABLE</div>
                         <div style="font-size: 2vw;">WAITING LIST IS CLOSED</div>-->
@@ -67,8 +167,17 @@ require_once("php/header.php");
 
                         <hr> <!-- Button to Open the Join Modal -->
                         <!-- Button to Open the Modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">
-                            REGISTRATION OPEN
+                        <?php
+                        if ($registration_btn_status == "closed") {
+                            $disabled = 'disabled';
+                        } else {
+                            $disabled;
+                        }
+                        ?>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register"
+                            <?php echo $disabled ?>>
+                            REGISTRATION
+                            <?php echo strtoupper($registration_btn_status) ?>
                         </button>
 
                         <!-- The Register Modal -->
@@ -90,7 +199,8 @@ require_once("php/header.php");
                                             registration, just click on the button below and enter your email and
                                             the
                                             password you want to use.</p>
-                                        <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN"><img src="images/powerupscreen.png" class="mx-auto d-block" width="50%"></a>
+                                        <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN"><img
+                                                src="images/powerupscreen.png" class="mx-auto d-block" width="50%"></a>
                                         <br>
                                         <p style="color: black; text-align: center;">Our soccer fields are located
                                             in
@@ -104,7 +214,8 @@ require_once("php/header.php");
                                     <!-- Modal footer -->
                                     <div class="modal-footer">
                                         <img src="images/PowerUp_logo.png">
-                                        <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN" class="btn btn-success">CONTINUE TO POWERUP</a>
+                                        <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN"
+                                            class="btn btn-success">CONTINUE TO POWERUP</a>
                                     </div>
                                 </div>
                             </div>
@@ -124,16 +235,16 @@ require_once("php/header.php");
                                 <select autocomplete="off" id="select1">
                                     <option value="" disabled selected>Select Division</option>
                                     <?php
-                                    require_once("db/db_config.php");
                                     $sql = "SELECT DISTINCT(division_name) FROM  tableone";
                                     $result = mysqli_query($conn, $sql);
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) {
-                                    ?>
+                                            ?>
 
                                             <option value="<?php echo $row['division_name']; ?>">
-                                                <?php echo $row['division_name']; ?></option>
-                                    <?php
+                                                <?php echo $row['division_name']; ?>
+                                            </option>
+                                            <?php
                                         }
                                     }
 
@@ -144,7 +255,6 @@ require_once("php/header.php");
                                 <select autocomplete="off" id="select2">
                                     <option value="" disabled selected>Select Team</option>
                                     <?php
-                                    require_once("db/db_config.php");
 
                                     $sql = "SELECT home_team_name, away_team_name FROM tableone";
                                     $result = mysqli_query($conn, $sql);
@@ -190,7 +300,8 @@ require_once("php/header.php");
                                 </tbody>
                             </table>
                             <div class="row">
-                                <div class="col"><button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#fieldmap">Map of fields</button>
+                                <div class="col"><button type="button" class="btn btn-success btn-sm"
+                                        data-bs-toggle="modal" data-bs-target="#fieldmap">Map of fields</button>
                                 </div>
                                 <!--<div class="col"><button class="btn btn-success btn-sm" id="calendar_ics">Add to your calendar</button>-->
                             </div>
@@ -299,36 +410,48 @@ require_once("php/header.php");
     </div>
     <!--center blurb-->
     <div class="px-5 py-2 my-3 text-center">
-        <h1 class="pb-0 text-center">51 Great Years Of Soccer</h1>
+        <h1 class="pb-0 text-center">
+            <?php echo $section_1_heading ?>
+        </h1>
         <div class="col-lg-8 mx-auto">
             <p class="lead mb-0 px-2">
-                It seems like yesterday when the first whistle blew to start the first game. Since then we have
-                built a
-                large organization that is still growing day by day. We have great people, great facilities and a
-                true love of the beautiful game.
+                <?php echo $section_1_text ?>
             </p>
         </div>
     </div>
     <div class="bg-dark text-white py-3">
         <div style="text-align: center;">
-            <h3>2024 OUTDOOR SOCCER REGISTRATON</h3>
-            <h4>Starts January 15, 2024</h4>
+            <h3>
+                <?php echo $registration_info_heading ?>
+            </h3>
+            <h4>
+                <?php echo $registration_info_date ?>
+            </h4>
             <h6>ONLINE REGISTRATION ONLY</h6>
             <img src="images/outdoorseason.png" style="width: 60%; height:auto;">
             <div class="px-5">
-                <p style="text-align: center;"><small>All age groups are set from January to December of year of birth. </small>
+                <p style="text-align: center;">
+                    <small>
+                        All age groups are set from January to December of year of birth.
+                    </small>
                     <hr>
-                <p style="text-align: center;"> SDYSC INC. ARE CELEBRATING 51 YEARS THIS UP COMING SEASON!<br>
+                </p>
+                <p style="text-align: center;">
                     Log in or sign up in Power up.
-                <p> Make sure you tick opt in so you can receive information on the team and schedules when available.
-                <p>
+                </p>
 
-                <h5> Season will start the week of May 13, 2024<br>
-                    U4, U5, U6 start May 25, 2024.<br>
+                <p>
+                    Make sure you tick opt in so you can receive information on the team and schedules when available.
+                </p>
+
+                <h5>
+                    <?php echo $season_start_date ?><br>
+                    <?php echo $u6_start_date ?> <br>
                     JOIN EARLY!<br>
                 </h5>
-                <p> Once all divisions are full a waiting list will be kept for all divisions, no fee is required to go on waiting list.</p>
-                </p>
+                <p> Once all divisions are full a waiting list will be kept for all divisions, no fee is required to go
+                    on waiting list.</p>
+
             </div>
         </div>
     </div>
@@ -344,21 +467,40 @@ require_once("php/header.php");
                 <img src="images/ball.png" style=" width: 50px; height: auto;">
             </div>
         </div>
-        <div class="p-0 m-0"><img src="images/parkpano.jpg" class="img-fluid" style="width: 100%; height:auto" alt="..."></div>
+        <div class="p-0 m-0">
+            <img src="images/parkpano.jpg" class="img-fluid" style="width: 100%; height:auto" alt="...">
+        </div>
     </div>
     <div class="row py-3 px-5">
         <div class="col-4">
             <img src="images/aud2.jpg" class="img-fluid" style="width: 100%; height:auto" alt="...">
         </div>
         <div class="col-4 pt-3" style="text-align: center;">
-            <h3>OUTDOOR</h3>
-            <p><b>Norfolk County Youth Soccer Fields</b><br>660 West Street, Simcoe ON, N3Y 4K5</p>
-            <h3>INDOOR</h3>
-            <p><b>The Aud</b><br>172 South Drive, Simcoe On</p>
+            <h3>
+                OUTDOOR
+            </h3>
+            <p>
+                <b>
+                    Norfolk County Youth Soccer Fields
+                </b><br>
+                660 West Street, Simcoe ON, N3Y 4K5
+            </p>
+            <h3>
+                INDOOR
+            </h3>
+            <p>
+                <b>
+                    The Aud
+                </b>
+                <br>
+                172 South Drive, Simcoe On
+            </p>
 
         </div>
 
-        <div class="col-4"><img src="images/parkmap.jpg" class="img-fluid" style="width: 100%; height:auto" alt="..."></div>
+        <div class="col-4">
+            <img src="images/<?php echo $field_image ?>" class="img-fluid" style="width: 100%; height:auto" alt="...">
+        </div>
     </div>
     </div>
     <!--news-->
@@ -366,148 +508,249 @@ require_once("php/header.php");
         <hr style="color: blue;">
         <h1 class="p-0 text-center">CLUB NEWS</h1>
         <hr style="color: blue;">
-        <div class="row p-0">
-            <div class="col-sm-12 col-md-3 px-0" style="text-align: center;">
-                <!-- <div class="0-1 text-center">
-                    <h5>ANNUAL GENERAL MEETING</h5>
-                    <h5><b>NOVEMBER 15 <br>6:30 pm</b><br>
-                        <br>
-                        BASEMENT ROOM<br>
-                        NORFOLK COUNTY PUBLIC LIBRARY<br>
-                        46 COLBORNE ST. S, SIMCOE
-                    </h5>
-                </div> 
-                <H5>TOURNAMENT DATES</H5>
-                <ul style="text-align: center; list-style-type: none;">
-                    <li>U18 Boys & U11 June 2, 3</li>
-                    <li>U18 Girls & U13 Boys June 9, 10</li>
-                    <li>U13 Girls, U9 & U7 June 16, 17</li>
-                    <li>Woman 19+ and U8 June 23, 24</li>
-                </ul>
-                <br>-->
-            </div>
-            <div class="col-sm-12 col-md-6  px-0" style="text-align: center;">
-                <!--<h4>FUN DAY</h4>
-                <h5>U4-U5-U6<br>Sat. JULY 29th</h5>
-                <h5 style="color: green;">GAMES<br>AWARDS<br>NORFOLK BOUNCY CASTLES</h5>
-                <br>-->
+        <div id="card-section" class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
 
-                <h5>TOURNAMENT CHAMPS FOR 2023 OUTDOOR SEASON</h5>
-                <ul style="list-style-type:none;">
-                    <li>U18 Boys: Norfolk Dental Hygiene</li>
-                    <li>U11: Norfolk Dental Hygiene</li>
-                    <li>U18 Girls: Suprun Psychotherapy</li>
-                    <li>U13 Girls: Simcoe Lions Club</li>
-                    <li>U13 Boys: Port Dover Chiropractic & Rehab Ctr </li>
-                    <li>U9: Springview Farms Golf Course</li>
-                    <li>U8: Roulstons Pharmacy</li>
-                    <li>ALL U& TEAMS ARE CHAMPIONS!!!!</li>
-                    <li>Women 19+: The Functional Approach Chiro & Physio</li>
-                    <hr style="width: 90%; text-align: center;">
-                    <li>FUN DAY All teams are sponsored by Tim Hortons in
-                        U4, U5 & U6</li>
+                <?php if (!empty($card_image_1) || !empty($card_heading_1) || !empty($card_text_1) || !empty($card_link_1)) { ?>
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="container-fluid">
+                                <img id="card_1_image" src="images/<?php echo $card_image_1 ?>"
+                                    style="width:100%; height:auto;" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p id="card_1_heading" class="card-text"><b>
+                                        <?php echo $card_heading_1 ?>
+                                    </b></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul style="text-align: center; list-style-type: none;">
+                                        <small id="card_1_text">
+                                            <?php echo $card_text_1 ?>
+                                        </small>
+                                    </ul>
+                                </div>
+                                <?php if (!empty($card_link_1)) { ?>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="<?php echo $card_link_1 ?>"> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } else {
+                    echo "";
+                } ?>
 
-                </ul>
-            </div>
-            <div class=" col-sm-12 col-md-3 px-0" style="text-align: center;">
-                <h5>THANK YOU TOURNAMENT SPONSORS</h5>
-                <div id="sponsor">
-                    <ul style="text-align: center; list-style-type: none;">
-                        <li>Childs Financial</li>
-                        <li>Mike's No Frills</li>
-                        <li>Dominoes Pizza</li>
-                        <li>Brian's Handyman Services</li>
-                        <li>Unilever Canada</li><br>
-                        <li>Scotlynn Group</li>
-                        <li>Michelle Millson </li>
-                        <li>Norfolk Bouncy Castles</li>
-                        <li>Figueiredo Group</li>
-                        <li>Tim Hortons</li>
-                    </ul>
-                </div>
+                <?php if (!empty($card_image_2) || !empty($card_heading_2) || !empty($card_text_2) || !empty($card_link_2)) { ?>
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="container-fluid">
+                                <img id="card_2_image" src="images/<?php echo $card_image_2 ?>"
+                                    style="width:100%; height:auto;" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p id="card_2_heading" class="card-text"><b>
+                                        <?php echo $card_heading_2 ?>
+                                    </b></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul style="text-align: center; list-style-type: none;">
+                                        <small id="card_2_text">
+                                            <?php echo $card_text_2 ?>
+                                        </small>
+                                    </ul>
+                                </div>
+                                <?php
+                                if (!empty($card_link_2)) { ?>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="<?php echo $card_link_2 ?>"> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } else {
+                    echo "";
+                } ?>
+
+                <?php if (!empty($card_image_3) || !empty($card_heading_3) || !empty($card_text_3) || !empty($card_link_3)) { ?>
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="container-fluid">
+                                <img id="card_3_image" src="images/<?php echo $card_image_3 ?>"
+                                    style="width:100%; height:auto;" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p id="card_3_heading" class="card-text"><b>
+                                        <?php echo $card_heading_3 ?>
+                                    </b></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul style="text-align: center; list-style-type: none;">
+                                        <small id="card_3_text">
+                                            <?php echo $card_text_3 ?>
+                                        </small>
+                                    </ul>
+                                </div>
+                                <?php if (!empty($card_link_3)) { ?>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="<?php echo $card_link_3 ?>"> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } else {
+                    echo "";
+                } ?>
             </div>
         </div>
         <hr>
         <!--lower News-->
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="row">
-                            <div class="col-6 m-0 p-0"><img src="images/bereferee.jpg" style="width: 100%; height:auto" alt="Soccer Reveree"></div>
-                            <div class="col-6 m-0 p-0"> <img src="images/asstcoach.png" style="width: 100%; height:auto" alt="Soccer coach"></div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-text"><b>BE A COACH OR ASSISTANT REFEREE</b></h5>
-                            <p>Complete online application for Team Official <br>contact Club Manager: Bev Suggett clubmanager@simcoesoccer.ca<br>
-                                If you are interested in becoming an Official (Ref) complete online Official application <br>contact Ref Coordinator: Joe Estrela joe.estrela@hotmail.com</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="/officials.html"><button type="button" class="btn btn-sm btn-outline-secondary">View Information</button></a>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
+                <?php if (!empty($card_image_4) || !empty($card_heading_4) || !empty($card_text_4) || !empty($card_link_4)) { ?>
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="container-fluid">
+                                <img id="card_4_image" src="images/<?php echo $card_image_4 ?>"
+                                    style="width:100%; height:auto;" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p id="card_4_heading" class="card-text"><b>
+                                        <?php echo $card_heading_4 ?>
+                                    </b></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul style="text-align: center; list-style-type: none;">
+                                        <small id="card_4_text">
+                                            <?php echo $card_text_4 ?>
+                                        </small>
+                                    </ul>
                                 </div>
-                                <small class="text-body-secondary"></small>
+                                <?php if (!empty($card_link_4)) { ?>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="<?php echo $card_link_4 ?>"> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="container-fluid"> <img src="images/balltrophy.jpg" style="width:100%; height:auto;" alt=""></div>
-                        <div class="card-body">
-                            <p class="card-text"><b>Here are the 2023 League Champions</b></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small>
-                                        <li>U8 - COBB & JONES LLP</li>
-                                        <li>U9 - SPRINGVIEW FARM GOLF COURSE</li>
-                                        <li>U11 - NORFOLK DENTAL HYGIENE</li>
-                                        <li>U13 GIRLS - BRODY'S MECHANICAL SERVICES INC.</li>
-                                        <li>U13 BOYS - PORT DOVER CHIROPRACTIC & REHABILITATION CENTRE</li>
-                                        <li>U18 GIRLS - SUPRUN PSYCHOTHERAPY</li>
-                                        <li>U18 BOYS - TOWNSEND BUTCHERS </li>
-                                        <li>WOMEN 19+ - NORFOLK DENTAL HYGIENE</li>
-                                    </small>
-                                </ul>
-                                <small class="text-body-secondary"></small>
+                <?php } else {
+                    echo "";
+                } ?>
+
+                <?php if (!empty($card_image_5) || !empty($card_heading_5) || !empty($card_text_5) || !empty($card_link_5)) { ?>
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="container-fluid">
+                                <img id="card_5_image" src="images/<?php echo $card_image_5 ?>"
+                                    style="width:100%; height:auto;" alt="">
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="images/bursary2023.jpg" style="width:100%; height:auto;" alt="">
-                        <div class="card-body">
-                            <p class="card-text">SDYSC RYAN CATTRYSSE MEMORIAL BURSARY AWARD
-                                <br> <b>Congratulations Natalie Suprun! </b>
-                                <br>Michelle Millson Vice President presented a cheque for $500 to Natalie Suprun for her submission for the 2023.
-                                <br><small>BURSARY CLOSED UNTIL MAY 2024</small>
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="/ryanaward.html"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                            <div class="card-body">
+                                <p id="card_5_heading" class="card-text"><b>
+                                        <?php echo $card_heading_5 ?>
+                                    </b></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul style="text-align: center; list-style-type: none;">
+                                        <small id="card_5_text">
+                                            <?php echo $card_text_5 ?>
+                                        </small>
+                                    </ul>
                                 </div>
-                                <small class="text-body-secondary"></small>
+                                <?php
+                                if (!empty($card_link_5)) { ?>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="<?php echo $card_link_5 ?>"> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
-                </div>
+                <?php } else {
+                    echo "";
+                } ?>
+
+                <?php if (!empty($card_image_6) || !empty($card_heading_6) || !empty($card_text_6) || !empty($card_link_6)) { ?>
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="container-fluid">
+                                <img id="card_6_image" src="images/<?php echo $card_image_6 ?>"
+                                    style="width:100%; height:auto;" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p id="card_6_heading" class="card-text"><b>
+                                        <?php echo $card_heading_6 ?>
+                                    </b></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <ul style="text-align: center; list-style-type: none;">
+                                        <small id="card_6_text">
+                                            <?php echo $card_text_6 ?>
+                                        </small>
+                                    </ul>
+                                </div>
+                                <?php if (!empty($card_link_6)) { ?>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="<?php echo $card_link_6 ?>"> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } else {
+                    echo "";
+                } ?>
             </div>
         </div>
     </div>
+
+    <!-- Rules and Regulations button link -->
     <div class="container-fluid" style="text-align: center;">
         <hr style="color: blue;">
-        <a href="files/2023constitution.pdf"><button type="button" class="btn btn-primary m-1" data-bs-toggle="collapse" data-bs-target="#demo1">2023 Rules and Constitution</button></a>
+        <a href="files/<?php echo $link_rules_pdf ?>"><button type="button" class="btn btn-primary m-1"
+                data-bs-toggle="collapse" data-bs-target="#demo1">
+                <?php echo $link_rules_text ?>
+            </button></a>
         <hr style="color: blue;">
     </div>
+
+
     <div class="row p-3">
+
+        <!-- Ad 1 -->
         <div class="col-lg-6 col-sm-12">
-            <div class="container-fluid" style="text-align: center; width:90%; height:auto"><a href="/ryanaward.html" style="width:70%"><img src="images/bursary.jpg"></a><br>
-                <p style="text-align: center;">Bursary closed until the 2024 outdoor season</p>
+            <div class="container-fluid" style="text-align: center; width:80%; height:auto">
+                <a href="<?php echo $ad_link_1 ?>" style="width:100%; height: auto;">
+                    <img src="images/<?php echo $ad_image_1 ?>" style="width: 100%; height: auto;">
+                </a>
+                <br>
+                <p style="text-align: center;">
+                    <?php echo $ad_text_1 ?>
+                </p>
             </div>
         </div>
+
+        <!-- Ad 2 -->
         <div class="col-lg-6 col-sm-12" id="indoor">
-            <div class="container-fluid" style="text-align: center; width:90%; height:auto"><img src="images/conveeners.jpg" style="width:80%"></div>
+            <div class="container-fluid" style="text-align: center; width:80%; height:auto">
+                <a href="<?php echo $ad_link_2 ?>" style="width:100%; height: auto;">
+                    <img src="images/<?php echo $ad_image_2 ?>" style="width: 100%; height: auto;">
+                </a>
+            </div>
+            <p style="text-align: center;">
+                <?php echo $ad_text_2 ?>
+            </p>
         </div>
+
     </div>
     <!--indoor -->
     <div class="row p-3 mx-5">
@@ -519,16 +762,30 @@ require_once("php/header.php");
         <h3 style="text-align: center;">INDOOR SPONSORS</h3>
         <div class="indoorsponsor bg-white px-4">
             <div class="row p-3">
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/timslogo.jpg" alt="tims" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/lions.jpg" alt="lions" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/victor.jpg" alt="victor pools" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/mitandroby.jpg" alt="Mit and roby" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/NACL.jpg" alt="NACL" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/brianlogo.jpg" alt="Brians Handyman" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/barrel.jpg" alt="Barrel" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/toyota.jpg" alt="Toyota" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/jarja.jpg" alt="Jarja" style="width: 100%;"></div>
-                <div class="sponpic p-2" style="width: 20%;"><img src="sponsors/TnT.jpg" alt="Tacos and tequila" style="width: 100%;"></div>
+                <?php
+                // Fetch sponsors from the indoor_sponsors table
+                $sql = "SELECT * FROM indoor_sponsors";
+                $result = $conn->query($sql);
+
+                // Check if there are any sponsors
+                if ($result->num_rows > 0) {
+                    // Loop through each row
+                    while ($row = $result->fetch_assoc()) {
+                        // Display the HTML structure
+                
+                        $image = $row["image"];
+                        $name = $row["name"];
+                        ?>
+                        <div class="sponpic p-2" style="width: 20%;">
+                            <img src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                        </div>
+                        <?php
+                    }
+                } else {
+                    echo "No sponsors found.";
+                }
+
+                ?>
             </div>
         </div>
 
@@ -538,43 +795,32 @@ require_once("php/header.php");
     <div class="px-5">
         <div class="container-fluid px-5" style="text-align: center;">
             <div class="row row-cols-5">
-                <div class="col p-2"><img src="sponsors/arbor.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/bachmann.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/barrel.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/bml.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/boer.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/bulkbarn.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/cojo.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/countrytro.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/demyer.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/doverchiro.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/eastlink.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/edgehill.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/eriebeach.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/firstchoice.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/goodred.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/homehardwt.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/jarja.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/KofC.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/lilceas.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/lions.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/mitandroby.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/NACL.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/Nordelhyg.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/opg.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/randt.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/RCL.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/rolstons.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/springfarm.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/suprin.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/timbits.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/timslogo.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/tirecraft.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/TnT.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/townsend.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/toyota.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/viceldercare.jpg" style="width: 100%;"></div>
-                <div class="col p-2"><img src="sponsors/victor.jpg" style="width: 100%;"></div>
+                <?php
+                // Fetch sponsors from the indoor_sponsors table
+                $sql = "SELECT * FROM outdoor_sponsors";
+                $result = $conn->query($sql);
+
+                // Check if there are any sponsors
+                if ($result->num_rows > 0) {
+                    // Loop through each row
+                    while ($row = $result->fetch_assoc()) {
+                        // Display the HTML structure
+                
+                        $image = $row["image"];
+                        $name = $row["name"];
+                        ?>
+                        <div class="sponpic p-2" style="width: 20%;">
+                            <img src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                        </div>
+                        <?php
+                    }
+                } else {
+                    echo "No sponsors found.";
+                }
+
+                // Close the database connection
+                $conn->close();
+                ?>
             </div>
         </div>
     </div>
@@ -586,17 +832,27 @@ require_once("php/header.php");
             <div class="row">
                 <div class="col-sm-12 p-2">
                     <h3 style="color: black ;">Contact Us</h3>
-                    <div class="container-fluid"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca" width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="container-fluid"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
+                            width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col pt-2" style="text-align: center; line-height: 2.; color: black;">
                     <p class="contacttext">
                         MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3
                         <hr style="color: blue;">
-                        PRESIDENT: <a href="mailto:president@simcoesoccer.ca">Brian Suggett</a> <br>
-                        MANAGER: <a href="mailto:clubmanager@simcoesoccer.ca">Bev Suggett </a><br>
-                        REFEREES: <a href="mailto:joe.estrela@hotmail.com">Joe Estrela</a> <br>
-                        E TRANSFERS: </a>sdysc.treasurer@gmail.com</a>
+                        PRESIDENT: <a href="mailto:<?php echo $president_email ?>">
+                            <?php echo $president_name ?>
+                        </a> <br>
+                        MANAGER: <a href="mailto:<?php echo $manager_email ?>">
+                            <?php echo $manager_name ?>
+                        </a><br>
+                        REFEREES: <a href="mailto:<?php echo $referees_email ?>">
+                            <?php echo $referees_name ?>
+                        </a> <br>
+                        E TRANSFERS: </a>
+                        <?php echo $e_transfer_email ?></a>
                     </p>
                     <small><a href="http://www.businesslore.com" style="text-decoration: none; ">- CREATED BY
                             BUSINESSLORE - </a></small>
