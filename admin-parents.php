@@ -1,5 +1,14 @@
 <?php 
-require_once("config-url.php");
+
+require_once "config-url.php";
+session_start();
+
+if (!isset($_SESSION["admin_username"])) {
+    header("Location: " . BASE_URL . "admin-login.php?error=access_denied");
+    exit;
+}
+
+
 ?>
 
 <!DOCTYPE html>
