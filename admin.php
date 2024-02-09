@@ -1,3 +1,14 @@
+<?php
+
+require_once "config-url.php";
+session_start();
+
+if (!isset($_SESSION["admin_username"])) {
+    header("Location: " . BASE_URL . "admin.php?error=access_denied");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -594,7 +605,8 @@ require_once("config-url.php");
             </form>
         </div>
 
-        <div class="col-4"><img id="field-image" src="images/<?php echo $field_image ?>" class="img-fluid"
+        <div class="col-4">
+            <img id="field-image" src="images/<?php echo $field_image ?>" class="img-fluid"
                 style="width: 100%; height:auto" alt="...">
         </div>
     </div>
@@ -706,16 +718,16 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_1_image" src="images/<?php echo $card_image_4 ?>"
+                            <img id="card_4_image" src="images/<?php echo $card_image_4 ?>"
                                 style="width:100%; height:auto;" alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_1_heading" class="card-text"><b>
+                            <p id="card_4_heading" class="card-text"><b>
                                     <?php echo $card_heading_4 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_1_text">
+                                    <small id="card_4_text">
                                         <?php echo $card_text_4 ?>
                                     </small>
                                 </ul>
@@ -736,16 +748,16 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_2_image" src="images/<?php echo $card_image_5 ?>"
+                            <img id="card_5_image" src="images/<?php echo $card_image_5 ?>"
                                 style="width:100%; height:auto;" alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_2_heading" class="card-text"><b>
+                            <p id="card_5_heading" class="card-text"><b>
                                     <?php echo $card_heading_5 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_2_text">
+                                    <small id="card_5_text">
                                         <?php echo $card_text_5 ?>
                                     </small>
                                 </ul>
@@ -767,16 +779,16 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_3_image" src="images/<?php echo $card_image_6 ?>"
+                            <img id="card_6_image" src="images/<?php echo $card_image_6 ?>"
                                 style="width:100%; height:auto;" alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_3_heading" class="card-text"><b>
+                            <p id="card_6_heading" class="card-text"><b>
                                     <?php echo $card_heading_6 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_3_text">
+                                    <small id="card_6_text">
                                         <?php echo $card_text_6 ?>
                                     </small>
                                 </ul>
@@ -840,6 +852,7 @@ require_once("config-url.php");
                     <div id="card_section" card_num="<?php echo $card_num ?>" class="card-edit-section">
                         <form id="card-form" class="card-form" method="post" enctype="multipart/form-data"
                             action="admin-functions/card-section.php?card_num=<?php echo $card_num ?>">
+                            <a class="btn btn-danger card-reset-btn" href="<?php echo BASE_URL . "admin-functions/reset-card.php?card_num=$card_num" ?>">Reset Card</a>
                             <h2>Edit Card
                                 <?php echo $card_num ?>
                             </h2>
@@ -1029,7 +1042,14 @@ require_once("config-url.php");
                     // Loop through each row
                     while ($row = $result->fetch_assoc()) {
                         // Display the HTML structure
-                        echo '<div class="sponpic p-2" style="width: 20%;"><img src="sponsors/' . $row["image"] . '" alt="' . $row["name"] . '" style="width: 100%;"></div>';
+                
+                        $image = $row["image"];
+                        $name = $row["name"];
+                        ?>
+                        <div class="sponpic p-2" style="width: 20%;">
+                            <img src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                        </div>
+                        <?php
                     }
                 } else {
                     echo "No sponsors found.";
@@ -1093,7 +1113,14 @@ require_once("config-url.php");
                     // Loop through each row
                     while ($row = $result->fetch_assoc()) {
                         // Display the HTML structure
-                        echo '<div class="sponpic p-2" style="width: 20%;"><img src="sponsors/' . $row["image"] . '" alt="' . $row["name"] . '" style="width: 100%;"></div>';
+                
+                        $image = $row["image"];
+                        $name = $row["name"];
+                        ?>
+                        <div class="sponpic p-2" style="width: 20%;">
+                            <img src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                        </div>
+                        <?php
                     }
                 } else {
                     echo "No sponsors found.";
