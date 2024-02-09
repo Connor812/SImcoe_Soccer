@@ -1,3 +1,8 @@
+<?php
+require_once("db/db_config.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,17 +66,48 @@
         <h4>BOARD OF DIRECTORS</h4>
         <hr>
         <ul style="list-style-type:none;">
-          <li>PRESIDENT - BRIAN SUGGETT</li>
-          <li> VICE PRESIDENT - MICHELLE MILLSON</li>
-          <li> TREASURER - JOHN DICKSON</li>
-          <li>SECRETARY - MICHELLE MILLSON</li>
-          <li>DIRECTORS AT LARGE</li>
-          <li>1. Joe Estrela</li>
-          <li>2. Steve Braun</li>
-          <li>3. Mallard Mungal</li>
-          <li>4. Jason Figueiredo</li>
-          <li>CLUB MANAGER - BEV SUGGETT</li>
-          <li>REF COORDINATOR - JOE ESTRELA</li>
+          <?php
+
+          $sql = "SELECT * FROM `current_presidents`;";
+
+          $stmt = $conn->prepare($sql);
+
+          if (!$stmt) {
+            echo "<li>Failed to get Directors. Please Try Again</li>";
+          }
+
+          // Execute the statement
+          $stmt->execute();
+
+          // Get the result set
+          $result = $stmt->get_result();
+
+          // Check if there are any results
+          if ($result->num_rows > 0) {
+            // Fetch data and display it
+            while ($directors_row = $result->fetch_assoc()) {
+              // Assuming you have columns named 'name' and 'position'
+              $name = $directors_row['name'];
+              $position = $directors_row['position'];
+
+              ?>
+              <li>
+                <?php echo strtoupper($position) ?> -
+                <?php echo strtoupper($name) ?>
+              </li>
+              <?php
+            }
+          } else {
+            echo "<li>No Presidents found.</li>";
+          }
+
+          // Close the result set
+          $result->close();
+
+          // Close the statement
+          $stmt->close();
+
+          ?>
         </ul>
         <!-- Button to Open the Modal -->
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#presidents"
@@ -93,23 +129,50 @@
               <!-- Modal body -->
               <div class="modal-body" style="text-align: left; padding-left: 10%;">
                 <ul style="list-style-type:none;">
-                  <li>1973 - Al Jackson</li>
-                  <li>1974 - 1975 - Brian Cook</li>
-                  <li> 1976 - Bill Doyle</li>
-                  <li>1977 - Trevor Jamison</li>
-                  <li>1978 - Doug Robertson</li>
-                  <li>1979 - Ella Mitchell</li>
-                  <li>1980 - Tom Foster</li>
-                  <li>1981 - 1982 - Derek Barker</li>
-                  <li>1983 - 1984 - Jeff Gill</li>
-                  <li>1985 - 1986 - Tom Foster</li>
-                  <li>1987 - 1989 - Ella Mitchell</li>
-                  <li>1989 - 1992 - Chris Coburn </li>
-                  <li>1992 - 1996 - Brian Suggett</li>
-                  <li>1996 - 2000 - Norma Mitchell</li>
-                  <li>2000 - 2004 - Brian Suggett</li>
-                  <li>2004 - 2012 - Bernie Solymar</li>
-                  <li>2012 - present - Brian Suggett</li>
+                  <?php
+
+                  $sql = "SELECT * FROM `past_presidents`;";
+
+                  $stmt = $conn->prepare($sql);
+
+                  if (!$stmt) {
+                    echo "<li>Failed to get Past Presidents. Please Try Again</li>";
+                  }
+
+                  // Execute the statement
+                  $stmt->execute();
+
+                  // Get the result set
+                  $result = $stmt->get_result();
+
+                  // Check if there are any results
+                  if ($result->num_rows > 0) {
+                    // Fetch data and display it
+                    while ($past_directors_row = $result->fetch_assoc()) {
+                      // Assuming you have columns named 'name' and 'position'
+                      $id = $past_directors_row["id"];
+                      $name = $past_directors_row['name'];
+                      $year = $past_directors_row['year'];
+
+                      ?>
+                      <li>
+                        <?php echo strtoupper($year) ?> -
+                        <?php echo strtoupper($name) ?>
+
+                      </li>
+                      <?php
+                    }
+                  } else {
+                    echo "<li>No Presidents found.</li>";
+                  }
+
+                  // Close the result set
+                  $result->close();
+
+                  // Close the statement
+                  $stmt->close();
+
+                  ?>
                 </ul>
               </div>
 
@@ -127,7 +190,7 @@
       <div class="col-sm-12 col-md-7 pt-3" style="text-align: left;">
         <h4 style="text-align: center;">OUR STORY</h4>
 
-        In 1973 there were 83 children registered in that first year! The Club grew slowly and steadily over the next 20
+        In 1973 there were 83 children registered in that first year! The Club grew slowly and ste`ily over the next 20
         years to around 400 participants. In 1996 the organization was incorporated as a not-for-profit organization.
         Then, with the growing popularity of soccer in North America, we began experiencing exponential growth in the
         next decade. By 2006, 1200 children, youth and adults were playing soccer with our Club. Today, we continue to

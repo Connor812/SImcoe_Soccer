@@ -6,7 +6,7 @@
     <a href="<?php echo BASE_URL ?>parents.html">Parents</a>
     <a href="<?php echo BASE_URL ?>coaches.html">Coaches</a>
     <a href="<?php echo BASE_URL ?>officials.html">Officials</a>
-    <a href="<?php echo BASE_URL ?>info.html">Info</a>
+    <a href="<?php echo BASE_URL ?>info.php">Info</a>
     <a href="#footer">Contact Us</a>
     <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN" class="split"><img src="images/PowerUp_logo.png" alt="POWERUP" style= "width:50%; padding-top:2%" ></a>
 
