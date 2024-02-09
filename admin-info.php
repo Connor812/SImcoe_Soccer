@@ -1,4 +1,13 @@
 <?php
+
+require_once "config-url.php";
+session_start();
+
+if (!isset($_SESSION["admin_username"])) {
+    header("Location: " . BASE_URL . "admin-login.php?error=access_denied");
+    exit;
+}
+
 require_once("php/admin-header.php");
 require_once("admin-functions/error-handlers.php");
 require_once("db/db_config.php");
@@ -186,8 +195,8 @@ require_once("db/db_config.php");
                 </div>
 
                 <!-- Action modal for the past presidents -->
-                <div class="modal fade" id="past-presidents-action-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="past-presidents-action-modal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -202,8 +211,7 @@ require_once("db/db_config.php");
                                 </form>
                                 <form id="update-past-president-form" method="post">
                                     <h4 class="text-start">Change Year</h4>
-                                    <input id="new-past-year" type="text" class="form-control" name="new_year"
-                                        value="">
+                                    <input id="new-past-year" type="text" class="form-control" name="new_year" value="">
                                     <h4 class="text-start">Change Name</h4>
                                     <input id="new-past-name" type="text" class="form-control" name="new_name" value="">
                             </div>
