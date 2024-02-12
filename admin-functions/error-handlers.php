@@ -48,6 +48,14 @@ function errorHandler($error)
         $message = "Error: Incorrect Username. Please Try Again.";
     } elseif ($error == "failed_to_login") {
         $message = "Error: Failed To Login. Please Try Again.";
+    } elseif ($error == "failed_to_login") {
+        $message = "Error: Failed To Login. Please Try Again.";
+    } elseif ($error == "failed_reset_card") {
+        $message = "Error: Failed Reset Card. Please Try Again.";
+    } elseif ($error == "couldnt_get_card_num") {
+        $message = "Error: Failed To Get Card Number. Please Try Again.";
+    } elseif ($error == "deleted_sponsor") {
+        $message = "Error: Failed To Delete Sponsor. Please Try Again.";
     } 
 
     ?>
@@ -96,6 +104,10 @@ function successHandler($success)
         $message = "Successfully Deleted Past President.";
     } elseif ($success == "logged_in") {
         $message = "Successfully Logged In. Welcome!";
+    } elseif ($success == "reset_card") {
+        $message = "Successfully Reset Card. Welcome!";
+    } elseif ($success == "deleted_sponsor") {
+        $message = "Successfully Reset Card. Welcome!";
     }
  
     ?>

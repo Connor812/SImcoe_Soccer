@@ -326,3 +326,13 @@
     }
     
 }
+
+.sponsor-img {
+    transition: 300ms;
+}
+
+.delete-sponsor-img {
+    box-shadow: 0px 0px 5px 5px red;
+}
+
+

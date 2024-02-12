@@ -4,7 +4,7 @@ require_once "config-url.php";
 session_start();
 
 if (!isset($_SESSION["admin_username"])) {
-    header("Location: " . BASE_URL . "admin.php?error=access_denied");
+    header("Location: " . BASE_URL . "admin-login.php?error=access_denied");
     exit;
 }
 ?>
@@ -1042,13 +1042,14 @@ require_once("config-url.php");
                     // Loop through each row
                     while ($row = $result->fetch_assoc()) {
                         // Display the HTML structure
-                
+                        $id = $row["id"];
                         $image = $row["image"];
                         $name = $row["name"];
                         ?>
-                        <div class="sponpic p-2" style="width: 20%;">
-                            <img src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
-                        </div>
+                        <center class="sponpic p-2" style="width: 20%;">
+                            <img id="sponsor-img-<?php echo $id ?>" class="sponsor-img" src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                            <a class="btn btn-danger delete-indoor-sponsor-btn" sponsor-id="<?php echo $id ?>" href="admin-functions/delete-indoor-sponsor.php?<?php echo "id=$id" ?>">Delete</a>
+                        </center>
                         <?php
                     }
                 } else {
@@ -1113,12 +1114,13 @@ require_once("config-url.php");
                     // Loop through each row
                     while ($row = $result->fetch_assoc()) {
                         // Display the HTML structure
-                
+                        $id = $row["id"];
                         $image = $row["image"];
                         $name = $row["name"];
                         ?>
                         <div class="sponpic p-2" style="width: 20%;">
-                            <img src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                            <img id="sponsor-img-<?php echo $id ?>" class="sponsor-img" src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
+                            <a class="btn btn-danger delete-outdoor-sponsor-btn" sponsor-id="<?php echo $id ?>" href="admin-functions/delete-outdoor-sponsor.php?<?php echo "id=$id" ?>">Delete</a>
                         </div>
                         <?php
                     }
@@ -1228,6 +1230,7 @@ require_once("config-url.php");
     <script src="<?php echo BASE_URL ?>js/registration-year.js"></script>
     <script src="<?php echo BASE_URL ?>js/ad_1.js"></script>
     <script src="<?php echo BASE_URL ?>js/ad_2.js"></script>
+    <script src="<?php echo BASE_URL ?>js/sponsors.js"></script>
 
 </body>
 
