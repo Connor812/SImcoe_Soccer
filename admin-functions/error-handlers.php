@@ -56,7 +56,27 @@ function errorHandler($error)
         $message = "Error: Failed To Get Card Number. Please Try Again.";
     } elseif ($error == "deleted_sponsor") {
         $message = "Error: Failed To Delete Sponsor. Please Try Again.";
-    } 
+    } elseif ($error == "failed_add_announcement") {
+        $message = "Error: Failed To Add Announcement. Please Try Again.";
+    } elseif ($error == "delete_announcement") {
+        $message = "Error: Failed To Delete Announcement. Please Try Again.";
+    } elseif ($error == "no_id") {
+        $message = "Error: Failed To Delete Announcement. No Id. Please Try Again.";
+    } elseif ($error == "couldnt_get_old_image") {
+        $message = "Error: Failed To Retrieve Old Image. Please Try Again.";
+    } elseif ($error == "failed_edit_announcement") {
+        $message = "Error: Failed To Edit Announcement. Please Try Again.";
+    } elseif ($error == "failed_add_news") {
+        $message = "Error: Failed To Add New News. Please Try Again.";
+    } elseif ($error == "failed_edit_news") {
+        $message = "Error: Failed To Edit New News. Please Try Again.";
+    } elseif ($error == "delete_news") {
+        $message = "Error: Failed To Delete New News. Please Try Again.";
+    } elseif ($error == "failed_update_division") {
+        $message = "Error: Failed To Update Division. Please Try Again.";
+    } elseif ($error == "failed_update_conduct_pdf") {
+        $message = "Error: Failed To Update Code Of Conduct Form. Please Try Again.";
+    }
 
     ?>
     <div class="floating-error" id="floating-error">
@@ -105,9 +125,25 @@ function successHandler($success)
     } elseif ($success == "logged_in") {
         $message = "Successfully Logged In. Welcome!";
     } elseif ($success == "reset_card") {
-        $message = "Successfully Reset Card. Welcome!";
+        $message = "Successfully Reset Card. ";
     } elseif ($success == "deleted_sponsor") {
-        $message = "Successfully Reset Card. Welcome!";
+        $message = "Successfully Reset Card. ";
+    } elseif ($success == "added_announcement") {
+        $message = "Successfully Added New Announcement.";
+    } elseif ($success == "delete_announcement") {
+        $message = "Successfully Deleted Announcement.";
+    } elseif ($success == "edited_announcement") {
+        $message = "Successfully Edited Announcement.";
+    } elseif ($success == "added_news") {
+        $message = "Successfully Added New News.";
+    } elseif ($success == "edited_news") {
+        $message = "Successfully Edited New News.";
+    } elseif ($success == "delete_news") {
+        $message = "Successfully Delete New News.";
+    } elseif ($success == "update_division") {
+        $message = "Successfully Updated Division.";
+    }  elseif ($success == "updated_conduct_pdf") {
+        $message = "Successfully Updated Code Of Conduct Form.";
     }
  
     ?>

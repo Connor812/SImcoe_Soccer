@@ -9,7 +9,7 @@ $card_link = $_POST["card_link"];
 $card_image = $_FILES["card_image"];
 $old_image = $_POST["old_image"];
 
-if (empty($card_heading) || empty($card_text)) {
+if (empty($card_heading) && empty($card_text) && empty($card_link) && empty($card_image["name"])) {
     header("Location: " . BASE_URL . "admin.php?error=empty_input#card-section");
     exit;
 }

@@ -6,10 +6,6 @@ $old_pdf = $_POST["old_pdf"];
 $rules_regulations_pdf = $_FILES["rules_regulations_pdf"];
 $link_rules_text = $_POST["link_rules_text"];
 
-echo $old_pdf . "<br>";
-echo print_r($rules_regulations_pdf) . "<br>";
-echo $link_rules_text . "<br>";
-
 if (empty($link_rules_text)) {
     header("Location: " . BASE_URL . "admin.php?error=empty_input#link-pdf-btn");
     exit;

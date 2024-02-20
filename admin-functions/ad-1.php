@@ -12,12 +12,6 @@ $ad_text = $_POST["ad_text_1"];
 $ad_link = $_POST["ad_link_1"];
 $old_image = $_POST["old_img"];
 
-// This checks if the input is empty
-if (empty($ad_text)) {
-    header("Location: " . BASE_URL . "admin.php?error=empty_input#ad-section");
-    exit;
-}
-
 // Checks to see if there was an image uploaded
 if (empty($ad_image["name"])) {
     require_once("../db/db_config.php");

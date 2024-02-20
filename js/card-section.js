@@ -23,20 +23,6 @@ if ($("#card_section").length > 0) {
         $(card_container).remove();
     });
 
-    $("#card-form").change(function (event) {
-        console.log("change")
-        if ($("#card-submit-btn-container").find('#card-upload-btn').length === 0) {
-            const uploadButton = $('<button>', {
-                id: 'card-upload-btn',
-                class: 'btn btn-primary input-group-text',
-                text: 'Upload',
-                type: 'submit'
-            });
-
-            $("#card-submit-btn-container").append(uploadButton);
-        }
-    });
-
     $(card_heading_input).on("input", function (event) {
         $(card_heading).text($(card_heading_input).val());
     });
@@ -60,3 +46,4 @@ if ($("#card_section").length > 0) {
         }
     })
 }
+

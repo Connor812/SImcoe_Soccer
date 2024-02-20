@@ -361,7 +361,7 @@ $stmt->close();
                         there to listen.
                     </div>
                     <div class="container-fluid" style="text-align: center;">
-                        <a href="/parents.html"><button type="button" class="btn btn-primary btn-sm">Go To Parents
+                        <a href="/parents.php"><button type="button" class="btn btn-primary btn-sm">Go To Parents
                                 Page</button></a>
                     </div>
                     <br>

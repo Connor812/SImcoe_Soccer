@@ -17,15 +17,22 @@ require_once("db/db_config.php");
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/selection.css" rel="stylesheet">
-    <link href="css/info.css" rel="stylesheet">
-    <link href="css/admin.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link href="css/selection.css"
+          rel="stylesheet">
+    <link href="css/info.css"
+          rel="stylesheet">
+    <link href="css/admin.css"
+          rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+          crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Information</title>
 </head>
@@ -64,10 +71,13 @@ require_once("db/db_config.php");
 <body>
     <!--topblurb-->
 
-    <img src="images/info.jpg" style="width: 100%;">
-    <div class="container-fluid" style="text-align: center;">
+    <img src="images/info.jpg"
+         style="width: 100%;">
+    <div class="container-fluid"
+         style="text-align: center;">
         <div class="row p-3">
-            <div class="col-sm-12  col-md-5 px-2" style="text-align: center">
+            <div class="col-sm-12  col-md-5 px-2"
+                 style="text-align: center">
                 <h4>BOARD OF DIRECTORS</h4>
                 <hr>
                 <ul style="list-style-type:none;">
@@ -98,9 +108,13 @@ require_once("db/db_config.php");
 
                             ?>
                             <li>
-                                <button value="<?php echo $id ?>" name="<?php echo $name ?>" position="<?php echo $position ?>"
-                                    class="director" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#presidents-action-modal">
+                                <button value="<?php echo $id ?>"
+                                        name="<?php echo $name ?>"
+                                        position="<?php echo $position ?>"
+                                        class="director"
+                                        type="button"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#presidents-action-modal">
                                     <?php echo strtoupper($position) ?> -
                                     <?php echo strtoupper($name) ?>
                                 </button>
@@ -120,43 +134,65 @@ require_once("db/db_config.php");
                     ?>
                 </ul>
                 <!-- Button trigger Change the Board of Directors modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adding-director">
+                <button type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#adding-director">
                     Adding Director
                 </button>
 
                 <!-- Button to Open the View all past presidents Modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#presidents">
+                <button type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#presidents">
                     Past Presidents
                 </button>
 
 
                 <!-- Change Current Presidents -->
-                <div class="modal fade" id="adding-director" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade"
+                     id="adding-director"
+                     tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Adding Director</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <h5 class="modal-title"
+                                    id="exampleModalLabel">Adding Director</h5>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form method="post" action="admin-functions/add-director.php">
+                                <form method="post"
+                                      action="admin-functions/add-director.php">
                                     <h5 class="text-start">
                                         Position
                                     </h5>
-                                    <input id="position" class="form-control"
-                                        placeholder="Please Enter The Directors Position" name="position" type="text">
+                                    <input id="position"
+                                           class="form-control"
+                                           placeholder="Please Enter The Directors Position"
+                                           name="position"
+                                           type="text">
                                     <h5 class="text-start">
                                         Directors Name
                                     </h5>
-                                    <input id="vice-president" class="form-control"
-                                        placeholder="Please Enter A The Directors Name" name="name" type="text">
+                                    <input id="vice-president"
+                                           class="form-control"
+                                           placeholder="Please Enter A The Directors Name"
+                                           name="name"
+                                           type="text">
 
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                <button type="submit"
+                                        class="btn btn-primary">Save changes</button>
                                 </form>
                             </div>
                         </div>
@@ -165,29 +201,48 @@ require_once("db/db_config.php");
 
 
                 <!-- Action modal for the presidents -->
-                <div class="modal fade" id="presidents-action-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade"
+                     id="presidents-action-modal"
+                     tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Edit Or Delete</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <h5 class="modal-title"
+                                    id="exampleModalLabel">Edit Or Delete</h5>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form id="delete-director-form" method="post">
-                                    <button class="btn btn-danger" type="submit">Delete Director</button>
+                                <form id="delete-director-form"
+                                      method="post">
+                                    <button class="btn btn-danger"
+                                            type="submit">Delete Director</button>
                                 </form>
-                                <form id="update-director-form" method="post">
+                                <form id="update-director-form"
+                                      method="post">
                                     <h4 class="text-start">Change Position</h4>
-                                    <input id="new-position" type="text" class="form-control" name="new_position"
-                                        value="">
+                                    <input id="new-position"
+                                           type="text"
+                                           class="form-control"
+                                           name="new_position"
+                                           value="">
                                     <h4 class="text-start">Change Name</h4>
-                                    <input id="new-name" type="text" class="form-control" name="new_name" value="">
+                                    <input id="new-name"
+                                           type="text"
+                                           class="form-control"
+                                           name="new_name"
+                                           value="">
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                <button type="submit"
+                                        class="btn btn-primary">Save changes</button>
                                 </form>
                             </div>
                         </div>
@@ -195,29 +250,49 @@ require_once("db/db_config.php");
                 </div>
 
                 <!-- Action modal for the past presidents -->
-                <div class="modal fade" id="past-presidents-action-modal" tabindex="-1"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade"
+                     id="past-presidents-action-modal"
+                     tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Edit Or Delete</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                <h5 class="modal-title"
+                                    id="exampleModalLabel">Edit Or Delete</h5>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
 
-                                <form id="delete-past-president-form" method="post">
-                                    <button class="btn btn-danger" type="submit">Delete Past President</button>
+                                <form id="delete-past-president-form"
+                                      method="post">
+                                    <button class="btn btn-danger"
+                                            type="submit">Delete Past President</button>
                                 </form>
-                                <form id="update-past-president-form" method="post">
+                                <form id="update-past-president-form"
+                                      method="post">
                                     <h4 class="text-start">Change Year</h4>
-                                    <input id="new-past-year" type="text" class="form-control" name="new_year" value="">
+                                    <input id="new-past-year"
+                                           type="text"
+                                           class="form-control"
+                                           name="new_year"
+                                           value="">
                                     <h4 class="text-start">Change Name</h4>
-                                    <input id="new-past-name" type="text" class="form-control" name="new_name" value="">
+                                    <input id="new-past-name"
+                                           type="text"
+                                           class="form-control"
+                                           name="new_name"
+                                           value="">
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                <button type="submit"
+                                        class="btn btn-primary">Save changes</button>
                                 </form>
                             </div>
                         </div>
@@ -225,18 +300,22 @@ require_once("db/db_config.php");
                 </div>
 
                 <!-- The Modal -->
-                <div class="modal" id="presidents">
+                <div class="modal"
+                     id="presidents">
                     <div class="modal-dialog">
                         <div class="modal-content">
 
                             <!-- Modal Header -->
                             <div class="modal-header">
                                 <h4 class="modal-title">Past Presidents</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"></button>
                             </div>
 
                             <!-- Modal body -->
-                            <div class="modal-body" style="text-align: left; padding-left: 10%;">
+                            <div class="modal-body"
+                                 style="text-align: left; padding-left: 10%;">
                                 <ul style="list-style-type:none;">
                                     <?php
 
@@ -265,9 +344,13 @@ require_once("db/db_config.php");
 
                                             ?>
                                             <li>
-                                                <button value="<?php echo $id ?>" name="<?php echo $name ?>"
-                                                    year="<?php echo $year ?>" class="past_president" type="button"
-                                                    data-bs-toggle="modal" data-bs-target="#past-presidents-action-modal">
+                                                <button value="<?php echo $id ?>"
+                                                        name="<?php echo $name ?>"
+                                                        year="<?php echo $year ?>"
+                                                        class="past_president"
+                                                        type="button"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#past-presidents-action-modal">
                                                     <?php echo strtoupper($year) ?> -
                                                     <?php echo strtoupper($name) ?>
                                                 </button>
@@ -291,7 +374,9 @@ require_once("db/db_config.php");
                             <!-- Modal footer -->
                             <div class="modal-footer">
 
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button"
+                                        class="btn btn-danger"
+                                        data-bs-dismiss="modal">Close</button>
                             </div>
 
                         </div>
@@ -299,7 +384,8 @@ require_once("db/db_config.php");
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-7 pt-3" style="text-align: left;">
+            <div class="col-sm-12 col-md-7 pt-3"
+                 style="text-align: left;">
                 <h4 style="text-align: center;">OUR STORY</h4>
 
                 In 1973 there were 83 children registered in that first year! The Club grew slowly and steadily over the
@@ -317,20 +403,30 @@ require_once("db/db_config.php");
                 We continue to draw 192 participants a year with 3 divisions.
             </div>
         </div>
-        <img img-class="img-fluid" src="images/teamstrip.jpg" style="width: 100%; height: auto;">
+        <img img-class="img-fluid"
+             src="images/teamstrip.jpg"
+             style="width: 100%; height: auto;">
         <div id="accordion">
-            <div class="card" style="border-color: white;">
-                <div class="card-header" style="background-color: white; border-color: white;">
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne"
-                        style="background-color: blue; width: 100%; color: white;">
+            <div class="card"
+                 style="border-color: white;">
+                <div class="card-header"
+                     style="background-color: white; border-color: white;">
+                    <a class="btn"
+                       data-bs-toggle="collapse"
+                       href="#collapseOne"
+                       style="background-color: blue; width: 100%; color: white;">
                         CLICK HERE TO LEARN ALL ABOUT OUR SOCCER PARK
                     </a>
                 </div>
-                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseOne"
+                     class="collapse"
+                     data-bs-parent="#accordion">
                     <div class="card-body py-0">
                         <h4>Norfolk County Youth Soccer Park, 660 West St</h4>
-                        <div class="container-fluid"><img class="img-fluid" src="images/parkmap.jpg" alt="park map"
-                                style="float: right; margin: 2%; transition-duration: 0.4s;
+                        <div class="container-fluid"><img class="img-fluid"
+                                 src="images/parkmap.jpg"
+                                 alt="park map"
+                                 style="float: right; margin: 2%; transition-duration: 0.4s;
             cursor: pointer;"></div>
                         <p style="text-align: left;">The rapid rise on player numbers and teams forced the realization
                             that the
@@ -392,27 +488,183 @@ require_once("db/db_config.php");
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-5 pt-3" style="background-color: aliceblue;">
+            <div class="col-sm-12 col-md-6 col-lg-6 pt-3"
+                 style="background-color: aliceblue;">
                 <h2>Announcements</h2>
                 <hr style="color: blue;">
-                <h5>Ryan Cattrysse Memorial Bursary Award</h5>
-                <div class="container-fluid" style="text-align: center;"><img src="images/Ryan.jpg" style="width: 33%;">
+                <!-- Button trigger add Announcement modal -->
+                <button type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#add-announcement">
+                    Add Announcement
+                </button>
+
+                <!-- Announcement modal -->
+                <div class="modal fade"
+                     id="add-announcement"
+                     tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered"
+                         style="max-width: 80%;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"
+                                    id="exampleModalLabel">Add Announcement</h5>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Card Starts -->
+                                <center>
+
+                                    <div class="col m-3"
+                                         style="max-width: 500px">
+                                        <div class="card shadow-sm">
+                                            <img id="image"
+                                                 src="images/upload.png"
+                                                 style="width:100%; height:auto;"
+                                                 alt="">
+                                            <div class="card-body">
+                                                <div class="card-text">
+                                                    <b>
+                                                        <h3 id="heading">
+                                                            Heading Here
+                                                        </h3>
+                                                    </b>
+                                                    <p id="text">
+                                                        Text Here
+                                                    </p>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">
+                                                            View
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </center>
+                                <center>
+                                    <form action="admin-functions/add-announcement.php"
+                                          method="post"
+                                          enctype="multipart/form-data">
+
+                                        <div class="my-3"
+                                             style="width: 80%;">
+                                            <h4 class="text-start">Upload Image</h4>
+                                            <input type="file"
+                                                   class="form-control"
+                                                   name="announcement-image"
+                                                   id="announcement-image"
+                                                   accept="image/*">
+                                            <h4 class="text-start">Heading</h4>
+                                            <input id="heading-input"
+                                                   type="text"
+                                                   name="heading"
+                                                   class="form-control"
+                                                   placeholder="Enter Text For Heading">
+                                            <h4 class="text-start">Text</h4>
+                                            <textarea id="text-input"
+                                                      name="text"
+                                                      cols="30"
+                                                      class="form-control"
+                                                      placeholder="Enter Text For Text"></textarea>
+                                            <h4 class="text-start">Link</h4>
+                                            <input type="text"
+                                                   name="link"
+                                                   class="form-control"
+                                                   placeholder="Enter A Link">
+                                        </div>
+                                </center>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                <button type="submit"
+                                        class="btn btn-primary">Upload</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p><a href="/ryanaward.html">Learn how you can participate.</a></p>
-                <img img-class="img-fluid" src="images/ball200x200.gif" style="width: 25%;">
-                <HR>
-                <H6>2007 ONTARIO CUP FINALISTS</H6>
-                <img src="images/2007finalists.png" style="text-align: center;">
-                <div class="texttiny">Coach: Zvonko Horvat </div>
-                <div class="texttinier">Back row left to right in the photo w/o flags; Assistant coach; Bill
-                    Baskerville,
-                    trainer; Maureen Sloot, Christian Vos, Dean Marshall, Ryan Horvat, Kurt Wilson, Andrew Sloot, Jake
-                    Durant,
-                    coach, Zvonko Horvat,
-                    Front left to right; Andre Breda, Braden St-Amand, Sam Baskerville, Justin Lopes, Mark Whitworth,
-                    Alex
-                    Miranda, Matt Ruby, Cody Lyons, Andrew Miranda
-                    Centre; Josh Ternowski</div>
+                <center>
+
+                    <?php
+
+                    $sql = "SELECT * FROM `announcements` ORDER BY `id` DESC;";
+
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $id = $row["id"];
+                            $image = $row["image"];
+                            $heading = $row["heading"];
+                            $text = $row["text"];
+                            $link = $row["link"];
+
+                            ?>
+                            <div class="col m-3"
+                                 style="max-width: 500px">
+                                <div class="card shadow-sm">
+                                    <img src="images/<?php echo $image ?>"
+                                         style="width:100%; height:auto;"
+                                         alt="">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            <b>
+                                                <h3>
+                                                    <?php echo $heading ?>
+                                                </h3>
+                                            </b>
+                                            <?php echo $text ?>
+                                        </p>
+                                        <?php if (!empty($link)) { ?>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a href="<?php echo $link ?>">
+                                                        <button type="button"
+                                                                class="btn btn-sm btn-outline-secondary">
+                                                            View
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <small class="text-body-secondary"></small>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="btn btn-success"
+                                   href="<?php echo BASE_URL . "edit-announcement.php?id=$id" ?>">
+                                    Edit
+                                </a>
+                                <a class="btn btn-danger"
+                                   href="<?php echo BASE_URL . "admin-functions/delete-announcement.php?id=$id" ?>">
+                                    Delete
+                                </a>
+                            </div>
+
+                            <?php
+                        }
+                    } else {
+                        // ! No data found
+                        echo "No Cards Found";
+                    }
+
+                    ?>
+                </center>
                 <hr>
                 <div class="container-fluid">
                     <h4>1973 Original Executive</h4>
@@ -429,39 +681,169 @@ require_once("db/db_config.php");
                         <li>Armando Carvalho</li>
                     </ul>
                 </div>
-                <img img-class="img-fluid" src="images/50jumbo.jpg" style="width: 100%; height:auto;">
+                <img img-class="img-fluid"
+                     src="images/50jumbo.jpg"
+                     style="width: 100%; height:auto;">
                 <hr>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-7 pt-3">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 pt-3">
                 <a id="right"></a>
                 <h2>Latest News</h2>
                 <hr style="color: blue;">
-                <h5>INDOOR SOCCER CHAMPS 2022</h5>
-                <div class="container-fluid p-2"><img src="images/U10-IndoorChampsPurpleTimHortons.jpg"
-                        style="width: 80%;">
+
+                <!-- Modal Button For Adding News -->
+                <button type="button"
+                        class="btn btn-primary mb-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#new-news">
+                    Add News
+                </button>
+
+                <!-- New News modal -->
+                <div class="modal fade"
+                     id="new-news"
+                     tabindex="-1"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered"
+                         style="max-width: 80%;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"
+                                    id="exampleModalLabel">Add News</h5>
+                                <button type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Card Starts -->
+                                <center>
+                                    <div class="latest-news-container card"
+                                         style="max-width: 50%">
+                                        <img id="news-image"
+                                             src="images/upload.png">
+                                        <b>
+                                            <h3 id="news-heading">
+                                                Heading
+                                            </h3>
+                                        </b>
+                                        <p id="news-text">
+                                            Text
+                                        </p>
+                                    </div>
+                                </center>
+                                <center>
+                                    <form action="admin-functions/add-news.php"
+                                          method="post"
+                                          enctype="multipart/form-data">
+
+                                        <div class="my-3"
+                                             style="width: 80%;">
+                                            <h4 class="text-start">Upload Image</h4>
+                                            <input type="file"
+                                                   class="form-control"
+                                                   name="news-image"
+                                                   id="news-image-input"
+                                                   accept="image/*">
+
+                                            <h4 class="text-start">Heading</h4>
+                                            <input id="news-heading-input"
+                                                   type="text"
+                                                   name="heading"
+                                                   class="form-control"
+                                                   placeholder="Enter Text For Heading">
+
+                                            <h4 class="text-start">Text</h4>
+                                            <textarea id="news-text-input"
+                                                      name="text"
+                                                      cols="30"
+                                                      class="form-control"
+                                                      placeholder="Enter Text For Text"></textarea>
+                                        </div>
+                                </center>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                <button type="submit"
+                                        class="btn btn-primary">Upload</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>U10 Indoor Champs Purple Tim Hortons</p>
-                <div class="container-fluid p-2"><img src="images/U13Indoorlions.jpg" style="width:80%;"></div>
-                <p>U13 Indoor Champs Simcoe Lions Club</p>
-                <div class="container-fluid px-2"><img src="images/U18indoorBrian.jpg" style="width: 80%;"></div>
-                <p>U18 Indoor Champs Brian's Handyman Services</p>
+
+                <center class="latest-news-wrapper">
+
+                    <?php
+
+                    $sql = "SELECT * FROM `latest_news` ORDER BY `id` DESC;";
+
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $id = $row["id"];
+                            $image = $row["image"];
+                            $heading = $row["heading"];
+                            $text = $row["text"];
+                            ?>
+                            <div class="latest-news-container card">
+                                <img src="images/<?php echo $image ?>">
+                                <b>
+                                    <h3>
+                                        <?php echo $heading ?>
+                                    </h3>
+                                </b>
+                                <p>
+                                    <?php echo $text ?>
+                                </p>
+                            </div>
+
+                            <div class="my-3">
+                                <a class="btn btn-success"
+                                   href="<?php echo BASE_URL . "edit-news.php?id=$id" ?>">Edit</a>
+                                <a class="btn btn-danger"
+                                   href="<?php echo BASE_URL . "admin-functions/delete-news.php?id=$id" ?>">Delete</a>
+                            </div>
+
+                            <?php
+                        }
+                    } else {
+                        // ! No data found
+                        echo "No News Found";
+                    }
+
+                    ?>
+
+                </center>
             </div>
+
         </div>
     </div>
     <!--Footer-->
     <a id="footer"></a>
-    <div class="container-fluid bg-primary text-center" style="width: 100%; padding: 3% 5%;">
+    <div class="container-fluid bg-primary text-center"
+         style="width: 100%; padding: 3% 5%;">
         <div class="contactalert">
             <div class="row">
                 <div class="col-sm-12 p-2">
                     <h3 style="color: black ;">Contact Us</h3>
                     <div class="container-fluid"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
-                            width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
+                                width="80%"
+                                height="auto"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col pt-2" style="text-align: center; line-height: 2.; color: black;">
+                <div class="col pt-2"
+                     style="text-align: center; line-height: 2.; color: black;">
                     <p class="contacttext">
                         MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3
                         <hr style="color: blue;">
@@ -470,13 +852,15 @@ require_once("db/db_config.php");
                         REFEREES: <a href="mailto:joe.estrela@hotmail.com">Joe Estrela</a> <br>
                         E TRANSFERS: </a>sdysc.treasurer@gmail.com</a>
                     </p>
-                    <small><a href="http://www.businesslore.com" style="text-decoration: none; ">- CREATED BY
+                    <small><a href="http://www.businesslore.com"
+                           style="text-decoration: none; ">- CREATED BY
                             BUSINESSLORE -
                         </a></small>
                 </div>
             </div>
         </div>
-        <div class="linkchange" style="text-align: center;">
+        <div class="linkchange"
+             style="text-align: center;">
             <small><a href="http://www.businesslore.com">- CREATED BY BUSINESSLORE - </a></small>
         </div>
     </div>
@@ -486,6 +870,8 @@ require_once("db/db_config.php");
     <script src="js/admin.js"></script>
     <script src="js/directors.js"></script>
     <script src="js/past-presidents.js"></script>
+    <script src="js/announcement.js"></script>
+    <script src="js/latest-news.js"></script>
     <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
         window.onscroll = function () { scrollFunction() };

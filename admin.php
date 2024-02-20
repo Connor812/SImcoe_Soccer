@@ -13,14 +13,24 @@ if (!isset($_SESSION["admin_username"])) {
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/selection.css" rel="stylesheet">
-    <link href="css/admin.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link href="css/selection.css"
+          rel="stylesheet">
+    <link href="css/admin.css"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+          crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery Script -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script>
+    <!-- Tiny Cloud Textarea -->
+    <script src="https://cdn.tiny.cloud/1/zhb46ft1zqpmyb99d0lz5r1e5zt4nip43uccz5hw15w7voz0/tinymce/6/tinymce.min.js"
+            referrerpolicy="origin"></script>
     <title>Simcoe Soccer Home Page</title>
 </head>
 <style>
@@ -58,7 +68,9 @@ require_once("config-url.php");
 ?>
 
 <body>
-    <div class="wrapper" style="width: 100%;">
+
+    <div class="wrapper"
+         style="width: 100%;">
         <!--JumboImage-->
         <?php
         $sql = "SELECT *
@@ -153,34 +165,54 @@ require_once("config-url.php");
         $stmt->close();
 
         ?>
-        <img id="hero-img" src="<?php echo empty($hero_image) ? 'images/jumbo1.jpg' : "images/$hero_image"; ?>"
-            class="img-fluid" width="100%" alt="50 Years of Soccer">
-        <form class="hero-img-container" action="admin-functions/update-hero-img.php" method="post"
-            enctype="multipart/form-data">
+        <img id="hero-img"
+             src="<?php echo empty($hero_image) ? 'images/jumbo1.jpg' : "images/$hero_image"; ?>"
+             class="img-fluid"
+             width="100%"
+             alt="50 Years of Soccer">
+        <form class="hero-img-container"
+              action="admin-functions/update-hero-img.php"
+              method="post"
+              enctype="multipart/form-data">
             <h2>Upload a New Home Page Image</h2>
             <div class="input-group mb-3 hero-img-upload">
-                <input type="file" class="form-control" name="hero-img" id="new-hero-img" accept="image/*">
+                <input type="file"
+                       class="form-control"
+                       name="hero-img"
+                       id="new-hero-img"
+                       accept="image/*">
             </div>
 
-            <div id="hero-upload-btn" class="hero-upload-btn">
+            <div id="hero-upload-btn"
+                 class="hero-upload-btn">
             </div>
         </form>
 
 
         <!--sections-->
-        <div class="container-fluid h2 p-2 m-0" style="text-align: center; background-color: blue; color: white;">SIMCOE
+        <div class="container-fluid h2 p-2 m-0"
+             style="text-align: center; background-color: blue; color: white;">SIMCOE
             DISTRICT YOUTH SOCCER CLUB</div>
-        <div class="container-fluid p-0 m-0" style="width: 100%;">
-            <button class="tablink" onclick="openPage('registration', this, 'red')"
-                id="defaultOpen">REGISTRATION</button>
-            <button class="tablink" onclick="openPage('games', this, 'green')">TODAYS GAMES</button>
-            <button class="tablink" onclick="openPage('players', this, 'blue')">PLAYERS &amp; PARENTS</button>
-            <button class="tablink" onclick="openPage('coaches', this, 'orange')">COACHES &amp; OFFICIALS</button>
+        <div class="container-fluid p-0 m-0"
+             style="width: 100%;">
+            <button class="tablink"
+                    onclick="openPage('registration', this, 'red')"
+                    id="defaultOpen">REGISTRATION</button>
+            <button class="tablink"
+                    onclick="openPage('games', this, 'green')">TODAYS GAMES</button>
+            <button class="tablink"
+                    onclick="openPage('players', this, 'blue')">PLAYERS &amp; PARENTS</button>
+            <button class="tablink"
+                    onclick="openPage('coaches', this, 'orange')">COACHES &amp; OFFICIALS</button>
             <!--Registration-->
-            <div class="tabcontent p-2" id="registration">
-                <div class="row px-5 py-3" style="text-align: center;">
+            <div class="tabcontent p-2"
+                 id="registration">
+                <div class="row px-5 py-3"
+                     style="text-align: center;">
                     <div class="col col-lg-3 col-sm-7 p-0 center">
-                        <img src="images/CrestLOGO1.png" width="80%" height="mx-auto">
+                        <img src="images/CrestLOGO1.png"
+                             width="80%"
+                             height="mx-auto">
                     </div>
                     <div class="col">
                         <div style="font-size: 3vw;">
@@ -196,12 +228,20 @@ require_once("config-url.php");
                         <div style="font-size: 2vw;">WAITING LIST IS CLOSED</div>-->
 
                         <hr> <!-- Button to Open the Join Modal -->
-                        <form id="registration-date-form" class="registration-date-form" method="post"
-                            action="admin-functions/registration-date.php">
-                            <input id="registration-year-input" name="registration_year" class="form-control"
-                                type="text" value="<?php echo $registration_year ?>">
-                            <input id="registration_start_date-input" name="registration_start_date"
-                                class="form-control" type="text" value="<?php echo $registration_start_date ?>">
+                        <form id="registration-date-form"
+                              class="registration-date-form"
+                              method="post"
+                              action="admin-functions/registration-date.php">
+                            <input id="registration-year-input"
+                                   name="registration_year"
+                                   class="form-control"
+                                   type="text"
+                                   value="<?php echo $registration_year ?>">
+                            <input id="registration_start_date-input"
+                                   name="registration_start_date"
+                                   class="form-control"
+                                   type="text"
+                                   value="<?php echo $registration_start_date ?>">
                             <div id="registration-submit-btn-container"></div>
                         </form>
 
@@ -213,40 +253,53 @@ require_once("config-url.php");
                             $disabled;
                         }
                         ?>
-                        <button id="registration-btn" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#register" <?php echo $disabled ?>>
+                        <button id="registration-btn"
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#register"
+                                <?php echo $disabled ?>>
                             REGISTRATION
                             <?php echo $registration_btn_status ?>
                         </button>
 
                         <div class="registration-input">
                             <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle fs-5" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-primary dropdown-toggle fs-5"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                     Select Registration state
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" value="open">Open</a></li>
-                                    <li><a class="dropdown-item" value="closed">Closed</a></li>
+                                    <li><a class="dropdown-item"
+                                           value="open">Open</a></li>
+                                    <li><a class="dropdown-item"
+                                           value="closed">Closed</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div id="registration-state-result-container">
 
-                            <div class="fs-5" id="registration-state-result"></div>
+                            <div class="fs-5"
+                                 id="registration-state-result"></div>
 
                         </div>
                         <!-- The Register Modal -->
-                        <div class="modal" id="register">
+                        <div class="modal"
+                             id="register">
                             <div class="modal-dialog">
                                 <div class="modal-content">
 
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                        <h4 class="modal-title" style="color: blue; text-align: center;">
+                                        <h4 class="modal-title"
+                                            style="color: blue; text-align: center;">
                                             REGISTRATION
                                             INFORMATION</h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        <button type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
 
                                     <!-- Modal body -->
@@ -256,7 +309,9 @@ require_once("config-url.php");
                                             the
                                             password you want to use.</p>
                                         <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN"><img
-                                                src="images/powerupscreen.png" class="mx-auto d-block" width="50%"></a>
+                                                 src="images/powerupscreen.png"
+                                                 class="mx-auto d-block"
+                                                 width="50%"></a>
                                         <br>
                                         <p style="color: black; text-align: center;">Our soccer fields are located
                                             in
@@ -271,7 +326,7 @@ require_once("config-url.php");
                                     <div class="modal-footer">
                                         <img src="images/PowerUp_logo.png">
                                         <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN"
-                                            class="btn btn-success">CONTINUE TO POWERUP</a>
+                                           class="btn btn-success">CONTINUE TO POWERUP</a>
                                     </div>
                                 </div>
                             </div>
@@ -280,16 +335,22 @@ require_once("config-url.php");
                 </div>
             </div>
             <!--Games-->
-            <div class="tabcontent p-3" style="text-align: center;" id="games">
+            <div class="tabcontent p-3"
+                 style="text-align: center;"
+                 id="games">
                 <br>
                 <div style="color: white;">
                     <div class="row py-2">
                         <h3 style="text-align: center;">Choose a team</h3>
                         <p><small>PLEASE TURN YOUR PHONE SIDEWAYS</small></p>
-                        <div class="col" style="text-align: right;">
+                        <div class="col"
+                             style="text-align: right;">
                             <p> Division:
-                                <select autocomplete="off" id="select1">
-                                    <option value="" disabled selected>Select Division</option>
+                                <select autocomplete="off"
+                                        id="select1">
+                                    <option value=""
+                                            disabled
+                                            selected>Select Division</option>
                                     <?php
                                     $sql = "SELECT DISTINCT(division_name) FROM  tableone";
                                     $result = mysqli_query($conn, $sql);
@@ -308,8 +369,11 @@ require_once("config-url.php");
                                 </select>
                             </p>
                             <p> Team:
-                                <select autocomplete="off" id="select2">
-                                    <option value="" disabled selected>Select Team</option>
+                                <select autocomplete="off"
+                                        id="select2">
+                                    <option value=""
+                                            disabled
+                                            selected>Select Team</option>
                                     <?php
 
                                     $sql = "SELECT home_team_name, away_team_name FROM tableone";
@@ -331,18 +395,27 @@ require_once("config-url.php");
                                 </select>
                             </p>
                         </div>
-                        <div class="col" style="text-align: left;">
+                        <div class="col"
+                             style="text-align: left;">
                             <p><span class="output"></span></p>
-                            <input type="submit" name="submit" id="submit" value="SHOW GAMES" />
+                            <input type="submit"
+                                   name="submit"
+                                   id="submit"
+                                   value="SHOW GAMES" />
                             <div></div>
-                            <input type="submit" name="reset" id="reset" value="Reset" />
+                            <input type="submit"
+                                   name="reset"
+                                   id="reset"
+                                   value="Reset" />
                         </div>
                     </div>
 
 
                     <div class="alert alert-success p-1">
-                        <div class="container mt-1 p-1" style="width: 100%; height:auto;">
-                            <table class="table table-bordered" style="width: 100%; height:auto;">
+                        <div class="container mt-1 p-1"
+                             style="width: 100%; height:auto;">
+                            <table class="table table-bordered"
+                                   style="width: 100%; height:auto;">
                                 <thead>
                                     <tr>
                                         <th>Date</th>
@@ -356,8 +429,10 @@ require_once("config-url.php");
                                 </tbody>
                             </table>
                             <div class="row">
-                                <div class="col"><button type="button" class="btn btn-success btn-sm"
-                                        data-bs-toggle="modal" data-bs-target="#fieldmap">Map of fields</button>
+                                <div class="col"><button type="button"
+                                            class="btn btn-success btn-sm"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#fieldmap">Map of fields</button>
                                 </div>
                                 <!--<div class="col"><button class="btn btn-success btn-sm" id="calendar_ics">Add to your calendar</button>-->
                             </div>
@@ -367,30 +442,38 @@ require_once("config-url.php");
             </div>
         </div>
         <!-- The FieldMapModal -->
-        <div class="modal" id="fieldmap">
+        <div class="modal"
+             id="fieldmap">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
 
                     <!-- Modal Header -->
                     <div class="modal-header">
                         <h4 style="text-align: center;">FIELD MAP</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"></button>
                     </div>
 
                     <!-- Modal body -->
-                    <div class="modal-body" style="text-align: center;">
-                        <img src="images/<?php echo $field_image ?>" style="width: 90%;">
+                    <div class="modal-body"
+                         style="text-align: center;">
+                        <img src="images/<?php echo $field_image ?>"
+                             style="width: 90%;">
                     </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
         <!--players-->
-        <div class="tabcontent p-5" id="players">
+        <div class="tabcontent p-5"
+             id="players">
             <div class="row">
                 <div class="col p-3">
                     <h3 style="text-align: center;">Players</h3>
@@ -401,11 +484,14 @@ require_once("config-url.php");
                         together is a great way to make memories. Our players page will tell you all about our
                         program.
                     </div>
-                    <div class="container-fluid" style="text-align: center;">
-                        <a href="/players.html"><button type="button" class="btn btn-primary btn-sm">Go To Players
+                    <div class="container-fluid"
+                         style="text-align: center;">
+                        <a href="/players.html"><button type="button"
+                                    class="btn btn-primary btn-sm">Go To Players
                                 Page</button></a>
                     </div>
-                    <br><img src="images/kidsrunning.jpg" style="width: 100%">
+                    <br><img src="images/kidsrunning.jpg"
+                         style="width: 100%">
                 </div>
                 <div class="col p-3">
                     <h3 style="text-align: center;">Parents</h3>
@@ -416,18 +502,22 @@ require_once("config-url.php");
                         are
                         there to listen.
                     </div>
-                    <div class="container-fluid" style="text-align: center;">
-                        <a href="/parents.html"><button type="button" class="btn btn-primary btn-sm">Go To Parents
+                    <div class="container-fluid"
+                         style="text-align: center;">
+                        <a href="/parents.html"><button type="button"
+                                    class="btn btn-primary btn-sm">Go To Parents
                                 Page</button></a>
                     </div>
                     <br>
-                    <img src="images/soccermoms.jpg" style="width: 100%;">
+                    <img src="images/soccermoms.jpg"
+                         style="width: 100%;">
                 </div>
                 <br>
             </div>
         </div>
         <!--coaches-->
-        <div class="tabcontent p-2" id="coaches">
+        <div class="tabcontent p-2"
+             id="coaches">
             <div class="row">
                 <div class="col p-3">
                     <h3 style="text-align: center;">Coaches</h3>
@@ -436,14 +526,17 @@ require_once("config-url.php");
                         game at
                         every level and showing them by example how to contribute to our community.
                         the coaches page has information about our program.
-                        <div class="container-fluid p-3" style="text-align: center;">
-                            <a href="/coaches.html"><button type="button" class="btn btn-primary btn-sm">Go To
+                        <div class="container-fluid p-3"
+                             style="text-align: center;">
+                            <a href="/coaches.html"><button type="button"
+                                        class="btn btn-primary btn-sm">Go To
                                     Coaches
                                     Page</button></a>
                         </div>
                     </div>
 
-                    <br><img src="images/coach.jpg" style="width: 100%">
+                    <br><img src="images/coach.jpg"
+                         style="width: 100%">
                 </div>
                 <div class="col p-3">
                     <h3 style="text-align: center;">Officials</h3>
@@ -452,12 +545,15 @@ require_once("config-url.php");
                         sportsmanship are a part of the job. You can train to be a ref and officiate games or watch
                         the
                         line and wave the flag at our SDYSC park. Our officials page has more info.
-                        <div class="container-fluid p-3" style="text-align: center;">
-                            <a href="/officials.html"><button type="button" class="btn btn-primary btn-sm">Go To
+                        <div class="container-fluid p-3"
+                             style="text-align: center;">
+                            <a href="/officials.html"><button type="button"
+                                        class="btn btn-primary btn-sm">Go To
                                     Officials Page</button></a>
                         </div>
                     </div><br>
-                    <img src="images/referee.jpg" style="width: 100%;">
+                    <img src="images/referee.jpg"
+                         style="width: 100%;">
                 </div>
                 <br>
 
@@ -465,36 +561,47 @@ require_once("config-url.php");
         </div>
     </div>
     <!--center blurb-->
-    <div id="section-1" class="px-5 py-2 my-3 d-flex flex-column justify-content-center align-items-center">
-        <h1 id="section-1-heading" class="pb-0">
+    <div id="section-1"
+         class="px-5 py-2 my-3 d-flex flex-column justify-content-center align-items-center">
+        <h1 id="section-1-heading"
+            class="pb-0">
             <?php echo $section_1_heading ?>
         </h1>
         <div class="col-lg-8 mx-auto">
-            <p id="section-1-text" class="lead mb-0 px-2">
+            <p id="section-1-text"
+               class="lead mb-0 px-2">
                 <?php echo $section_1_text ?>
             </p>
         </div>
         <!-- Section 1 Form -->
-        <form id="section-1-form" class="section-1-input-container" method="post"
-            action="admin-functions/update-section-1.php">
+        <form id="section-1-form"
+              class="section-1-input-container"
+              method="post"
+              action="admin-functions/update-section-1.php">
             <h4 for="section-1-heading-input">Heading Text</h4>
             <div class="form-floating">
-                <textarea name="section-1-heading" class="form-control" placeholder="Leave a comment here"
-                    id="section-1-heading-input" style="height: 100px"><?php echo $section_1_heading ?></textarea>
+                <textarea name="section-1-heading"
+                          class="form-control"
+                          placeholder="Leave a comment here"
+                          id="section-1-heading-input"
+                          style="height: 100px"><?php echo $section_1_heading ?></textarea>
 
             </div>
             <h4 for="section-1-text-input">Paragraph Text</h4>
             <div class="form-floating">
-                <textarea name="section-1-text" class="form-control" placeholder="Leave a comment here"
-                    id="section-1-text-input" style="height: 100px"><?php echo $section_1_text ?></textarea>
+                <textarea name="section-1-text"
+                          class="form-control"
+                          placeholder="Leave a comment here"
+                          id="section-1-text-input"
+                          style="height: 100px"><?php echo $section_1_text ?></textarea>
             </div>
             <div class="section-1-submit-btn-container d-flex justify-content-center"
-                id="section-1-submit-btn-container">
+                 id="section-1-submit-btn-container">
             </div>
         </form>
     </div>
     <div id="registration-info"
-        class="bg-dark text-white py-3 d-flex flex-column justify-content-center align-items-center">
+         class="bg-dark text-white py-3 d-flex flex-column justify-content-center align-items-center">
         <h3 id="registration-heading">
             <?php echo $registration_info_heading ?>
         </h3>
@@ -505,42 +612,54 @@ require_once("config-url.php");
 
         <!-- Section 1 Form -->
         <div class="registration-container">
-            <form id="registration-form" class="registration-form p-4" method="post"
-                action="admin-functions/update-registration-date-text.php">
+            <form id="registration-form"
+                  class="registration-form p-4"
+                  method="post"
+                  action="admin-functions/update-registration-date-text.php">
                 <h4 for="registration-heading-input">Heading Text</h4>
                 <div class="form-floating">
 
-                    <textarea name="registration_info_heading" class="form-control"
-                        placeholder="Please Enter New Heading" id="registration-heading-input"
-                        style="height: 100px"><?php echo $registration_info_heading ?></textarea>
+                    <textarea name="registration_info_heading"
+                              class="form-control"
+                              placeholder="Please Enter New Heading"
+                              id="registration-heading-input"
+                              style="height: 100px"><?php echo $registration_info_heading ?></textarea>
 
                 </div>
                 <h4 for="registration-date-input">Date</h4>
                 <div class="form-floating">
-                    <textarea name="registration_info_date" class="form-control" placeholder="Enter New Date"
-                        id="registration-date-input"
-                        style="height: 100px"><?php echo $registration_info_date ?></textarea>
+                    <textarea name="registration_info_date"
+                              class="form-control"
+                              placeholder="Enter New Date"
+                              id="registration-date-input"
+                              style="height: 100px"><?php echo $registration_info_date ?></textarea>
                 </div>
                 <div class="m-3 registration-submit-btn-container d-flex justify-content-center"
-                    id="registration-info-submit-btn-container">
+                     id="registration-info-submit-btn-container">
                 </div>
             </form>
         </div>
 
         <img id="registration-info-image"
-            src="<?php echo empty($registration_info_image) ? 'images/outdoorseason.png' : "images/$registration_info_image"; ?>"
-            style="width: 60%; height:auto;">
+             src="<?php echo empty($registration_info_image) ? 'images/outdoorseason.png' : "images/$registration_info_image"; ?>"
+             style="width: 60%; height:auto;">
 
         <!-- Upload Registration Info Image -->
-        <form class="registration-info-image-input" action="admin-functions/registration-info-image.php" method="post"
-            enctype="multipart/form-data">
+        <form class="registration-info-image-input"
+              action="admin-functions/registration-info-image.php"
+              method="post"
+              enctype="multipart/form-data">
             <h2>Upload a New Image</h2>
             <div class="input-group mb-3 hero-img-upload">
-                <input type="file" class="form-control" name="new-registration-info-image"
-                    id="new-registration-info-image" accept="image/*">
+                <input type="file"
+                       class="form-control"
+                       name="new-registration-info-image"
+                       id="new-registration-info-image"
+                       accept="image/*">
             </div>
 
-            <div id="registration-image-upload-btn-container" class="registration-image-upload-btn">
+            <div id="registration-image-upload-btn-container"
+                 class="registration-image-upload-btn">
             </div>
         </form>
 
@@ -551,18 +670,28 @@ require_once("config-url.php");
                 Log in or sign up in Power up.
             <p> Make sure you tick opt in so you can receive information on the team and schedules when available.
             <p>
-            <form id="season_date" action="admin-functions/season-date.php" class="season-data" method="post">
+            <form id="season_date"
+                  action="admin-functions/season-date.php"
+                  class="season-data"
+                  method="post">
                 <h5 id="season_start_date_text">
                     <?php echo $season_start_date ?>
                 </h5><br>
-                <textarea name="season_start_date" class="form-control" placeholder="Enter New Date"
-                    id="season_start_date_input" style="height: 100px"><?php echo $season_start_date ?></textarea>
+                <textarea name="season_start_date"
+                          class="form-control"
+                          placeholder="Enter New Date"
+                          id="season_start_date_input"
+                          style="height: 100px"><?php echo $season_start_date ?></textarea>
                 <h5 id="u6_start_date_text">
                     <?php echo $u6_start_date ?>
                 </h5><br>
-                <textarea name="u6_start_date" class="form-control" placeholder="Enter New Date"
-                    id="u6_start_date_input" style="height: 100px"><?php echo $u6_start_date ?></textarea>
-                <div id="season_start_date_submit_btn" class="season_start_date_submit_btn m-3"></div>
+                <textarea name="u6_start_date"
+                          class="form-control"
+                          placeholder="Enter New Date"
+                          id="u6_start_date_input"
+                          style="height: 100px"><?php echo $u6_start_date ?></textarea>
+                <div id="season_start_date_submit_btn"
+                     class="season_start_date_submit_btn m-3"></div>
                 <h5>JOIN EARLY!<br>
                 </h5>
             </form>
@@ -574,76 +703,102 @@ require_once("config-url.php");
     </div>
     <div>
         <div class="row py-3">
-            <div class="col-3" style="text-align: right;">
-                <img src="images/ball.png" style=" width: 50px; height: auto;">
+            <div class="col-3"
+                 style="text-align: right;">
+                <img src="images/ball.png"
+                     style=" width: 50px; height: auto;">
             </div>
             <div class="col-6">
                 <h1 style="text-align:center;">WHERE WE PLAY</h1>
             </div>
-            <div class="col-3" style="text-align: left;">
-                <img src="images/ball.png" style=" width: 50px; height: auto;">
+            <div class="col-3"
+                 style="text-align: left;">
+                <img src="images/ball.png"
+                     style=" width: 50px; height: auto;">
             </div>
         </div>
-        <div class="p-0 m-0"><img src="images/parkpano.jpg" class="img-fluid" style="width: 100%; height:auto"
-                alt="..."></div>
+        <div class="p-0 m-0"><img src="images/parkpano.jpg"
+                 class="img-fluid"
+                 style="width: 100%; height:auto"
+                 alt="..."></div>
     </div>
     <div class="row py-3 px-5">
         <div class="col-4">
-            <img src="images/aud2.jpg" class="img-fluid" style="width: 100%; height:auto" alt="...">
+            <img src="images/aud2.jpg"
+                 class="img-fluid"
+                 style="width: 100%; height:auto"
+                 alt="...">
         </div>
-        <div class="col-4 pt-3" style="text-align: center;">
+        <div class="col-4 pt-3"
+             style="text-align: center;">
             <h3>OUTDOOR</h3>
             <p><b>Norfolk County Youth Soccer Fields</b><br>660 West Street, Simcoe ON, N3Y 4K5</p>
             <h3>INDOOR</h3>
             <p><b>The Aud</b><br>172 South Drive, Simcoe On</p>
             <!-- Field Image Upload -->
-            <form id="field-image-form" class="" method="post" action="admin-functions/field-image.php"
-                enctype="multipart/form-data">
+            <form id="field-image-form"
+                  class=""
+                  method="post"
+                  action="admin-functions/field-image.php"
+                  enctype="multipart/form-data">
                 <h2 class="text-start">Upload New Field Image</h2>
-                <input type="file" class="form-control" name="field-image" id="new-field-image" accept="image/*">
-                <div id="field-img-submit-container" class="m-4"></div>
+                <input type="file"
+                       class="form-control"
+                       name="field-image"
+                       id="new-field-image"
+                       accept="image/*">
+                <div id="field-img-submit-container"
+                     class="m-4"></div>
             </form>
         </div>
 
         <div class="col-4">
-            <img id="field-image" src="images/<?php echo $field_image ?>" class="img-fluid"
-                style="width: 100%; height:auto" alt="...">
+            <img id="field-image"
+                 src="images/<?php echo $field_image ?>"
+                 class="img-fluid"
+                 style="width: 100%; height:auto"
+                 alt="...">
         </div>
     </div>
     </div>
     <!--news-->
-    <div class="row row-col-3 bg-body-tertiary" style="text-align: center; padding: 1% 5%;">
+    <div class="row row-col-3 bg-body-tertiary"
+         style="text-align: center; padding: 1% 5%;">
         <hr style="color: blue;">
         <h1 class="p-0 text-center">CLUB NEWS</h1>
         <hr style="color: blue;">
-        <div id="card-section" class="container">
+        <div id="card-section"
+             class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_1_image" src="images/<?php echo $card_image_1 ?>"
-                                style="width:100%; height:auto;" alt="">
+                            <img id="card_1_image"
+                                 src="images/<?php echo $card_image_1 ?>"
+                                 style="width:100%; height:auto;"
+                                 alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_1_heading" class="card-text"><b>
+                            <p id="card_1_heading"
+                               class="card-text"><b>
                                     <?php echo $card_heading_1 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_1_text">
-                                        <?php echo $card_text_1 ?>
-                                    </small>
-                                </ul>
+
+                                <small id="card_1_text" style="width: 100%;">
+                                    <?php echo $card_text_1 ?>
+                                </small>
+
                             </div>
                             <?php if (!empty($card_link_1)) { ?>
                                 <div class="d-flex justify-content-start">
                                     <a href="<?php echo $card_link_1 ?>"> <button type="button"
-                                            class="btn btn-sm btn-outline-secondary">View</button></a>
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
                                 </div>
                             <?php } ?>
                             <div>
                                 <a href="<?php echo BASE_URL ?>admin.php?card=1#card-section"><button type="button"
-                                        class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
+                                            class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
                             </div>
                         </div>
                     </div>
@@ -651,30 +806,33 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_2_image" src="images/<?php echo $card_image_2 ?>"
-                                style="width:100%; height:auto;" alt="">
+                            <img id="card_2_image"
+                                 src="images/<?php echo $card_image_2 ?>"
+                                 style="width:100%; height:auto;"
+                                 alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_2_heading" class="card-text"><b>
+                            <p id="card_2_heading"
+                               class="card-text"><b>
                                     <?php echo $card_heading_2 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_2_text">
-                                        <?php echo $card_text_2 ?>
-                                    </small>
-                                </ul>
+
+                                <small id="card_2_text" style="width: 100%;">
+                                    <?php echo $card_text_2 ?>
+                                </small>
+
                             </div>
                             <?php
                             if (!empty($card_link_2)) { ?>
                                 <div class="d-flex justify-content-start">
                                     <a href="<?php echo $card_link_2 ?>"> <button type="button"
-                                            class="btn btn-sm btn-outline-secondary">View</button></a>
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
                                 </div>
                             <?php } ?>
                             <div>
                                 <a href="<?php echo BASE_URL ?>admin.php?card=2#card-section"><button type="button"
-                                        class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
+                                            class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
                             </div>
                         </div>
                     </div>
@@ -682,29 +840,32 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_3_image" src="images/<?php echo $card_image_3 ?>"
-                                style="width:100%; height:auto;" alt="">
+                            <img id="card_3_image"
+                                 src="images/<?php echo $card_image_3 ?>"
+                                 style="width:100%; height:auto;"
+                                 alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_3_heading" class="card-text"><b>
+                            <p id="card_3_heading"
+                               class="card-text"><b>
                                     <?php echo $card_heading_3 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_3_text">
-                                        <?php echo $card_text_3 ?>
-                                    </small>
-                                </ul>
+
+                                <small id="card_3_text" style="width: 100%;">
+                                    <?php echo $card_text_3 ?>
+                                </small>
+
                             </div>
                             <?php if (!empty($card_link_3)) { ?>
                                 <div class="d-flex justify-content-start">
                                     <a href="<?php echo $card_link_3 ?>"> <button type="button"
-                                            class="btn btn-sm btn-outline-secondary">View</button></a>
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
                                 </div>
                             <?php } ?>
                             <div>
                                 <a href="<?php echo BASE_URL ?>admin.php?card=3#card-section"><button type="button"
-                                        class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
+                                            class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
                             </div>
                         </div>
                     </div>
@@ -713,34 +874,38 @@ require_once("config-url.php");
         </div>
         <hr>
         <!--lower News-->
-        <div id="card-section" class="container">
+        <div id="card-section"
+             class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_4_image" src="images/<?php echo $card_image_4 ?>"
-                                style="width:100%; height:auto;" alt="">
+                            <img id="card_4_image"
+                                 src="images/<?php echo $card_image_4 ?>"
+                                 style="width:100%; height:auto;"
+                                 alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_4_heading" class="card-text"><b>
+                            <p id="card_4_heading"
+                               class="card-text"><b>
                                     <?php echo $card_heading_4 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_4_text">
-                                        <?php echo $card_text_4 ?>
-                                    </small>
-                                </ul>
+
+                                <small id="card_4_text" style="width: 100%;">
+                                    <?php echo $card_text_4 ?>
+                                </small>
+
                             </div>
                             <?php if (!empty($card_link_4)) { ?>
                                 <div class="d-flex justify-content-start">
                                     <a href="<?php echo $card_link_4 ?>"> <button type="button"
-                                            class="btn btn-sm btn-outline-secondary">View</button></a>
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
                                 </div>
                             <?php } ?>
                             <div>
                                 <a href="<?php echo BASE_URL ?>admin.php?card=4#card-section"><button type="button"
-                                        class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
+                                            class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
                             </div>
                         </div>
                     </div>
@@ -748,30 +913,33 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_5_image" src="images/<?php echo $card_image_5 ?>"
-                                style="width:100%; height:auto;" alt="">
+                            <img id="card_5_image"
+                                 src="images/<?php echo $card_image_5 ?>"
+                                 style="width:100%; height:auto;"
+                                 alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_5_heading" class="card-text"><b>
+                            <p id="card_5_heading"
+                               class="card-text"><b>
                                     <?php echo $card_heading_5 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_5_text">
-                                        <?php echo $card_text_5 ?>
-                                    </small>
-                                </ul>
+
+                                <small id="card_5_text" style="width: 100%;">
+                                    <?php echo $card_text_5 ?>
+                                </small>
+
                             </div>
                             <?php
                             if (!empty($card_link_5)) { ?>
                                 <div class="d-flex justify-content-start">
                                     <a href="<?php echo $card_link_5 ?>"> <button type="button"
-                                            class="btn btn-sm btn-outline-secondary">View</button></a>
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
                                 </div>
                             <?php } ?>
                             <div>
                                 <a href="<?php echo BASE_URL ?>admin.php?card=5#card-section"><button type="button"
-                                        class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
+                                            class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
                             </div>
                         </div>
                     </div>
@@ -779,29 +947,32 @@ require_once("config-url.php");
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="container-fluid">
-                            <img id="card_6_image" src="images/<?php echo $card_image_6 ?>"
-                                style="width:100%; height:auto;" alt="">
+                            <img id="card_6_image"
+                                 src="images/<?php echo $card_image_6 ?>"
+                                 style="width:100%; height:auto;"
+                                 alt="">
                         </div>
                         <div class="card-body">
-                            <p id="card_6_heading" class="card-text"><b>
+                            <p id="card_6_heading"
+                               class="card-text"><b>
                                     <?php echo $card_heading_6 ?>
                                 </b></p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <ul style="text-align: center; list-style-type: none;">
-                                    <small id="card_6_text">
-                                        <?php echo $card_text_6 ?>
-                                    </small>
-                                </ul>
+
+                                <small id="card_6_text" style="width: 100%;">
+                                    <?php echo $card_text_6 ?>
+                                </small>
+
                             </div>
                             <?php if (!empty($card_link_6)) { ?>
                                 <div class="d-flex justify-content-start">
                                     <a href="<?php echo $card_link_6 ?>"> <button type="button"
-                                            class="btn btn-sm btn-outline-secondary">View</button></a>
+                                                class="btn btn-sm btn-outline-secondary">View</button></a>
                                 </div>
                             <?php } ?>
                             <div>
                                 <a href="<?php echo BASE_URL ?>admin.php?card=6#card-section"><button type="button"
-                                        class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
+                                            class="btn btn-sm btn-outline-secondary px-5">Edit</button></a>
                             </div>
                         </div>
                     </div>
@@ -849,34 +1020,58 @@ require_once("config-url.php");
 
 
                     ?>
-                    <div id="card_section" card_num="<?php echo $card_num ?>" class="card-edit-section">
-                        <form id="card-form" class="card-form" method="post" enctype="multipart/form-data"
-                            action="admin-functions/card-section.php?card_num=<?php echo $card_num ?>">
-                            <a class="btn btn-danger card-reset-btn" href="<?php echo BASE_URL . "admin-functions/reset-card.php?card_num=$card_num" ?>">Reset Card</a>
+                    <div id="card_section"
+                         card_num="<?php echo $card_num ?>"
+                         class="card-edit-section">
+                        <form id="card-form"
+                              class="card-form"
+                              method="post"
+                              enctype="multipart/form-data"
+                              action="admin-functions/card-section.php?card_num=<?php echo $card_num ?>">
+                            <a class="btn btn-danger card-reset-btn"
+                               href="<?php echo BASE_URL . "admin-functions/reset-card.php?card_num=$card_num" ?>">Reset
+                                Card</a>
                             <h2>Edit Card
                                 <?php echo $card_num ?>
                             </h2>
                             <hr>
                             <h3 class="text-start">Card Image</h3>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control mx-4" name="card_image"
-                                    id="card_<?php echo $card_num ?>_image_input" accept="image/*">
-                                <input type="hidden" value="<?php echo $card_image ?>" name="old_image">
+                                <input type="file"
+                                       class="form-control mx-4"
+                                       name="card_image"
+                                       id="card_<?php echo $card_num ?>_image_input"
+                                       accept="image/*">
+                                <input type="hidden"
+                                       value="<?php echo $card_image ?>"
+                                       name="old_image">
                             </div>
                             <h3 class="text-start">Card Title</h3>
-                            <textarea class="form-control mx-4" placeholder="Please Enter Card Title"
-                                id="card_<?php echo $card_num ?>_heading_input" name="card_heading"
-                                style="height: 100px"><?php echo $card_heading ?></textarea>
+                            <textarea class="form-control mx-4"
+                                      placeholder="Please Enter Card Title"
+                                      id="card_<?php echo $card_num ?>_heading_input"
+                                      name="card_heading"
+                                      style="height: 100px"><?php echo $card_heading ?></textarea>
                             <h3 class="text-start">Card Text</h3>
-                            <textarea class="form-control mx-4" placeholder="Please Enter Card Title"
-                                id="card_<?php echo $card_num ?>_text_input" name="card_text"
-                                style="height: 100px"><?php echo $card_text ?></textarea>
-                            <h3 class="text-start">Card Text</h3>
+                            <textarea class="form-control mx-4 textarea"
+                                      placeholder="Please Enter Card Title"
+                                      id="card_<?php echo $card_num ?>_text_input"
+                                      name="card_text"
+                                      style="height: 100px"><?php echo $card_text ?></textarea>
+                            <h3 class="text-start">Card Link</h3>
                             <div class="fs-6 text-start">Optional:</div>
-                            <textarea class="form-control mx-4" placeholder="Please Enter Link"
-                                id="card_<?php echo $card_num ?>_link" name="card_link"
-                                style="height: 100px"><?php echo $card_link ?></textarea>
-                            <div id="card-submit-btn-container" class="m-4"></div>
+                            <textarea class="form-control mx-4"
+                                      placeholder="Please Enter Link"
+                                      id="card_<?php echo $card_num ?>_link"
+                                      name="card_link"
+                                      style="height: 100px"><?php echo $card_link ?></textarea>
+                            <div id="card-submit-btn-container"
+                                 class="m-4"></div>
+
+                            <button class="btn btn-primary m-3"
+                                    id="card-upload-btn"
+                                    type="submit">Upload</button>
+
                         </form>
                     </div>
                     <?php
@@ -886,29 +1081,47 @@ require_once("config-url.php");
             ?>
         </div>
     </div>
-    <div id="rules_regulations-section" class="container-fluid" style="text-align: center;">
+    <div id="rules_regulations-section"
+         class="container-fluid"
+         style="text-align: center;">
         <hr style="color: blue;">
         <a href="files/<?php echo $link_rules_pdf ?>">
-            <button id="link-pdf-btn" type="button" class="btn btn-primary m-1" data-bs-toggle="collapse"
-                data-bs-target="#demo1">
+            <button id="link-pdf-btn"
+                    type="button"
+                    class="btn btn-primary m-1"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#demo1">
                 <?php echo $link_rules_text ?>
             </button>
         </a>
-        <form id="rules-regulations-form" class="regulation-rules-container" method="post" enctype="multipart/form-data"
-            action="admin-functions/rules-regulations.php">
+        <form id="rules-regulations-form"
+              class="regulation-rules-container"
+              method="post"
+              enctype="multipart/form-data"
+              action="admin-functions/rules-regulations.php">
             <h3>
                 Upload New PDF
             </h3>
-            <input type="file" class="form-control regulation-rules-input mx-4" name="rules_regulations_pdf"
-                id="rules_regulations_pdf" accept=".pdf">
-            <input type="hidden" name="old_pdf" value="<?php echo $link_rules_pdf ?>">
+            <input type="file"
+                   class="form-control regulation-rules-input mx-4"
+                   name="rules_regulations_pdf"
+                   id="rules_regulations_pdf"
+                   accept=".pdf">
+            <input type="hidden"
+                   name="old_pdf"
+                   value="<?php echo $link_rules_pdf ?>">
             <h3 class="align-items-start">
                 Enter New Text For Button
             </h3>
             <div class="input-group mb-3 regulation-rules-input">
-                <input id="link-rules-text" type="text" class="form-control" placeholder="Please Enter Text For Button"
-                    aria-label="Example text with button addon" name="link_rules_text" aria-describedby="button-addon1"
-                    value="<?php echo $link_rules_text ?>">
+                <input id="link-rules-text"
+                       type="text"
+                       class="form-control"
+                       placeholder="Please Enter Text For Button"
+                       aria-label="Example text with button addon"
+                       name="link_rules_text"
+                       aria-describedby="button-addon1"
+                       value="<?php echo $link_rules_text ?>">
             </div>
             <div id="rules-regulations-submit-btn-container">
 
@@ -916,71 +1129,117 @@ require_once("config-url.php");
         </form>
         <hr style="color: blue;">
     </div>
-    <div id="ad-section" class="row p-3">
+    <div id="ad-section"
+         class="row p-3">
         <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-between">
-            <div class="container-fluid" style="text-align: center; width:90%; height:auto">
-                <a href="/<?php echo $ad_link_1 ?>" style="width:70%">
-                    <img id="ad-image-1" style="width: 350px;" src="images/<?php echo $ad_image_1 ?>">
+            <div class="container-fluid"
+                 style="text-align: center; width:90%; height:auto">
+                <a href="/<?php echo $ad_link_1 ?>"
+                   style="width:70%">
+                    <img id="ad-image-1"
+                         style="width: 350px;"
+                         src="images/<?php echo $ad_image_1 ?>">
                 </a>
                 <br>
-                <p id="ad-text-1" style="text-align: center;">
+                <p id="ad-text-1"
+                   style="text-align: center;">
                     <?php echo $ad_text_1 ?>
                 </p>
             </div>
-            <form id="ad-1-form" class="ad-form" method="post" enctype="multipart/form-data"
-                action="admin-functions/ad-1.php">
+            <form id="ad-1-form"
+                  class="ad-form"
+                  method="post"
+                  enctype="multipart/form-data"
+                  action="admin-functions/ad-1.php">
                 <h4>
                     Upload New Image
                 </h4>
-                <input id="ad-image-1-input" type="file" class="form-control" name="ad_image_1" accept="image/*">
-                <input type="hidden" name="old_img" value="<?php echo $ad_image_1 ?>">
+                <input id="ad-image-1-input"
+                       type="file"
+                       class="form-control"
+                       name="ad_image_1"
+                       accept="image/*">
+                <input type="hidden"
+                       name="old_img"
+                       value="<?php echo $ad_image_1 ?>">
                 <h4>
                     Upload New Text
                 </h4>
-                <input id="ad-text-1-input" class="form-control" name="ad_text_1" type="text"
-                    placeholder="Please Enter Text For Ad 1" value="<?php echo $ad_text_1 ?>">
+                <input id="ad-text-1-input"
+                       class="form-control"
+                       name="ad_text_1"
+                       type="text"
+                       placeholder="Please Enter Text For Ad 1"
+                       value="<?php echo $ad_text_1 ?>">
                 <h4>
                     Upload New Link
                 </h4>
-                <input id="ad-link-1-input" class="form-control" name="ad_link_1" type="text"
-                    placeholder="Please Enter Link For Ad 1" value="<?php echo $ad_link_1 ?>">
+                <input id="ad-link-1-input"
+                       class="form-control"
+                       name="ad_link_1"
+                       type="text"
+                       placeholder="Please Enter Link For Ad 1"
+                       value="<?php echo $ad_link_1 ?>">
                 <div id="ad_1_submit_btn_container"></div>
             </form>
         </div>
-        <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-between" id="indoor">
-            <div class="container-fluid" style="text-align: center; width:90%; height:auto">
+        <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-between"
+             id="indoor">
+            <div class="container-fluid"
+                 style="text-align: center; width:90%; height:auto">
                 <a href="/<?php echo $ad_link_2 ?>">
-                    <img id="ad-image-2" src="images/<?php echo $ad_image_2 ?>" style="width:80%">
+                    <img id="ad-image-2"
+                         src="images/<?php echo $ad_image_2 ?>"
+                         style="width:80%">
                 </a>
 
                 <br>
-                <p id="ad-text-2" style="text-align: center;">
+                <p id="ad-text-2"
+                   style="text-align: center;">
                     <?php echo $ad_text_2 ?>
                 </p>
             </div>
-            <form id="ad-2-form" class="ad-form" method="post" enctype="multipart/form-data"
-                action="admin-functions/ad-2.php">
+            <form id="ad-2-form"
+                  class="ad-form"
+                  method="post"
+                  enctype="multipart/form-data"
+                  action="admin-functions/ad-2.php">
                 <h4>
                     Upload New Image
                 </h4>
-                <input id="ad-image-2-input" type="file" class="form-control" name="ad_image_2" accept="image/*">
-                <input type="hidden" name="old_img" value="<?php echo $ad_image_2 ?>">
+                <input id="ad-image-2-input"
+                       type="file"
+                       class="form-control"
+                       name="ad_image_2"
+                       accept="image/*">
+                <input type="hidden"
+                       name="old_img"
+                       value="<?php echo $ad_image_2 ?>">
                 <h4>
                     Upload New Text
                 </h4>
-                <input id="ad-text-2-input" class="form-control" name="ad_text_2" type="text"
-                    placeholder="Please Enter Text For Ad 2" value="<?php echo $ad_text_2 ?>">
+                <input id="ad-text-2-input"
+                       class="form-control"
+                       name="ad_text_2"
+                       type="text"
+                       placeholder="Please Enter Text For Ad 2"
+                       value="<?php echo $ad_text_2 ?>">
                 <h4>
                     Upload New Link
                 </h4>
-                <input id="ad-link-2-input" class="form-control" name="ad_link_2" type="text"
-                    placeholder="Please Enter Link For Ad 2" value="<?php echo $ad_link_2 ?>">
+                <input id="ad-link-2-input"
+                       class="form-control"
+                       name="ad_link_2"
+                       type="text"
+                       placeholder="Please Enter Link For Ad 2"
+                       value="<?php echo $ad_link_2 ?>">
                 <div id="ad_2_submit_btn_container"></div>
             </form>
         </div>
     </div>
     <!--indoor -->
-    <div id="sponsors" class="row p-3 mx-5">
+    <div id="sponsors"
+         class="row p-3 mx-5">
 
         <div style="text-align: center; color:white; background-color:blue;">
             <h1>
@@ -992,38 +1251,61 @@ require_once("config-url.php");
         <div class="indoorsponsor bg-white px-4">
             <!-- Button trigger modal -->
             <center>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#indoor-sponsors">
+                <button type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#indoor-sponsors">
                     Add New Sponsor
                 </button>
             </center>
 
             <!-- Indoor Sponsor Modal -->
-            <div class="modal fade" id="indoor-sponsors" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade"
+                 id="indoor-sponsors"
+                 tabindex="-1"
+                 aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add New Indoor Sponsor</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title"
+                                id="exampleModalLabel">Add New Indoor Sponsor</h5>
+                            <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="indoor-sponsors" class="" method="post" enctype="multipart/form-data"
-                                action="admin-functions/indoor-sponsors.php">
+                            <form id="indoor-sponsors"
+                                  class=""
+                                  method="post"
+                                  enctype="multipart/form-data"
+                                  action="admin-functions/indoor-sponsors.php">
                                 <h4>
                                     Upload New Image
                                 </h4>
-                                <input id="indoor-sponsor-image" type="file" class="form-control"
-                                    name="indoor_sponsor_image" accept="image/*">
+                                <input id="indoor-sponsor-image"
+                                       type="file"
+                                       class="form-control"
+                                       name="indoor_sponsor_image"
+                                       accept="image/*">
                                 <h4>
                                     Sponsor's Name
                                 </h4>
-                                <input id="indoor-sponsor-name" class="form-control" name="indoor_sponsor_name"
-                                    type="text" placeholder="Please Enter In Sponsor Company Name" value="">
+                                <input id="indoor-sponsor-name"
+                                       class="form-control"
+                                       name="indoor_sponsor_name"
+                                       type="text"
+                                       placeholder="Please Enter In Sponsor Company Name"
+                                       value="">
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                            <button type="submit"
+                                    class="btn btn-primary">Save changes</button>
                             </form>
                         </div>
                     </div>
@@ -1046,9 +1328,16 @@ require_once("config-url.php");
                         $image = $row["image"];
                         $name = $row["name"];
                         ?>
-                        <center class="sponpic p-2" style="width: 20%;">
-                            <img id="sponsor-img-<?php echo $id ?>" class="sponsor-img" src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
-                            <a class="btn btn-danger delete-indoor-sponsor-btn" sponsor-id="<?php echo $id ?>" href="admin-functions/delete-indoor-sponsor.php?<?php echo "id=$id" ?>">Delete</a>
+                        <center class="sponpic p-2"
+                                style="width: 20%;">
+                            <img id="sponsor-img-<?php echo $id ?>"
+                                 class="sponsor-img"
+                                 src="sponsors/<?php echo $image ?>"
+                                 alt="<?php echo $name ?>"
+                                 style="width: 100%;">
+                            <a class="btn btn-danger delete-indoor-sponsor-btn"
+                               sponsor-id="<?php echo $id ?>"
+                               href="admin-functions/delete-indoor-sponsor.php?<?php echo "id=$id" ?>">Delete</a>
                         </center>
                         <?php
                     }
@@ -1064,40 +1353,64 @@ require_once("config-url.php");
     <h3 style="text-align: center;">OUTDOOR SPONSORS</h3>
     <!--Sponsors-->
     <div class="px-5">
-        <div class="container-fluid px-5" style="text-align: center;">
+        <div class="container-fluid px-5"
+             style="text-align: center;">
             <center>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#outdoor-sponsors">
+                <button type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#outdoor-sponsors">
                     Add New Sponsor
                 </button>
             </center>
 
             <!-- outdoor Sponsor Modal -->
-            <div class="modal fade" id="outdoor-sponsors" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade"
+                 id="outdoor-sponsors"
+                 tabindex="-1"
+                 aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add New Outdoor Sponsor</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title"
+                                id="exampleModalLabel">Add New Outdoor Sponsor</h5>
+                            <button type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="outdoor-sponsors" class="" method="post" enctype="multipart/form-data"
-                                action="admin-functions/outdoor-sponsors.php">
+                            <form id="outdoor-sponsors"
+                                  class=""
+                                  method="post"
+                                  enctype="multipart/form-data"
+                                  action="admin-functions/outdoor-sponsors.php">
                                 <h4 class="text-start">
                                     Upload New Image
                                 </h4>
-                                <input id="outdoor-sponsor-image" type="file" class="form-control"
-                                    name="outdoor_sponsor_image" accept="image/*">
+                                <input id="outdoor-sponsor-image"
+                                       type="file"
+                                       class="form-control"
+                                       name="outdoor_sponsor_image"
+                                       accept="image/*">
                                 <h4 class="text-start">
                                     Sponsor's Name
                                 </h4>
-                                <input id="outdoor-sponsor-name" class="form-control" name="outdoor_sponsor_name"
-                                    type="text" placeholder="Please Enter In Sponsor Company Name" value="">
+                                <input id="outdoor-sponsor-name"
+                                       class="form-control"
+                                       name="outdoor_sponsor_name"
+                                       type="text"
+                                       placeholder="Please Enter In Sponsor Company Name"
+                                       value="">
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="button"
+                                    class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                            <button type="submit"
+                                    class="btn btn-primary">Save changes</button>
                             </form>
                         </div>
                     </div>
@@ -1118,9 +1431,16 @@ require_once("config-url.php");
                         $image = $row["image"];
                         $name = $row["name"];
                         ?>
-                        <div class="sponpic p-2" style="width: 20%;">
-                            <img id="sponsor-img-<?php echo $id ?>" class="sponsor-img" src="sponsors/<?php echo $image ?>" alt="<?php echo $name ?>" style="width: 100%;">
-                            <a class="btn btn-danger delete-outdoor-sponsor-btn" sponsor-id="<?php echo $id ?>" href="admin-functions/delete-outdoor-sponsor.php?<?php echo "id=$id" ?>">Delete</a>
+                        <div class="sponpic p-2"
+                             style="width: 20%;">
+                            <img id="sponsor-img-<?php echo $id ?>"
+                                 class="sponsor-img"
+                                 src="sponsors/<?php echo $image ?>"
+                                 alt="<?php echo $name ?>"
+                                 style="width: 100%;">
+                            <a class="btn btn-danger delete-outdoor-sponsor-btn"
+                               sponsor-id="<?php echo $id ?>"
+                               href="admin-functions/delete-outdoor-sponsor.php?<?php echo "id=$id" ?>">Delete</a>
                         </div>
                         <?php
                     }
@@ -1136,19 +1456,28 @@ require_once("config-url.php");
     </div>
     </div>
     <!--Footer-->
-    <div id="footer" class="container-fluid bg-primary text-center" style="width: 100%; padding: 3% 5%;">
+    <div id="footer"
+         class="container-fluid bg-primary text-center"
+         style="width: 100%; padding: 3% 5%;">
         <div class="contactalert">
             <div class="row">
                 <div class="col-sm-12 p-2">
                     <h3 style="color: black ;">Contact Us</h3>
                     <div class="container-fluid"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
-                            width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
+                                width="80%"
+                                height="auto"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <form id="footer-form" class="col pt-2" style="text-align: center; line-height: 2.; color: black;"
-                    method="post" action="admin-functions/footer-update.php">
+                <form id="footer-form"
+                      class="col pt-2"
+                      style="text-align: center; line-height: 2.; color: black;"
+                      method="post"
+                      action="admin-functions/footer-update.php">
                     <p class="contacttext">
                         MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3
                         <hr style="color: blue;">
@@ -1159,13 +1488,19 @@ require_once("config-url.php");
                     <h5 class="text-start">
                         President Name:
                     </h5>
-                    <input id="president_name" name="president_name" type="text" class="form-control"
-                        value="<?php echo $president_name ?>">
+                    <input id="president_name"
+                           name="president_name"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $president_name ?>">
                     <h5 class="text-start">
                         President Email:
                     </h5>
-                    <input id="president_email" name="president_email" type="text" class="form-control"
-                        value="<?php echo $president_email ?>">
+                    <input id="president_email"
+                           name="president_email"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $president_email ?>">
 
                     MANAGER: <a href="mailto:<?php echo $manager_email ?>">
                         <?php echo $manager_name ?>
@@ -1174,13 +1509,19 @@ require_once("config-url.php");
                     <h5 class="text-start">
                         Manager Name:
                     </h5>
-                    <input id="manager_name" name="manager_name" type="text" class="form-control"
-                        value="<?php echo $manager_name ?>">
+                    <input id="manager_name"
+                           name="manager_name"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $manager_name ?>">
                     <h5 class="text-start">
                         Manager Email:
                     </h5>
-                    <input id="manager_email" name="manager_email" type="text" class="form-control"
-                        value="<?php echo $manager_email ?>">
+                    <input id="manager_email"
+                           name="manager_email"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $manager_email ?>">
 
                     REFEREES: <a href="mailto:<?php echo $referees_email ?>">
                         <?php echo $referees_name ?>
@@ -1189,13 +1530,19 @@ require_once("config-url.php");
                     <h5 class="text-start">
                         Referees Name:
                     </h5>
-                    <input id="referees_name" name="referees_name" type="text" class="form-control"
-                        value="<?php echo $referees_name ?>">
+                    <input id="referees_name"
+                           name="referees_name"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $referees_name ?>">
                     <h5 class="text-start">
                         Referees Email:
                     </h5>
-                    <input id="referees_email" name="referees_email" type="text" class="form-control"
-                        value="<?php echo $referees_email ?>">
+                    <input id="referees_email"
+                           name="referees_email"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $referees_email ?>">
 
 
                     E TRANSFERS: <a>
@@ -1204,15 +1551,21 @@ require_once("config-url.php");
                     <h5 class="text-start">
                         E Transfer Email:
                     </h5>
-                    <input id="e_transfer_email" name="e_transfer_email" type="text" class="form-control"
-                        value="<?php echo $e_transfer_email ?>">
+                    <input id="e_transfer_email"
+                           name="e_transfer_email"
+                           type="text"
+                           class="form-control"
+                           value="<?php echo $e_transfer_email ?>">
 
 
-                    <button id="footer-submit-btn" type="submit" class="btn btn-primary mt-3 fs-5">Update</button>
+                    <button id="footer-submit-btn"
+                            type="submit"
+                            class="btn btn-primary mt-3 fs-5">Update</button>
                 </form>
             </div>
         </div>
-        <div class="linkchange" style="text-align: center;">
+        <div class="linkchange"
+             style="text-align: center;">
             <small><a href="http://www.businesslore.com">- CREATED BY BUSINESSLORE - </a></small>
         </div>
     </div>
@@ -1231,6 +1584,32 @@ require_once("config-url.php");
     <script src="<?php echo BASE_URL ?>js/ad_1.js"></script>
     <script src="<?php echo BASE_URL ?>js/ad_2.js"></script>
     <script src="<?php echo BASE_URL ?>js/sponsors.js"></script>
+
+    <script>
+        tinymce.init({
+            selector: '.textarea',
+            plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons link lists searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            mergetags_list: [
+                { value: 'First.Name', title: 'First Name' },
+                { value: 'Email', title: 'Email' },
+            ],
+            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+            setup: function (editor) {
+                editor.on("input", function () {
+                    const card_num = document.getElementById("card_section").getAttribute("card_num");
+                    console.log(card_num);
+                    const id = `#card_${card_num}_text`;
+                    console.log(editor.getContent());
+                    $(id).html(editor.getContent());
+
+
+                })
+            }
+        });
+    </script>
 
 </body>
 

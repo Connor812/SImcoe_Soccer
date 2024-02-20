@@ -1,5 +1,6 @@
 <?php
 require_once("db/db_config.php");
+require_once("config-url.php");
 ?>
 
 
@@ -7,11 +8,16 @@ require_once("db/db_config.php");
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/selection.css" rel="stylesheet">
-  <link href="css/info.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link href="css/selection.css"
+        rel="stylesheet">
+  <link href="css/info.css"
+        rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+        crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>Information</title>
 </head>
@@ -48,21 +54,18 @@ require_once("db/db_config.php");
 </style>
 
 <body>
-  <div id="navbar" style="z-index: 3;">
-    <a href="/index.php"><img fluid src="images/ball.png" style="width: 20px" alt="Ball"></a>
-    <a href="/players.html">Players</a>
-    <a href="/parents.html">Parents</a>
-    <a href="/coaches.html">Coaches</a>
-    <a href="/officials.html">Officials</a>
-    <a href="/info.html">Info</a>
-    <a href="#footer">Contact Us</a>
-  </div>
+  <?php
+  require_once("php/header.php");
+  ?>
   <!--topblurb-->
 
-  <img src="images/info.jpg" style="width: 100%;">
-  <div class="container-fluid" style="text-align: center;">
+  <img src="images/info.jpg"
+       style="width: 100%;">
+  <div class="container-fluid"
+       style="text-align: center;">
     <div class="row p-3">
-      <div class="col-sm-12  col-md-5 px-2" style="text-align: center">
+      <div class="col-sm-12  col-md-5 px-2"
+           style="text-align: center">
         <h4>BOARD OF DIRECTORS</h4>
         <hr>
         <ul style="list-style-type:none;">
@@ -110,24 +113,31 @@ require_once("db/db_config.php");
           ?>
         </ul>
         <!-- Button to Open the Modal -->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#presidents"
-          style="background-color: blue; color: white;">
+        <button type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#presidents"
+                style="background-color: blue; color: white;">
           Past Presidents
         </button>
 
         <!-- The Modal -->
-        <div class="modal" id="presidents">
+        <div class="modal"
+             id="presidents">
           <div class="modal-dialog">
             <div class="modal-content">
 
               <!-- Modal Header -->
               <div class="modal-header">
                 <h4 class="modal-title">Past Presidents</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"></button>
               </div>
 
               <!-- Modal body -->
-              <div class="modal-body" style="text-align: left; padding-left: 10%;">
+              <div class="modal-body"
+                   style="text-align: left; padding-left: 10%;">
                 <ul style="list-style-type:none;">
                   <?php
 
@@ -179,7 +189,9 @@ require_once("db/db_config.php");
               <!-- Modal footer -->
               <div class="modal-footer">
 
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal">Close</button>
               </div>
 
             </div>
@@ -187,7 +199,8 @@ require_once("db/db_config.php");
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-7 pt-3" style="text-align: left;">
+      <div class="col-sm-12 col-md-7 pt-3"
+           style="text-align: left;">
         <h4 style="text-align: center;">OUR STORY</h4>
 
         In 1973 there were 83 children registered in that first year! The Club grew slowly and ste`ily over the next 20
@@ -199,19 +212,30 @@ require_once("db/db_config.php");
         We continue to draw 192 participants a year with 3 divisions.
       </div>
     </div>
-    <img img-class="img-fluid" src="images/teamstrip.jpg" style="width: 100%; height: auto;">
+    <img img-class="img-fluid"
+         src="images/teamstrip.jpg"
+         style="width: 100%; height: auto;">
     <div id="accordion">
-      <div class="card" style="border-color: white;">
-        <div class="card-header" style="background-color: white; border-color: white;">
-          <a class="btn" data-bs-toggle="collapse" href="#collapseOne"
-            style="background-color: blue; width: 100%; color: white;">
+      <div class="card"
+           style="border-color: white;">
+        <div class="card-header"
+             style="background-color: white; border-color: white;">
+          <a class="btn"
+             data-bs-toggle="collapse"
+             href="#collapseOne"
+             style="background-color: blue; width: 100%; color: white;">
             CLICK HERE TO LEARN ALL ABOUT OUR SOCCER PARK
           </a>
         </div>
-        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+        <div id="collapseOne"
+             class="collapse"
+             data-bs-parent="#accordion">
           <div class="card-body py-0">
             <h4>Norfolk County Youth Soccer Park, 660 West St</h4>
-            <div class="container-fluid"><img class="img-fluid" src="images/parkmap.jpg" alt="park map" style="float: right; margin: 2%; transition-duration: 0.4s;
+            <div class="container-fluid"><img class="img-fluid"
+                   src="images/parkmap.jpg"
+                   alt="park map"
+                   style="float: right; margin: 2%; transition-duration: 0.4s;
             cursor: pointer;"></div>
             <p style="text-align: left;">The rapid rise on player numbers and teams forced the realization that the
               number of fields and
@@ -249,16 +273,75 @@ require_once("db/db_config.php");
     </div>
 
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-5 pt-3" style="background-color: aliceblue;">
+      <div class="col-sm-12 col-md-6 col-lg-6 pt-3"
+           style="background-color: aliceblue;">
         <h2>Announcements</h2>
         <hr style="color: blue;">
-        <h5>Ryan Cattrysse Memorial Bursary Award</h5>
-        <div class="container-fluid" style="text-align: center;"><img src="images/Ryan.jpg" style="width: 33%;"></div>
-        <p><a href="/ryanaward.html">Learn how you can participate.</a></p>
-        <img img-class="img-fluid" src="images/ball200x200.gif" style="width: 25%;">
+
+        <center>
+
+          <?php
+
+          $sql = "SELECT * FROM `announcements` ORDER BY `id` DESC;";
+
+          $result = mysqli_query($conn, $sql);
+
+          if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              $id = $row["id"];
+              $image = $row["image"];
+              $heading = $row["heading"];
+              $text = $row["text"];
+              $link = $row["link"];
+
+              ?>
+              <div class="col m-3"
+                   style="max-width: 500px">
+                <div class="card shadow-sm">
+                  <img src="images/<?php echo $image ?>"
+                       style="width:100%; height:auto;"
+                       alt="">
+                  <div class="card-body">
+                    <p class="card-text">
+                      <b>
+                        <h3>
+                          <?php echo $heading ?>
+                        </h3>
+                      </b>
+                      <?php echo $text ?>
+                    </p>
+                    <?php if (!empty($link)) { ?>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="<?php echo $link ?>">
+                            <button type="button"
+                                    class="btn btn-sm btn-outline-secondary">
+                              View
+                            </button>
+                          </a>
+                        </div>
+                        <small class="text-body-secondary"></small>
+                      </div>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
+              <?php
+            }
+          } else {
+            // ! No data found
+            echo "No Cards Found";
+          }
+
+          ?>
+        </center>
+
+
+
         <HR>
         <H6>2007 ONTARIO CUP FINALISTS</H6>
-        <img src="images/2007finalists.png" style="text-align: center;">
+        <img src="images/2007finalists.png"
+             style="text-align: center;">
         <div class="texttiny">Coach: Zvonko Horvat </div>
         <div class="texttinier">Back row left to right in the photo w/o flags; Assistant coach; Bill Baskerville,
           trainer; Maureen Sloot, Christian Vos, Dean Marshall, Ryan Horvat, Kurt Wilson, Andrew Sloot, Jake Durant,
@@ -281,38 +364,74 @@ require_once("db/db_config.php");
             <li>Armando Carvalho</li>
           </ul>
         </div>
-        <img img-class="img-fluid" src="images/50jumbo.jpg" style="width: 100%; height:auto;">
+        <img img-class="img-fluid"
+             src="images/50jumbo.jpg"
+             style="width: 100%; height:auto;">
         <hr>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-7 pt-3">
+      <div class="col-sm-12 col-md-6 col-lg-6 pt-3">
         <a id="right"></a>
         <h2>Latest News</h2>
         <hr style="color: blue;">
-        <h5>INDOOR SOCCER CHAMPS 2022</h5>
-        <div class="container-fluid p-2"><img src="images/U10-IndoorChampsPurpleTimHortons.jpg" style="width: 80%;">
-        </div>
-        <p>U10 Indoor Champs Purple Tim Hortons</p>
-        <div class="container-fluid p-2"><img src="images/U13Indoorlions.jpg" style="width:80%;"></div>
-        <p>U13 Indoor Champs Simcoe Lions Club</p>
-        <div class="container-fluid px-2"><img src="images/U18indoorBrian.jpg" style="width: 80%;"></div>
-        <p>U18 Indoor Champs Brian's Handyman Services</p>
+        <center class="latest-news-wrapper">
+
+          <?php
+
+          $sql = "SELECT * FROM `latest_news` ORDER BY `id` DESC;";
+
+          $result = mysqli_query($conn, $sql);
+
+          if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              $id = $row["id"];
+              $image = $row["image"];
+              $heading = $row["heading"];
+              $text = $row["text"];
+              ?>
+              <div class="latest-news-container card">
+                <img src="images/<?php echo $image ?>">
+                <b>
+                  <h3>
+                    <?php echo $heading ?>
+                  </h3>
+                </b>
+                <p>
+                  <?php echo $text ?>
+                </p>
+              </div>
+              <?php
+            }
+          } else {
+            // ! No data found
+            echo "No News Found";
+          }
+
+          ?>
+
+        </center>
       </div>
     </div>
   </div>
   <!--Footer-->
   <a id="footer"></a>
-  <div class="container-fluid bg-primary text-center" style="width: 100%; padding: 3% 5%;">
+  <div class="container-fluid bg-primary text-center"
+       style="width: 100%; padding: 3% 5%;">
     <div class="contactalert">
       <div class="row">
         <div class="col-sm-12 p-2">
           <h3 style="color: black ;">Contact Us</h3>
           <div class="container-fluid"><iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
-              width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
+                    width="80%"
+                    height="auto"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div class="col pt-2" style="text-align: center; line-height: 2.; color: black;">
+        <div class="col pt-2"
+             style="text-align: center; line-height: 2.; color: black;">
           <p class="contacttext">
             MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3
             <hr style="color: blue;">
@@ -321,12 +440,14 @@ require_once("db/db_config.php");
             REFEREES: <a href="mailto:joe.estrela@hotmail.com">Joe Estrela</a> <br>
             E TRANSFERS: </a>sdysc.treasurer@gmail.com</a>
           </p>
-          <small><a href="http://www.businesslore.com" style="text-decoration: none; ">- CREATED BY BUSINESSLORE -
+          <small><a href="http://www.businesslore.com"
+               style="text-decoration: none; ">- CREATED BY BUSINESSLORE -
             </a></small>
         </div>
       </div>
     </div>
-    <div class="linkchange" style="text-align: center;">
+    <div class="linkchange"
+         style="text-align: center;">
       <small><a href="http://www.businesslore.com">- CREATED BY BUSINESSLORE - </a></small>
     </div>
   </div>
