@@ -58,6 +58,7 @@ if (!isset($_SESSION["admin_username"])) {
     <?php
     require_once("php/admin-header.php");
     require_once("admin-functions/error-handlers.php");
+    require_once("db/db_config.php");
     ?>
     <!-- initialize the textarea -->
     <script>
@@ -114,10 +115,35 @@ if (!isset($_SESSION["admin_username"])) {
     <div class="container-fluid"
          style="text-align: center;">
         <hr style="color: blue;">
-        <a href="files/2023constitution.pdf"><button type="button"
-                    class="btn btn-primary m-1"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#demo1">2023 Rules and Constitution</button></a>
+        <?php
+        $sql = "SELECT * FROM `rules_regulations` WHERE id = 1;";
+
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $link_rules_pdf = $row["link_rules_pdf"];
+                $link_rules_text = $row["link_rules_text"];
+
+                ?>
+                <a href="files/<?php echo $link_rules_pdf ?>"><button type="button"
+                            class="btn btn-primary m-1"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#demo1">
+                        <?php echo $link_rules_text ?>
+                    </button></a>
+                <div>
+                    <a class="btn btn-success"
+                       href="<?php echo BASE_URL . "admin.php#rules_regulations-section" ?>">Edit</a>
+                </div>
+                <?php
+
+            }
+        } else {
+            // ! No data found
+            echo "Error No pdf found";
+        }
+        ?>
 
         <hr style="color: blue;">
     </div>

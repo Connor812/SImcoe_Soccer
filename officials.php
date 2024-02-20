@@ -72,11 +72,31 @@
   <div class="container-fluid"
        style="text-align: center;">
     <hr style="color: blue;">
-    <a href="files/2023constitution.pdf"><button type="button"
-              class="btn btn-primary m-1"
-              data-bs-toggle="collapse"
-              data-bs-target="#demo1">2023 Rules and Constitution</button></a>
+    <?php
+    $sql = "SELECT * FROM `rules_regulations` WHERE id = 1;";
 
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+      while ($row = mysqli_fetch_assoc($result)) {
+        $link_rules_pdf = $row["link_rules_pdf"];
+        $link_rules_text = $row["link_rules_text"];
+
+        ?>
+        <a href="files/<?php echo $link_rules_pdf ?>"><button type="button"
+                  class="btn btn-primary m-1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#demo1">
+            <?php echo $link_rules_text ?>
+          </button></a>
+        <?php
+
+      }
+    } else {
+      // ! No data found
+      echo "Error No pdf found";
+    }
+    ?>
     <hr style="color: blue;">
   </div>
 
@@ -273,59 +293,59 @@
       <hr>
     </div>
     </div>
-    </center>
-    </div>
-    <!--Footer-->
-    <a id="footer"></a>
-    <div class="container-fluid bg-primary text-center"
-         style="width: 100%; padding: 3% 5%;">
-      <div class="contactalert">
-        <div class="row">
-          <div class="col-sm-12 p-2">
-            <h3 style="color: black ;">Contact Us</h3>
-            <div class="container-fluid"><iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
-                      width="80%"
-                      height="auto"
-                      style="border:0;"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          <div class="col pt-2"
-               style="text-align: center; line-height: 2.; color: black;">
-            <p class="contacttext">
-              MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3
-              <hr style="color: blue;">
-              PRESIDENT: <a href="mailto:president@simcoesoccer.ca">Brian Suggett</a> <br>
-              MANAGER: <a href="mailto:clubmanager@simcoesoccer.ca">Bev Suggett </a><br>
-              REFEREES: <a href="mailto:joe.estrela@hotmail.com">Joe Estrela</a> <br>
-              E TRANSFERS: </a>sdysc.treasurer@gmail.com</a>
-            </p>
-            <small><a href="http://www.businesslore.com"
-                 style="text-decoration: none; ">- CREATED BY BUSINESSLORE - </a></small>
+  </center>
+  </div>
+  <!--Footer-->
+  <a id="footer"></a>
+  <div class="container-fluid bg-primary text-center"
+       style="width: 100%; padding: 3% 5%;">
+    <div class="contactalert">
+      <div class="row">
+        <div class="col-sm-12 p-2">
+          <h3 style="color: black ;">Contact Us</h3>
+          <div class="container-fluid"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17894.89103267856!2d-80.34367718384985!3d42.82865397385058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c4c3f274267a5%3A0x1068c11fe4ce3ea9!2sNorfolk%20County%20Youth%20Soccer%20Park!5e0!3m2!1sen!2sca!4v1682873399185!5m2!1sen!2sca"
+                    width="80%"
+                    height="auto"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      </div>
-      <div class="linkchange"
-           style="text-align: center;">
-        <small><a href="http://www.businesslore.com">- CREATED BY BUSINESSLORE - </a></small>
+        <div class="col pt-2"
+             style="text-align: center; line-height: 2.; color: black;">
+          <p class="contacttext">
+            MAIL<br>Club Manager PO Box 1012<br>Simcoe, ON N3Y 5B3
+            <hr style="color: blue;">
+            PRESIDENT: <a href="mailto:president@simcoesoccer.ca">Brian Suggett</a> <br>
+            MANAGER: <a href="mailto:clubmanager@simcoesoccer.ca">Bev Suggett </a><br>
+            REFEREES: <a href="mailto:joe.estrela@hotmail.com">Joe Estrela</a> <br>
+            E TRANSFERS: </a>sdysc.treasurer@gmail.com</a>
+          </p>
+          <small><a href="http://www.businesslore.com"
+               style="text-decoration: none; ">- CREATED BY BUSINESSLORE - </a></small>
+        </div>
       </div>
     </div>
+    <div class="linkchange"
+         style="text-align: center;">
+      <small><a href="http://www.businesslore.com">- CREATED BY BUSINESSLORE - </a></small>
+    </div>
+  </div>
 
-    <script>
-      // When the user scrolls down 20px from the top of the document, slide down the navbar
-      window.onscroll = function () { scrollFunction() };
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function () { scrollFunction() };
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-50px";
-        }
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
       }
-    </script>
+    }
+  </script>
 </body>
 
 </html>
