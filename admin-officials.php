@@ -287,7 +287,7 @@ if (!isset($_SESSION["admin_username"])) {
                             <textarea name="u9"
                                       class="textarea "
                                       cols="30"
-                                      rows="10"><?php echo $u8_text ?></textarea>
+                                      rows="10"><?php echo $u9_text ?></textarea>
                         </div>
                         <button class="btn btn-success m-3"
                                 type="submit">Save Changes</button>
